@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Feldpostbrief XML Viewer mit Tags</title>
+  <title>Feldpostbrief XML Viewer mit Tags und Highlight</title>
   <style>
     body { display: flex; margin: 0; height: 100vh; font-family: sans-serif; }
     #sidebar { width: 320px; overflow-y: auto; border-right: 1px solid #ccc; padding: 1rem; background: #fafafa; }
     #main { flex: 1; position: relative; overflow: auto; background: #f0f0f0; display: flex; align-items: center; justify-content: center; }
-    canvas { border: 1px solid #333; max-width: 100%; height: auto; }
+    canvas { border: 1px solid #333; max-width: 100%; height: auto; cursor: pointer; }
     h2 { margin-top: 0; }
     .region-text { cursor: pointer; margin-bottom: 0.7rem; padding: 0.4rem; border-bottom: 1px solid #eee; }
     .region-text:hover { background-color: #e0e0e0; }
@@ -40,6 +40,7 @@
 
     let image = new Image();
     let boxes = [];
+    let highlightIndex = null;
 
     async function loadFileList() {
       const response = await fetch('files.json');
@@ -69,7 +70,7 @@
       image.onload = () => draw();
 
       const regions = xmlDoc.querySelectorAll('TextLine');
-      regions.forEach((line) => {
+      regions.forEach((line, idx) => {
         const coordsStr = line.querySelector('Coords').getAttribute('points');
         const text = line.querySelector('Unicode')?.textContent || '';
         const custom = line.getAttribute('custom') || '';
@@ -81,12 +82,21 @@
         div.className = 'region-text';
         div.textContent = text;
 
-        // Tags extrahieren und visualisieren
         if (custom.includes('person')) addTag(div, 'Person', 'tag-person');
         if (custom.includes('date')) addTag(div, 'Datum', 'tag-date');
         if (custom.includes('movie')) addTag(div, 'Film', 'tag-movie');
         if (custom.includes('FeldpostNr.')) addTag(div, 'FeldpostNr.', 'tag-feldpost');
         if (custom.includes('Regiment')) addTag(div, 'Regiment', 'tag-regiment');
+
+        div.addEventListener('mouseenter', () => {
+          highlightIndex = idx;
+          draw();
+        });
+
+        div.addEventListener('mouseleave', () => {
+          highlightIndex = null;
+          draw();
+        });
 
         div.addEventListener('click', () => zoomToBox(box));
         textLinesDiv.appendChild(div);
@@ -115,9 +125,14 @@
       canvas.width = image.width;
       canvas.height = image.height;
       ctx.drawImage(image, 0, 0);
-      boxes.forEach(({ box }) => {
-        ctx.strokeStyle = 'rgba(255,0,0,0.7)';
-        ctx.lineWidth = 2;
+      boxes.forEach(({ box }, i) => {
+        if (i === highlightIndex) {
+          ctx.strokeStyle = 'rgba(0, 200, 0, 0.9)';
+          ctx.lineWidth = 3;
+        } else {
+          ctx.strokeStyle = 'rgba(255,0,0,0.7)';
+          ctx.lineWidth = 2;
+        }
         ctx.strokeRect(box.x, box.y, box.w, box.h);
       });
     }
