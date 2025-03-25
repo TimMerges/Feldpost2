@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Feldpostbrief XML Viewer mit Tags und Highlight</title>
+  <title>Feldpostbrief XML Viewer mit Tags und Hover-Highlight</title>
   <style>
     body { display: flex; margin: 0; height: 100vh; font-family: sans-serif; }
     #sidebar { width: 320px; overflow-y: auto; border-right: 1px solid #ccc; padding: 1rem; background: #fafafa; }
@@ -129,11 +129,8 @@
         if (i === highlightIndex) {
           ctx.strokeStyle = 'rgba(0, 200, 0, 0.9)';
           ctx.lineWidth = 3;
-        } else {
-          ctx.strokeStyle = 'rgba(255,0,0,0.7)';
-          ctx.lineWidth = 2;
+          ctx.strokeRect(box.x, box.y, box.w, box.h);
         }
-        ctx.strokeRect(box.x, box.y, box.w, box.h);
       });
     }
 
