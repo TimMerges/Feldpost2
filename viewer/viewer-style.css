@@ -1,0 +1,86 @@
+/* viewer-style.css */
+
+body {
+  display: flex;
+  margin: 0;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+#sidebar {
+  width: 320px;
+  overflow-y: auto;
+  border-right: 1px solid #ccc;
+  padding: 1rem;
+  background: #fafafa;
+}
+
+#main {
+  flex: 1;
+  position: relative;
+  overflow: auto;
+  background: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+canvas {
+  border: 1px solid #333;
+  max-width: 90%;
+  height: auto;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.region-text {
+  cursor: pointer;
+  margin-bottom: 0.7rem;
+  padding: 0.4rem;
+  border-bottom: 1px solid #eee;
+}
+
+.region-text:hover {
+  background-color: #e0e0e0;
+}
+
+.tag-label {
+  display: inline-block;
+  margin-left: 0.5rem;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  color: #fff;
+}
+
+.tag-person {
+  background-color: #4caf50;
+}
+
+.tag-date {
+  background-color: #2196f3;
+}
+
+.tag-movie {
+  background-color: #ff9800;
+}
+
+.tag-feldpost {
+  background-color: #9c27b0;
+}
+
+.tag-regiment {
+  background-color: #795548;
+}
+
+select, button {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
