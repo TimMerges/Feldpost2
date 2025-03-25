@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Feldpostbrief XML Viewer mit Tags und Hover-Highlight</title>
+  <title>Feldpostbrief XML Viewer mit Tags, Hover-Highlight und Bildrotation</title>
   <style>
     body { display: flex; margin: 0; height: 100vh; font-family: sans-serif; }
     #sidebar { width: 320px; overflow-y: auto; border-right: 1px solid #ccc; padding: 1rem; background: #fafafa; }
-    #main { flex: 1; position: relative; overflow: auto; background: #f0f0f0; display: flex; align-items: center; justify-content: center; }
-    canvas { border: 1px solid #333; max-width: 100%; height: auto; cursor: pointer; }
+    #main { flex: 1; position: relative; overflow: auto; background: #f0f0f0; display: flex; align-items: center; justify-content: center; flex-direction: column; }
+    canvas { border: 1px solid #333; max-width: 90%; height: auto; cursor: pointer; margin-bottom: 1rem; }
     h2 { margin-top: 0; }
     .region-text { cursor: pointer; margin-bottom: 0.7rem; padding: 0.4rem; border-bottom: 1px solid #eee; }
     .region-text:hover { background-color: #e0e0e0; }
@@ -18,13 +18,14 @@
     .tag-movie { background-color: #ff9800; }
     .tag-feldpost { background-color: #9c27b0; }
     .tag-regiment { background-color: #795548; }
-    select { width: 100%; margin-bottom: 1rem; }
+    select, button { width: 100%; margin-bottom: 1rem; padding: 0.5rem; font-size: 1rem; }
   </style>
 </head>
 <body>
   <div id="sidebar">
     <h2>Feldpostbriefe</h2>
     <select id="fileSelector"></select>
+    <button onclick="rotateImage()">Bild drehen</button>
     <h3>Transkription &amp; Tags</h3>
     <div id="textLines"></div>
   </div>
@@ -41,6 +42,7 @@
     let image = new Image();
     let boxes = [];
     let highlightIndex = null;
+    let rotation = 0;
 
     async function loadFileList() {
       const response = await fetch('files.json');
@@ -124,7 +126,20 @@
     function draw() {
       canvas.width = image.width;
       canvas.height = image.height;
-      ctx.drawImage(image, 0, 0);
+
+      ctx.save();
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      if (rotation !== 0) {
+        ctx.translate(canvas.width / 2, canvas.height / 2);
+        ctx.rotate((rotation * Math.PI) / 180);
+        ctx.drawImage(image, -image.width / 2, -image.height / 2);
+      } else {
+        ctx.drawImage(image, 0, 0);
+      }
+
+      ctx.restore();
+
       boxes.forEach(({ box }, i) => {
         if (i === highlightIndex) {
           ctx.strokeStyle = 'rgba(0, 200, 0, 0.9)';
@@ -132,6 +147,11 @@
           ctx.strokeRect(box.x, box.y, box.w, box.h);
         }
       });
+    }
+
+    function rotateImage() {
+      rotation = (rotation + 90) % 360;
+      draw();
     }
 
     function zoomToBox(box) {
