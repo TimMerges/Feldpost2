@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/pagecontent.xsd">
+    <Metadata>
+        <Creator>prov=READ-COOP:name=PyLaia@TranskribusPlatform:version=2.20.0:model_id=36508:lm=none:date=24_01_2025_13:43</Creator>
+        <Created>2025-01-14T20:07:45.762+01:00</Created>
+        <LastChange>2025-03-25T13:11:14.170+01:00</LastChange>
+    </Metadata>
+    <Page imageFilename="0017_Karl 10.05.44 Seite 2.jpeg" imageWidth="1746" imageHeight="2466">
+        <ReadingOrder>
+            <OrderedGroup id="ro_1742907175244" caption="Regions reading order">
+                <RegionRefIndexed index="0" regionRef="r"/>
+                <RegionRefIndexed index="1" regionRef="r_9"/>
+                <RegionRefIndexed index="2" regionRef="r_10"/>
+            </OrderedGroup>
+        </ReadingOrder>
+        <TextRegion id="r" custom="readingOrder {index:0;}">
+            <Coords points="137,147 1739,147 1739,584 137,584"/>
+            <TextLine id="l" custom="readingOrder {index:0;}">
+                <Coords points="196,263 763,244 868,306 972,304 1109,244 1340,327 1486,248 1696,278 1696,84 1556,116 1415,80 1316,133 933,177 836,125 743,174 530,125 196,170"/>
+                <Baseline points="207,244 1699,247"/>
+                <TextEquiv>
+                    <Unicode>Will nun für heute schließen</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_17" custom="readingOrder {index:1;}">
+                <Coords points="222,403 330,371 394,420 500,414 610,349 1017,427 1157,356 1556,386 1556,246 1340,328 1105,259 892,312 765,244 651,248 457,315 222,258"/>
+                <Baseline points="232,349 1562,352"/>
+                <TextEquiv>
+                    <Unicode>Es grüßt dich sowie alle</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_21" custom="readingOrder {index:2;}">
+                <Coords points="263,532 728,534 862,465 991,467 1047,504 1101,463 1185,480 1185,392 1019,429 719,377 426,422 328,368 263,384"/>
+                <Baseline points="274,461 1188,459"/>
+                <TextEquiv>
+                    <Unicode>Angehörigen dein</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_25" custom="readingOrder {index:3;} person {offset:7; length:4;firstname:Karl; lastname:Klein;}">
+                <Coords points="797,605 894,605 941,575 991,607 1187,612 1290,580 1375,627 1514,620 1514,455 1377,506 1245,459 970,530 879,467 797,463"/>
+                <Baseline points="808,569 1517,571"/>
+                <TextEquiv>
+                    <Unicode>Bruder Karl</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode></Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r_9" custom="readingOrder {index:1;}">
+            <Coords points="267,661 1270,661 1270,843 267,843"/>
+            <TextLine id="l_29" custom="readingOrder {index:0;}">
+                <Coords points="267,851 786,836 967,870 1198,784 1198,689 1069,668 967,700 623,668 267,704"/>
+                <Baseline points="277,783 1200,783"/>
+                <TextEquiv>
+                    <Unicode>Anschrift lautet</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode></Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r_10" custom="readingOrder {index:2;}">
+            <Coords points="309,881 1467,881 1467,1257 309,1257"/>
+            <TextLine id="l_33" custom="readingOrder {index:0;}">
+                <Coords points="446,1008 506,1004 593,1062 618,1038 638,1045 653,1030 664,1038 681,1030 681,888 618,914 549,898 446,922"/>
+                <Baseline points="457,1010 686,1010"/>
+                <TextEquiv>
+                    <Unicode>Gefr.</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_37" custom="readingOrder {index:1;} person {offset:0; length:10;firstname:Karl; lastname:Klein;}">
+                <Coords points="651,1127 730,1101 847,1120 905,1099 1054,1114 1137,1094 1200,1118 1200,1021 1103,1021 1062,989 957,1015 905,987 758,1017 713,998 651,1036"/>
+                <Baseline points="661,1100 1205,1095"/>
+                <TextEquiv>
+                    <Unicode>Karl Klein</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_44" custom="readingOrder {index:2;} unclear {offset:0; length:14;alternative:KR\u0020TRSP\u0020ABT\u0020DRK\u0020Abteilung\u0020790;}">
+                <Coords points="739,1305 1362,1314 1368,1116 1060,1122 922,1161 816,1110 743,1131"/>
+                <Baseline points="751,1220 1370,1207"/>
+                <TextEquiv>
+                    <Unicode>F.P.N 34252(I) </Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode></Unicode>
+            </TextEquiv>
+        </TextRegion>
+    </Page>
+</PcGts>

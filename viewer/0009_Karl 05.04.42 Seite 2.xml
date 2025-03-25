@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/pagecontent.xsd">
+    <Metadata>
+        <Creator>prov=READ-COOP:name=PyLaia@TranskribusPlatform:version=2.20.0:model_id=36508:lm=none:date=30_01_2025_14:34</Creator>
+        <Created>2025-01-14T20:07:44.900+01:00</Created>
+        <LastChange>2025-03-25T12:10:11.260+01:00</LastChange>
+    </Metadata>
+    <Page imageFilename="0009_Karl 05.04.42 Seite 2.jpeg" imageWidth="1614" imageHeight="2450">
+        <ReadingOrder>
+            <OrderedGroup id="ro_1742907172704" caption="Regions reading order">
+                <RegionRefIndexed index="0" regionRef="r"/>
+                <RegionRefIndexed index="1" regionRef="r_9"/>
+            </OrderedGroup>
+        </ReadingOrder>
+        <TextRegion id="r" custom="readingOrder {index:0;}">
+            <Coords points="5,66 1585,66 1585,1265 5,1265"/>
+            <TextLine id="l" custom="readingOrder {index:0;}">
+                <Coords points="8,271 570,215 1455,294 1455,116 1355,91 1188,145 926,124 800,178 707,114 634,155 415,128 253,174 8,91"/>
+                <Baseline points="18,228 1459,231"/>
+                <TextEquiv>
+                    <Unicode>da man überall hinsieht</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_16" custom="readingOrder {index:1;}">
+                <Coords points="0,317 348,325 479,386 557,321 779,359 1299,330 1297,263 1045,282 910,222 769,261 570,215 325,272 145,228 0,257"/>
+                <Baseline points="8,313 1304,332"/>
+                <TextEquiv>
+                    <Unicode>aber nachts ist es am</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_20" custom="readingOrder {index:2;}">
+                <Coords points="0,433 667,421 920,473 1036,425 1146,464 1287,444 1287,352 1225,334 1167,369 879,325 752,373 547,321 479,386 191,313 0,340"/>
+                <Baseline points="5,417 1292,424"/>
+                <TextEquiv>
+                    <Unicode>schlimmsten. Ihr könnt</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_24" custom="readingOrder {index:3;}">
+                <Coords points="10,524 133,524 187,578 257,535 512,528 750,533 875,582 943,531 1111,531 1161,572 1353,531 1333,421 1024,458 937,512 456,510 259,425 10,450"/>
+                <Baseline points="21,522 1358,528"/>
+                <TextEquiv>
+                    <Unicode>wenigstens noch nachts</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_28" custom="readingOrder {index:4;}">
+                <Coords points="0,620 164,655 361,620 417,653 472,620 680,655 746,620 1538,640 1525,512 1107,551 995,607 356,607 284,555 191,582 116,524 0,553"/>
+                <Baseline points="2,620 1544,620"/>
+                <TextEquiv>
+                    <Unicode>schlafen aber bei uns gibt</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_32" custom="readingOrder {index:5;}">
+                <Coords points="0,727 881,709 1003,759 1260,709 1507,729 1507,655 1299,622 1181,686 964,622 680,655 468,618 365,692 0,696"/>
+                <Baseline points="0,708 1513,708"/>
+                <TextEquiv>
+                    <Unicode>es nachts nur Wache stehen</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_36" custom="readingOrder {index:6;}">
+                <Coords points="0,810 396,845 530,810 1378,816 825,794 754,732 547,707 406,746 0,725"/>
+                <Baseline points="2,803 1383,813"/>
+                <TextEquiv>
+                    <Unicode>und am Tage  ebenfalls.</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_40" custom="readingOrder {index:7;}">
+                <Coords points="8,891 114,947 274,891 495,893 564,939 775,895 1208,935 1558,912 1556,812 6,823"/>
+                <Baseline points="18,888 1563,904"/>
+                <TextEquiv>
+                    <Unicode>Will nun zum Schluß meines</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_44" custom="readingOrder {index:8;}">
+                <Coords points="15,997 1024,984 1246,1044 1362,988 1542,1001 1542,922 1471,901 1415,937 939,937 854,901 574,931 367,891 249,939 15,928"/>
+                <Baseline points="27,980 1547,986"/>
+                <TextEquiv>
+                    <Unicode>Briefes kommen und grüße</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_48" custom="readingOrder {index:9;}">
+                <Coords points="15,1084 145,1152 313,1131 402,1171 759,1167 908,1086 1243,1096 1241,1044 1024,984 707,1020 537,984 472,1026 359,982 14,995"/>
+                <Baseline points="27,1072 1247,1091"/>
+                <TextEquiv>
+                    <Unicode>Dich recht herzlich dein</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_52" custom="readingOrder {index:10;} person {offset:7; length:4;firstname:Karl; lastname:Klein;}">
+                <Coords points="392,1214 1100,1214 1185,1239 1167,1090 1044,1111 910,1084 837,1152 732,1109 531,1165 392,1163"/>
+                <Baseline points="403,1179 1190,1179"/>
+                <TextEquiv>
+                    <Unicode>Bruder Karl</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode></Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r_9" custom="readingOrder {index:1;}">
+            <Coords points="574,1258 1491,1258 1491,1435 574,1435"/>
+            <TextLine id="l_56" custom="readingOrder {index:0;}">
+                <Coords points="599,1389 750,1424 883,1360 1053,1360 1144,1368 1241,1434 1285,1393 1422,1378 1420,1274 1217,1258 1117,1283 1042,1258 914,1287 835,1258 779,1299 597,1289"/>
+                <Baseline points="609,1360 1427,1375"/>
+                <TextEquiv>
+                    <Unicode>auf Widersehen</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode></Unicode>
+            </TextEquiv>
+        </TextRegion>
+    </Page>
+</PcGts>

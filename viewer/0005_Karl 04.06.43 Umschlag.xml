@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/pagecontent.xsd">
+    <Metadata>
+        <Creator>prov=READ-COOP:name=PyLaia@TranskribusPlatform:version=2.20.0:model_id=50870:lm=none:date=15_01_2025_11:49</Creator>
+        <Created>2025-01-14T20:07:44.462+01:00</Created>
+        <LastChange>2025-03-25T10:24:46.859+01:00</LastChange>
+    </Metadata>
+    <Page imageFilename="0005_Karl 04.06.43 Umschlag.jpeg" imageWidth="1664" imageHeight="2375">
+        <ReadingOrder>
+            <OrderedGroup id="ro_1742907171215" caption="Regions reading order">
+                <RegionRefIndexed index="0" regionRef="r"/>
+                <RegionRefIndexed index="1" regionRef="r_7"/>
+                <RegionRefIndexed index="2" regionRef="r_9"/>
+                <RegionRefIndexed index="3" regionRef="r_6"/>
+                <RegionRefIndexed index="4" regionRef="r_8"/>
+                <RegionRefIndexed index="5" regionRef="r_5"/>
+            </OrderedGroup>
+        </ReadingOrder>
+        <TextRegion id="r" custom="readingOrder {index:0;}">
+            <Coords points="599,1129 976,1129 976,1365 599,1365"/>
+            <TextLine id="l_68" custom="readingOrder {index:0;}">
+                <Coords points="685,1305 923,1305 923,1275 685,1275"/>
+                <Baseline points="685,1305 923,1305"/>
+                <TextEquiv>
+                    <Unicode>Feldpost</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode></Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r_7" custom="readingOrder {index:1;}">
+            <Coords points="548,1452 688,1452 688,1519 548,1519"/>
+            <TextLine id="l_72" custom="readingOrder {index:0;}">
+                <Coords points="578,1500 641,1496 639,1466 576,1470"/>
+                <Baseline points="578,1500 641,1496"/>
+                <TextEquiv>
+                    <Unicode>An</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode></Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r_9" custom="readingOrder {index:2;}">
+            <Coords points="96,1476 558,1476 558,2294 96,2294"/>
+            <TextLine id="l_99" custom="readingOrder {index:0;}">
+                <Coords points="224,2237 224,1520 194,1520 194,2237"/>
+                <Baseline points="224,2237 224,1520"/>
+                <TextEquiv>
+                    <Unicode>Absender:</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_103" custom="readingOrder {index:1;}">
+                <Coords points="312,2219 306,1555 276,1556 282,2219"/>
+                <Baseline points="312,2219 306,1555"/>
+                <TextEquiv>
+                    <Unicode>Soldat</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_107" custom="readingOrder {index:2;} person {offset:0; length:10;firstname:Karl; lastname:Klein;}">
+                <Coords points="434,2248 428,1613 398,1614 404,2248"/>
+                <Baseline points="434,2248 428,1613"/>
+                <TextEquiv>
+                    <Unicode>Karl Klein</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_80" custom="readingOrder {index:3;}">
+                <Coords points="558,1790 1308,1807 1309,1777 558,1760"/>
+                <Baseline points="558,1790 1308,1807"/>
+                <TextEquiv>
+                    <Unicode>F.P.N 35187</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode></Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r_6" custom="readingOrder {index:3;}">
+            <Coords points="572,1572 1318,1572 1318,1832 572,1832"/>
+            <TextLine id="l_76" custom="readingOrder {index:0;}">
+                <Coords points="606,1648 749,1646 748,1616 605,1618"/>
+                <Baseline points="606,1648 749,1646"/>
+                <TextEquiv>
+                    <Unicode>frl.</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode></Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r_8" custom="readingOrder {index:4;}">
+            <Coords points="596,1822 1616,1822 1616,2294 596,2294"/>
+            <TextLine id="l_84" custom="readingOrder {index:0;} person {offset:0; length:10;firstname:Anna; lastname:Klein;}">
+                <Coords points="860,1906 1564,1906 1564,1876 860,1876"/>
+                <Baseline points="860,1906 1564,1906"/>
+                <TextEquiv>
+                    <Unicode>Anna Klein</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_95" custom="readingOrder {index:1;} place {offset:0; length:5;wikiData:Q563974; country:Germany; placeName:Dreis;} place {offset:9; length:8;wikiData:Q559514; country:Germany; placeName:Wittlich;}">
+                <Coords points="1314,2244 1309,2226 1483,2238 1485,2208 1274,2199 1285,2252"/>
+                <Baseline points="1314,2244 1309,2226 1483,2238"/>
+                <TextEquiv>
+                    <Unicode>Dreis b. Wittlich</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_88" custom="readingOrder {index:2;}">
+                <Coords points="767,2250 1075,2250 1075,2220 767,2220"/>
+                <Baseline points="767,2250 1075,2250"/>
+                <TextEquiv>
+                    <Unicode>Nr. 65</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode></Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r_5" custom="readingOrder {index:5;}">
+            <Coords points="1068,1106 1539,1106 1539,1707 1068,1707"/>
+            <TextEquiv>
+                <Unicode></Unicode>
+            </TextEquiv>
+        </TextRegion>
+    </Page>
+</PcGts>

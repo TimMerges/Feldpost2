@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/pagecontent.xsd">
+    <Metadata>
+        <Creator>prov=READ-COOP:name=PyLaia@TranskribusPlatform:version=2.20.0:model_id=50870:lm=none:date=22_01_2025_19:06</Creator>
+        <Created>2025-01-14T20:07:45.109+01:00</Created>
+        <LastChange>2025-03-25T12:27:28.136+01:00</LastChange>
+    </Metadata>
+    <Page imageFilename="0011_Karl 05.07.43 Rueckseite.jpeg" imageWidth="1738" imageHeight="1250">
+        <ReadingOrder>
+            <OrderedGroup id="ro_1742907173319" caption="Regions reading order">
+                <RegionRefIndexed index="0" regionRef="tr_1"/>
+                <RegionRefIndexed index="1" regionRef="tr_2"/>
+                <RegionRefIndexed index="2" regionRef="tr_3"/>
+                <RegionRefIndexed index="3" regionRef="tr_4"/>
+            </OrderedGroup>
+        </ReadingOrder>
+        <TextRegion orientation="0.0" id="tr_1" custom="readingOrder {index:0;}">
+            <Coords points="60,772 60,1162 342,1162 342,772"/>
+            <TextLine id="tr_1_tl_1" custom="readingOrder {index:0;} person {offset:16; length:5;firstname:Karl; lastname:Klein;}">
+                <Coords points="61,841 98,840 134,821 175,826 201,817 268,818 268,759 228,768 198,763 176,779 142,776 120,756 89,746 61,756"/>
+                <Baseline points="66,812 91,812 117,811 142,811 168,812 193,812 219,810 244,812 270,812"/>
+                <TextEquiv>
+                    <Unicode>Absender: Gefr. Klein ???Gericht Landau(?)</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_1_tl_2" custom="readingOrder {index:1;}">
+                <Coords points="55,957 164,980 202,964 326,969 326,932 218,925 187,913 164,926 88,890 55,890"/>
+                <Baseline points="60,950 86,953 113,954 140,954 167,953 194,952 220,952 247,952 274,950 301,952 328,954"/>
+                <TextEquiv>
+                    <Unicode>Feldpostnummmer:</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_1_tl_3" custom="readingOrder {index:2;}">
+                <Coords points="57,1048 67,1047 72,1042 86,1042 94,1047 108,1040 123,1038 130,1043 141,1040 141,992 120,984 94,995 83,988 70,989 57,985"/>
+                <Baseline points="62,1024 88,1024 115,1024 142,1024"/>
+                <TextEquiv>
+                    <Unicode>Ort: Guttentag</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_1_tl_4" custom="readingOrder {index:3;}">
+                <Coords points="55,1110 116,1126 154,1116 176,1125 211,1097 340,1110 340,1030 331,1028 230,1029 109,1068 55,1063"/>
+                <Baseline points="60,1094 85,1094 111,1095 136,1096 162,1096 188,1096 213,1096 239,1096 265,1094 290,1094 316,1095 342,1094"/>
+                <TextEquiv>
+                    <Unicode>Straße: Oberschleßien</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_1_tl_5" custom="readingOrder {index:4;}">
+                <Coords points="74,1177 99,1176 121,1159 142,1173 152,1172 161,1179 178,1177 179,1125 151,1117 138,1126 127,1119 120,1126 112,1122 91,1131 75,1127"/>
+                <Baseline points="80,1150 105,1150 130,1150 155,1150 180,1148"/>
+                <TextEquiv>
+                    <Unicode>F/0387</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode></Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion orientation="0.0" id="tr_2" custom="readingOrder {index:1;}">
+            <Coords points="358,922 358,1074 502,1074 502,922"/>
+            <TextLine id="tr_2_tl_1" custom="readingOrder {index:0;}">
+                <Coords points="353,1027 372,1032 402,1026 415,1031 424,1026 500,1026 502,956 452,989 430,996 412,991 380,960 355,961"/>
+                <Baseline points="358,1024 386,1024 415,1024 444,1022 473,1022 502,1022"/>
+                <TextEquiv>
+                    <Unicode>land</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode></Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion orientation="0.0" id="tr_3" custom="readingOrder {index:2;}">
+            <Coords points="754,830 754,982 868,982 868,830"/>
+            <TextLine id="tr_3_tl_1" custom="readingOrder {index:0;}">
+                <Coords points="749,957 787,967 797,961 804,968 849,958 866,969 867,909 855,906 841,913 820,906 801,920 786,916 773,921 750,919"/>
+                <Baseline points="754,932 782,932 811,932 839,932 868,930"/>
+                <TextEquiv>
+                    <Unicode></Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode></Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion orientation="0.0" id="tr_4" custom="readingOrder {index:3;}">
+            <Coords points="824,40 824,1213 1592,1213 1592,40"/>
+            <TextLine id="tr_4_tl_1" custom="readingOrder {index:0;}">
+                <Coords points="1444,108 1468,100 1480,108 1488,107 1505,120 1514,117 1530,121 1544,114 1549,26 1528,24 1505,9 1491,13 1468,0 1450,0"/>
+                <Baseline points="1450,86 1482,79 1515,78 1548,80"/>
+                <TextEquiv>
+                    <Unicode>77</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_4_tl_2" custom="readingOrder {index:1;}">
+                <Coords points="819,263 888,258 957,274 1114,258 1164,274 1164,207 1145,213 1126,197 1023,188 938,210 819,190"/>
+                <Baseline points="824,250 850,252 876,253 902,253 929,252 955,252 981,252 1008,252 1034,252 1060,252 1087,252 1113,252 1139,251 1166,252"/>
+                <TextEquiv>
+                    <Unicode>Feldpostkarte</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l" custom="readingOrder {index:2;}">
+                <Coords points="884,539 1192,527 1191,497 883,509"/>
+                <Baseline points="884,539 1192,527"/>
+                <TextEquiv>
+                    <Unicode>Fräulein</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_11" custom="readingOrder {index:3;}">
+                <Coords points="948,680 1398,672 1397,642 948,650"/>
+                <Baseline points="948,680 1398,672"/>
+                <TextEquiv>
+                    <Unicode>Anna Klein</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_4_tl_3" custom="readingOrder {index:4;}">
+                <Coords points="873,801 1023,815 1117,798 1172,816 1195,800 1239,816 1283,792 1283,756 1247,760 1201,729 1091,727 980,758 933,754 875,712"/>
+                <Baseline points="878,796 903,790 928,790 954,792 979,790 1004,790 1030,789 1055,789 1081,790 1106,788 1131,786 1157,786 1182,787 1207,787 1233,786 1258,786 1284,788"/>
+                <TextEquiv>
+                    <Unicode>Dreis bei</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_19" custom="readingOrder {index:5;}">
+                <Coords points="1385,925 1723,940 1724,910 1386,895"/>
+                <Baseline points="1385,925 1723,940"/>
+                <TextEquiv>
+                    <Unicode>Wittlich</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_15" custom="readingOrder {index:6;}">
+                <Coords points="975,930 1318,932 1318,902 975,900"/>
+                <Baseline points="975,930 1318,932"/>
+                <TextEquiv>
+                    <Unicode></Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_4_tl_4" custom="readingOrder {index:7;}">
+                <Coords points="975,953 1589,966 1590,864 1317,826 1292,843 1192,824 1063,858 976,846"/>
+                <Baseline points="980,932 1010,931 1041,931 1071,930 1102,930 1133,931 1163,932 1194,931 1224,929 1255,928 1286,928 1316,930 1347,930 1377,928 1408,928 1439,928 1469,926 1500,926 1530,928 1561,928 1592,930"/>
+                <TextEquiv>
+                    <Unicode></Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_4_tl_5" custom="readingOrder {index:8;}">
+                <Coords points="947,996 1064,984 1115,1004 1176,982 1275,982 1424,1016 1424,956 1407,951 947,952"/>
+                <Baseline points="952,976 978,978 1004,978 1031,980 1057,979 1083,978 1110,978 1136,978 1162,978 1189,978 1215,978 1241,976 1268,977 1294,977 1320,976 1347,976 1373,976 1399,976 1426,972"/>
+                <TextEquiv>
+                    <Unicode>Feldpostnummer oder Bestimmungsort</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_4_tl_6" custom="readingOrder {index:9;}">
+                <Coords points="897,1246 1249,1249 961,1249 1249,1249 966,1249 1249,1249 982,1249 1249,1249 1001,1249 1249,1249 1013,1249 1249,1249 1022,1249 1045,1136 905,1123"/>
+                <Baseline points="906,1194 933,1193 961,1192 988,1190 1016,1188 1044,1186"/>
+                <TextEquiv>
+                    <Unicode>Kurfürstenstraße 75</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_23" custom="readingOrder {index:10;}">
+                <Coords points="890,1206 1222,1202 1222,1172 890,1176"/>
+                <Baseline points="890,1206 1222,1202"/>
+                <TextEquiv>
+                    <Unicode>Nr- 65</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode></Unicode>
+            </TextEquiv>
+        </TextRegion>
+    </Page>
+</PcGts>

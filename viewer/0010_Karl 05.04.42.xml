@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/pagecontent.xsd">
+    <Metadata>
+        <Creator>prov=READ-COOP:name=PyLaia@TranskribusPlatform:version=2.20.0:model_id=50870:lm=none:date=24_01_2025_13:55</Creator>
+        <Created>2025-01-14T20:07:44.999+01:00</Created>
+        <LastChange>2025-03-25T12:09:00.625+01:00</LastChange>
+    </Metadata>
+    <Page imageFilename="0010_Karl 05.04.42.jpeg" imageWidth="1606" imageHeight="2442">
+        <ReadingOrder>
+            <OrderedGroup id="ro_1742907173026" caption="Regions reading order">
+                <RegionRefIndexed index="0" regionRef="r_50"/>
+                <RegionRefIndexed index="1" regionRef="r_47"/>
+            </OrderedGroup>
+        </ReadingOrder>
+        <TextRegion id="r_50" custom="readingOrder {index:0;}">
+            <Coords points="39,120 1591,126 1608,2344 1420,2317 23,2344"/>
+            <TextLine id="l_62" custom="readingOrder {index:0;} person {offset:5; length:10;firstname:Anna; lastname:Klein;}">
+                <Coords points="40,424 1544,413 1544,383 39,394"/>
+                <Baseline points="40,424 1544,413"/>
+                <TextEquiv>
+                    <Unicode>Liebe Schwester</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_66" custom="readingOrder {index:1;}">
+                <Coords points="43,512 1562,495 1561,465 43,482"/>
+                <Baseline points="43,512 1562,495"/>
+                <TextEquiv>
+                    <Unicode>Fern der Heimat sendet dir</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_70" custom="readingOrder {index:2;}">
+                <Coords points="53,610 1558,596 1558,566 53,580"/>
+                <Baseline points="53,610 1558,596"/>
+                <TextEquiv>
+                    <Unicode>die besten Grüße dein Bruder</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_74" custom="readingOrder {index:3;} person {offset:0; length:5;firstname:Karl; lastname:Klein;}">
+                <Coords points="30,711 1541,694 1541,664 29,681"/>
+                <Baseline points="30,711 1541,694"/>
+                <TextEquiv>
+                    <Unicode>Karl, gesundeitlich geht es</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_78" custom="readingOrder {index:4;}">
+                <Coords points="17,798 1495,788 1494,758 16,768"/>
+                <Baseline points="17,798 1495,788"/>
+                <TextEquiv>
+                    <Unicode>mir noch gut was ich auch</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_82" custom="readingOrder {index:5;}">
+                <Coords points="10,899 1535,885 1535,855 10,869"/>
+                <Baseline points="10,899 1535,885"/>
+                <TextEquiv>
+                    <Unicode>von dir hoffe. habe heute</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_86" custom="readingOrder {index:6;} date {offset:17; length:7;when:1943.03.25;}">
+                <Coords points="47,990 1559,983 1559,953 47,960"/>
+                <Baseline points="47,990 1559,983"/>
+                <TextEquiv>
+                    <Unicode>deinen Brief vom 25.3.43 mit</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_90" custom="readingOrder {index:7;}">
+                <Coords points="20,1077 1485,1064 1484,1034 20,1047"/>
+                <Baseline points="20,1077 1485,1064"/>
+                <TextEquiv>
+                    <Unicode>Dank erhalten. Ich hatte noch</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_95" custom="readingOrder {index:8;} place {offset:16; length:9;wikiData:Q543174; country:Germany; placeName:Hetzerath;}">
+                <Coords points="10,1185 1556,1158 1555,1128 10,1155"/>
+                <Baseline points="10,1185 1556,1158"/>
+                <TextEquiv>
+                    <Unicode>den Kamerad aus Hetzerath</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_99" custom="readingOrder {index:9;}">
+                <Coords points="14,1280 1485,1263 1485,1233 13,1250"/>
+                <Baseline points="14,1280 1485,1263"/>
+                <TextEquiv>
+                    <Unicode>bei mir im Battalion aber</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_104" custom="readingOrder {index:10;}">
+                <Coords points="27,1377 1519,1364 1518,1334 27,1347"/>
+                <Baseline points="27,1377 1519,1364"/>
+                <TextEquiv>
+                    <Unicode>dieser soll früh gefallen</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_108" custom="readingOrder {index:11;} person {offset:6; length:13;firstname:Peter; lastname:Eiflich;}">
+                <Coords points="24,1458 1556,1455 1556,1425 24,1428"/>
+                <Baseline points="24,1458 1556,1455"/>
+                <TextEquiv>
+                    <Unicode>sein. Eiflich Peter habe ich</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_112" custom="readingOrder {index:12;}">
+                <Coords points="24,1556 1593,1549 1593,1519 24,1526"/>
+                <Baseline points="24,1556 1593,1549"/>
+                <TextEquiv>
+                    <Unicode>noch nicht getroffen. Liebe</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_117" custom="readingOrder {index:13;} person {offset:14; length:12;firstname:Rosa; lastname:Bausch;}">
+                <Coords points="14,1664 1589,1647 1589,1617 13,1634"/>
+                <Baseline points="14,1664 1589,1647"/>
+                <TextEquiv>
+                    <Unicode>Schwester wenn Bausch Rosa</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_121" custom="readingOrder {index:14;}">
+                <Coords points="17,1744 1387,1737 1387,1707 17,1714"/>
+                <Baseline points="17,1744 1387,1737"/>
+                <TextEquiv>
+                    <Unicode>schreibt kannst du ihr meine</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_125" custom="readingOrder {index:15;}">
+                <Coords points="37,1838 1572,1821 1572,1791 37,1808"/>
+                <Baseline points="37,1838 1572,1821"/>
+                <TextEquiv>
+                    <Unicode>Anschrift sagen und dem</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_129" custom="readingOrder {index:16;}">
+                <Coords points="24,1929 1458,1923 1458,1893 24,1899"/>
+                <Baseline points="24,1929 1458,1923"/>
+                <TextEquiv>
+                    <Unicode>Stubengefreiten bestelle viele</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_133" custom="readingOrder {index:17;}">
+                <Coords points="44,2037 1397,2007 1397,1977 43,2007"/>
+                <Baseline points="44,2037 1397,2007"/>
+                <TextEquiv>
+                    <Unicode>Grüße von mir. Hier ist</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_137" custom="readingOrder {index:18;}">
+                <Coords points="41,2115 1569,2108 1569,2078 40,2085"/>
+                <Baseline points="41,2115 1569,2108"/>
+                <TextEquiv>
+                    <Unicode>jetzt Tauwetter einge-</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_141" custom="readingOrder {index:19;}">
+                <Coords points="34,2206 1556,2199 1556,2169 34,2176"/>
+                <Baseline points="34,2206 1556,2199"/>
+                <TextEquiv>
+                    <Unicode>treten und bis an  die  Knie geht man im Wasser. Die</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_145" custom="readingOrder {index:20;}">
+                <Coords points="44,2307 1572,2300 1572,2270 44,2277"/>
+                <Baseline points="44,2307 1572,2300"/>
+                <TextEquiv>
+                    <Unicode>Tage ist es nicht so schlimm</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode></Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r_47" custom="readingOrder {index:1;}">
+            <Coords points="494,-5 1569,-5 1542,87 494,125"/>
+            <TextLine id="l_320" custom="readingOrder {index:0;} place {offset:0; length:7;} date {offset:13; length:6;when:1942.04.05;}">
+                <Coords points="571,58 1522,95 1523,65 572,28"/>
+                <Baseline points="571,58 1522,95"/>
+                <TextEquiv>
+                    <Unicode>Rußland, den 5.4.42</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode></Unicode>
+            </TextEquiv>
+        </TextRegion>
+    </Page>
+</PcGts>

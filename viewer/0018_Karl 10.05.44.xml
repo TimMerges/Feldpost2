@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/pagecontent.xsd">
+    <Metadata>
+        <Creator>prov=READ-COOP:name=PyLaia@TranskribusPlatform:version=2.20.0:model_id=36508:lm=none:date=24_01_2025_18:11</Creator>
+        <Created>2025-01-14T20:07:45.863+01:00</Created>
+        <LastChange>2025-03-25T13:15:08.385+01:00</LastChange>
+    </Metadata>
+    <Page imageFilename="0018_Karl 10.05.44.jpeg" imageWidth="1738" imageHeight="2475">
+        <ReadingOrder>
+            <OrderedGroup id="ro_1742907175635" caption="Regions reading order">
+                <RegionRefIndexed index="0" regionRef="r"/>
+            </OrderedGroup>
+        </ReadingOrder>
+        <TextRegion id="r" custom="readingOrder {index:0;}">
+            <Coords points="132,104 1738,104 1738,2374 132,2374"/>
+            <TextLine id="l" custom="readingOrder {index:0;} place {offset:0; length:6;wikiData:Q156593; country:Ukraine; placeName:Sambir;} date {offset:11; length:7;when:1944.05.10;}">
+                <Coords points="771,274 927,223 1615,240 1687,221 1687,140 1447,123 1352,77 1197,127 956,81 769,110"/>
+                <Baseline points="779,223 1694,234"/>
+                <TextEquiv>
+                    <Unicode>Sambor den 10.5.44</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_11" custom="readingOrder {index:1;} person {offset:15; length:5;firstname:Anna; lastname:Klein;}">
+                <Coords points="359,444 859,518 1026,444 1477,438 1477,389 1352,383 1281,331 1078,359 835,272 359,302"/>
+                <Baseline points="370,424 1482,435"/>
+                <TextEquiv>
+                    <Unicode>Liebe Schwester Anna</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_15" custom="readingOrder {index:2;}">
+                <Coords points="323,684 544,701 635,637 706,695 952,638 1018,674 1335,640 1520,684 1502,542 1005,550 950,586 786,529 512,548 323,510"/>
+                <Baseline points="333,651 1523,651"/>
+                <TextEquiv>
+                    <Unicode>Die liebsten Grüsse aus</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_19" custom="readingOrder {index:3;}">
+                <Coords points="293,754 618,742 703,806 801,808 874,754 1619,752 1617,695 1413,644 1082,735 935,722 850,657 708,697 646,637 531,714 291,682"/>
+                <Baseline points="303,740 1623,752"/>
+                <TextEquiv>
+                    <Unicode>dem Lazaret sendet dir</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_23" custom="readingOrder {index:4;} person {offset:11; length:5;firstname:Karl; lastname:Klein;}">
+                <Coords points="266,901 510,935 827,874 1273,863 1502,914 1502,767 1409,810 1245,752 1103,795 969,750 786,808 616,742 493,801 361,742 266,756"/>
+                <Baseline points="277,871 1504,863"/>
+                <TextEquiv>
+                    <Unicode>dein Bruder Karl. Muss</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_27" custom="readingOrder {index:5;}">
+                <Coords points="249,969 446,1003 553,959 740,1012 865,959 1231,963 1407,1037 1496,976 1622,978 1607,859 1367,924 1245,863 1173,912 1024,867 880,918 249,927"/>
+                <Baseline points="259,956 1627,967"/>
+                <TextEquiv>
+                    <Unicode>dir leider mitteilen daß</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_31" custom="readingOrder {index:6;}">
+                <Coords points="200,1075 674,1071 929,1141 1313,1073 1541,1122 1522,988 1409,1033 1203,963 980,1020 865,959 799,1010 555,958 434,1039 200,993"/>
+                <Baseline points="210,1068 1545,1075"/>
+                <TextEquiv>
+                    <Unicode>ich bereits jetzt das 4.</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_37" custom="readingOrder {index:7;}">
+                <Coords points="225,1241 1426,1241 1426,1095 1350,1075 927,1141 827,1097 225,1090"/>
+                <Baseline points="236,1172 1430,1180"/>
+                <TextEquiv>
+                    <Unicode>mal verwundet bin</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_43" custom="readingOrder {index:8;}">
+                <Coords points="215,1307 317,1271 618,1309 750,1271 1080,1318 1216,1277 1692,1298 1666,1226 215,1245"/>
+                <Baseline points="225,1258 1697,1269"/>
+                <TextEquiv>
+                    <Unicode>diesmal Granatsplitter</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_49" custom="readingOrder {index:9;}">
+                <Coords points="223,1409 442,1381 589,1435 672,1383 944,1379 1078,1460 1211,1381 1384,1447 1681,1396 1662,1282 1466,1320 1311,1273 1088,1318 848,1269 635,1315 472,1273 357,1328 225,1309"/>
+                <Baseline points="236,1380 1686,1373"/>
+                <TextEquiv>
+                    <Unicode>rechte Schulter. Hoffentlich</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_55" custom="readingOrder {index:10;}">
+                <Coords points="225,1537 731,1492 982,1562 1124,1498 1645,1496 1645,1392 1383,1447 1211,1383 1078,1458 925,1381 659,1464 440,1381 225,1407"/>
+                <Baseline points="236,1492 1649,1496"/>
+                <TextEquiv>
+                    <Unicode>bist du noch gesund was</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_61" custom="readingOrder {index:11;}">
+                <Coords points="230,1619 1604,1622 1592,1496 1124,1500 982,1562 661,1549 540,1490 446,1549 230,1534"/>
+                <Baseline points="240,1596 1608,1596"/>
+                <TextEquiv>
+                    <Unicode>auch in einigen Wochen bei</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_67" custom="readingOrder {index:12;}">
+                <Coords points="215,1713 589,1713 697,1757 852,1711 973,1755 1128,1702 1500,1709 1486,1598 1294,1656 1135,1649 1054,1598 999,1638 752,1598 580,1658 215,1639"/>
+                <Baseline points="225,1697 1504,1697"/>
+                <TextEquiv>
+                    <Unicode>mir der Fall sein wird.</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_73" custom="readingOrder {index:13;} place {offset:18; length:7; continued:true;wikiData:Q571752; country:Germany; placeName:Bettendorf;}">
+                <Coords points="223,1847 297,1876 480,1802 669,1847 816,1802 1622,1809 1622,1707 1587,1704 1139,1707 978,1781 827,1738 648,1760 589,1713 450,1764 363,1717 225,1736"/>
+                <Baseline points="236,1805 1627,1797"/>
+                <TextEquiv>
+                    <Unicode>Mein Kammerad aus Betten-</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_79" custom="readingOrder {index:14;} place {offset:0; length:5; continued:true;wikiData:Q571752; country:Germany; placeName:Bettendorf;}">
+                <Coords points="174,1940 616,1915 831,1957 950,1913 1090,1981 1196,1919 1689,1938 1689,1819 1600,1806 1507,1840 1094,1804 969,1868 720,1838 453,1893 372,1847 295,1877 174,1843"/>
+                <Baseline points="184,1916 1694,1913"/>
+                <TextEquiv>
+                    <Unicode>dorf und der Oberfeldwebel</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_85" custom="readingOrder {index:15;} person {offset:0; length:6;lastname:Sutter;}">
+                <Coords points="193,2030 586,2074 680,2027 905,2087 1086,2030 1260,2093 1692,2061 1690,1932 1621,1915 1464,1913 1332,1981 1186,1945 1024,1978 948,1911 833,1957 689,1915 627,1964 474,1913 193,1947"/>
+                <Baseline points="203,2017 1697,2028"/>
+                <TextEquiv>
+                    <Unicode>Sutter sind beide gefallen</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_91" custom="readingOrder {index:16;}">
+                <Coords points="193,2168 502,2131 1405,2142 1477,2089 1216,2087 1131,2036 856,2091 710,2036 567,2076 366,2029 195,2047"/>
+                <Baseline points="203,2132 1478,2121"/>
+                <TextEquiv>
+                    <Unicode>Als ich verwundet wurde</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_97" custom="readingOrder {index:17;} person {offset:18; length:6;firstname:Edmund;}">
+                <Coords points="185,2272 737,2236 865,2312 999,2261 1377,2312 1570,2242 1685,2259 1685,2136 1558,2166 1434,2125 1316,2183 971,2132 739,2191 185,2159"/>
+                <Baseline points="195,2236 1690,2236"/>
+                <TextEquiv>
+                    <Unicode>war mein Schwager Edmund</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_103" custom="readingOrder {index:18;}">
+                <Coords points="196,2372 280,2367 489,2418 569,2374 608,2406 678,2368 846,2382 874,2374 874,2310 761,2265 633,2289 455,2234 306,2280 195,2274"/>
+                <Baseline points="207,2337 879,2344"/>
+                <TextEquiv>
+                    <Unicode>noch gesund.</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode></Unicode>
+            </TextEquiv>
+        </TextRegion>
+    </Page>
+</PcGts>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feldpostbrief Viewer</title>
+  <style>
+    body { display: flex; margin: 0; height: 100vh; font-family: sans-serif; }
+    #sidebar { width: 300px; overflow-y: auto; border-right: 1px solid #ccc; padding: 1rem; }
+    #main { flex: 1; position: relative; overflow: auto; background: #f0f0f0; display: flex; align-items: center; justify-content: center; }
+    canvas { border: 1px solid #333; max-width: 100%; height: auto; }
+    h2 { margin-top: 0; }
+    .region-text { cursor: pointer; margin-bottom: 0.5rem; padding: 0.3rem; border-bottom: 1px solid #eee; }
+    .region-text:hover { background-color: #e0e0e0; }
+    select { width: 100%; margin-bottom: 1rem; }
+  </style>
+</head>
+<body>
+  <div id="sidebar">
+    <h2>Feldpostbriefe</h2>
+    <select id="fileSelector"></select>
+    <h3>Transkription</h3>
+    <div id="textLines"></div>
+  </div>
+  <div id="main">
+    <canvas id="canvas"></canvas>
+  </div>
+
+  <script>
+    const fileSelector = document.getElementById('fileSelector');
+    const textLinesDiv = document.getElementById('textLines');
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+
+    let image = new Image();
+    let boxes = [];
+
+    async function loadFileList() {
+      const response = await fetch('files.json');
+      const files = await response.json();
+      files.forEach(file => {
+        const option = document.createElement('option');
+        option.value = file;
+        option.textContent = file;
+        fileSelector.appendChild(option);
+      });
+      if (files.length > 0) loadXml(files[0]);
+    }
+
+    fileSelector.addEventListener('change', e => loadXml(e.target.value));
+
+    async function loadXml(file) {
+      boxes = [];
+      textLinesDiv.innerHTML = '';
+
+      const xmlResponse = await fetch(file);
+      const xmlText = await xmlResponse.text();
+      const parser = new DOMParser();
+      const xmlDoc = parser.parseFromString(xmlText, 'text/xml');
+
+      const imageFile = xmlDoc.querySelector('Page').getAttribute('imageFilename');
+      image.src = imageFile;
+      image.onload = () => draw();
+
+      const regions = xmlDoc.querySelectorAll('TextLine');
+      regions.forEach((line, idx) => {
+        const coordsStr = line.querySelector('Coords').getAttribute('points');
+        const text = line.querySelector('Unicode')?.textContent || '';
+        const points = coordsStr.split(' ').map(p => p.split(',').map(Number));
+        const box = getBoundingBox(points);
+        boxes.push({ box, text });
+
+        const div = document.createElement('div');
+        div.className = 'region-text';
+        div.textContent = text;
+        div.addEventListener('click', () => zoomToBox(box));
+        textLinesDiv.appendChild(div);
+      });
+    }
+
+    function getBoundingBox(points) {
+      const xs = points.map(p => p[0]);
+      const ys = points.map(p => p[1]);
+      return {
+        x: Math.min(...xs),
+        y: Math.min(...ys),
+        w: Math.max(...xs) - Math.min(...xs),
+        h: Math.max(...ys) - Math.min(...ys),
+      };
+    }
+
+    function draw() {
+      canvas.width = image.width;
+      canvas.height = image.height;
+      ctx.drawImage(image, 0, 0);
+      boxes.forEach(({ box }, i) => {
+        ctx.strokeStyle = 'rgba(255,0,0,0.7)';
+        ctx.lineWidth = 2;
+        ctx.strokeRect(box.x, box.y, box.w, box.h);
+      });
+    }
+
+    function zoomToBox(box) {
+      const offsetX = box.x - 50;
+      const offsetY = box.y - 50;
+      document.getElementById('main').scrollTo({
+        top: offsetY,
+        left: offsetX,
+        behavior: 'smooth'
+      });
+    }
+
+    loadFileList();
+  </script>
+</body>
+</html>

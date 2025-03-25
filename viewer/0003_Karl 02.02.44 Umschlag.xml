@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/pagecontent.xsd">
+    <Metadata>
+        <Creator>prov=READ-COOP:name=PyLaia@TranskribusPlatform:version=2.24.0:model_id=46140:lm=none:date=16_03_2025_18:09</Creator>
+        <Created>2025-01-14T20:07:44.249+01:00</Created>
+        <LastChange>2025-03-23T10:47:19.323+01:00</LastChange>
+    </Metadata>
+    <Page imageFilename="0003_Karl 02.02.44 Umschlag.jpeg" imageWidth="2218" imageHeight="3336">
+        <ReadingOrder>
+            <OrderedGroup id="ro_1742907170397" caption="Regions reading order">
+                <RegionRefIndexed index="0" regionRef="r"/>
+                <RegionRefIndexed index="1" regionRef="r_57"/>
+                <RegionRefIndexed index="2" regionRef="r_58"/>
+                <RegionRefIndexed index="3" regionRef="r_85"/>
+                <RegionRefIndexed index="4" regionRef="r_61"/>
+                <RegionRefIndexed index="5" regionRef="r_59"/>
+                <RegionRefIndexed index="6" regionRef="r_60"/>
+            </OrderedGroup>
+        </ReadingOrder>
+        <TextRegion id="r" custom="readingOrder {index:0;}">
+            <Coords points="2127,797 2127,1699 1810,1699 1810,797"/>
+            <TextLine id="l" custom="readingOrder {index:0;}">
+                <Coords points="1953,829 1966,1413 1996,1412 1983,828"/>
+                <Baseline points="1953,829 1966,1413"/>
+                <TextEquiv>
+                    <Unicode>Felpostkarte (FELDPOST d 04.2.44) Hakenkreuzadleler</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode></Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r_57" custom="readingOrder {index:1;}">
+            <Coords points="1865,627 1865,1625 1556,1625 1556,627"/>
+            <TextLine id="l_68" custom="readingOrder {index:0;}">
+                <Coords points="1741,631 1741,1206 1771,1206 1771,631"/>
+                <Baseline points="1741,631 1741,1206"/>
+                <TextEquiv>
+                    <Unicode>Fräulein</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_72" custom="readingOrder {index:1;}">
+                <Coords points="1635,737 1612,1491 1642,1492 1665,738"/>
+                <Baseline points="1635,737 1612,1491"/>
+                <TextEquiv>
+                    <Unicode>Anna Klein</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode></Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r_58" custom="readingOrder {index:2;}">
+            <Coords points="1510,692 1510,1754 1147,1754 1147,692"/>
+            <TextLine id="l_76" custom="readingOrder {index:0;}">
+                <Coords points="1387,903 1377,1524 1407,1524 1417,903"/>
+                <Baseline points="1387,903 1377,1524"/>
+                <TextEquiv>
+                    <Unicode>Dreis 65</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_80" custom="readingOrder {index:1;}">
+                <Coords points="1267,907 1262,1639 1292,1639 1297,907"/>
+                <Baseline points="1267,907 1262,1639"/>
+                <TextEquiv>
+                    <Unicode>22 b. Wittlich</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode></Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r_85" custom="readingOrder {index:3;}">
+            <Coords points="1108,1018 1108,1244 1069,1244 1069,1018"/>
+            <TextLine id="l_84" custom="readingOrder {index:0;}">
+                <Coords points="1078,1018 1069,1243 1099,1244 1108,1019"/>
+                <Baseline points="1078,1018 1069,1243"/>
+                <TextEquiv>
+                    <Unicode>Hier falten</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode></Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r_61" custom="readingOrder {index:4;}">
+            <Coords points="1143,2407 1143,2765 968,2765 968,2407"/>
+            <TextLine id="l_107" custom="readingOrder {index:0;}">
+                <Coords points="1046,2443 1023,2669 1053,2672 1076,2447"/>
+                <Baseline points="1046,2443 1023,2669"/>
+                <TextEquiv>
+                    <Unicode>Hier falten</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode></Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r_59" custom="readingOrder {index:5;}">
+            <Coords points="760,659 760,1813 466,1813 466,659"/>
+            <TextLine id="l_89" custom="readingOrder {index:0;}">
+                <Coords points="715,985 715,1455 745,1455 745,985"/>
+                <Baseline points="715,985 715,1455"/>
+                <TextEquiv>
+                    <Unicode>Gefr. Klein</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_93" custom="readingOrder {index:1;}">
+                <Coords points="595,866 591,1496 621,1496 625,866"/>
+                <Baseline points="595,866 591,1496"/>
+                <TextEquiv>
+                    <Unicode>35181C</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_98" custom="readingOrder {index:2;}">
+                <Coords points="591,1763 581,1537 551,1539 561,1764"/>
+                <Baseline points="591,1763 581,1537"/>
+                <TextEquiv>
+                    <Unicode>Absender:ggg</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode></Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r_60" custom="readingOrder {index:6;}">
+            <Coords points="195,903 195,1321 43,1321 43,903"/>
+            <TextLine id="l_103" custom="readingOrder {index:0;}">
+                <Coords points="158,999 153,1257 183,1257 188,1000"/>
+                <Baseline points="158,999 153,1257"/>
+                <TextEquiv>
+                    <Unicode>Hier öffnen</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode></Unicode>
+            </TextEquiv>
+        </TextRegion>
+    </Page>
+</PcGts>
