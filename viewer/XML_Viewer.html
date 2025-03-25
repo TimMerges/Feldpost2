@@ -1,18 +1,23 @@
-
 <!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Feldpostbrief XML Viewer</title>
+  <title>Feldpostbrief XML Viewer mit Tags</title>
   <style>
     body { display: flex; margin: 0; height: 100vh; font-family: sans-serif; }
-    #sidebar { width: 300px; overflow-y: auto; border-right: 1px solid #ccc; padding: 1rem; }
+    #sidebar { width: 320px; overflow-y: auto; border-right: 1px solid #ccc; padding: 1rem; background: #fafafa; }
     #main { flex: 1; position: relative; overflow: auto; background: #f0f0f0; display: flex; align-items: center; justify-content: center; }
     canvas { border: 1px solid #333; max-width: 100%; height: auto; }
     h2 { margin-top: 0; }
-    .region-text { cursor: pointer; margin-bottom: 0.5rem; padding: 0.3rem; border-bottom: 1px solid #eee; }
+    .region-text { cursor: pointer; margin-bottom: 0.7rem; padding: 0.4rem; border-bottom: 1px solid #eee; }
     .region-text:hover { background-color: #e0e0e0; }
+    .tag-label { display: inline-block; margin-left: 0.5rem; padding: 0.2rem 0.4rem; border-radius: 4px; font-size: 0.8rem; color: #fff; }
+    .tag-person { background-color: #4caf50; }
+    .tag-date { background-color: #2196f3; }
+    .tag-movie { background-color: #ff9800; }
+    .tag-feldpost { background-color: #9c27b0; }
+    .tag-regiment { background-color: #795548; }
     select { width: 100%; margin-bottom: 1rem; }
   </style>
 </head>
@@ -20,7 +25,7 @@
   <div id="sidebar">
     <h2>Feldpostbriefe</h2>
     <select id="fileSelector"></select>
-    <h3>Transkription</h3>
+    <h3>Transkription &amp; Tags</h3>
     <div id="textLines"></div>
   </div>
   <div id="main">
@@ -64,9 +69,10 @@
       image.onload = () => draw();
 
       const regions = xmlDoc.querySelectorAll('TextLine');
-      regions.forEach((line, idx) => {
+      regions.forEach((line) => {
         const coordsStr = line.querySelector('Coords').getAttribute('points');
         const text = line.querySelector('Unicode')?.textContent || '';
+        const custom = line.getAttribute('custom') || '';
         const points = coordsStr.split(' ').map(p => p.split(',').map(Number));
         const box = getBoundingBox(points);
         boxes.push({ box, text });
@@ -74,9 +80,24 @@
         const div = document.createElement('div');
         div.className = 'region-text';
         div.textContent = text;
+
+        // Tags extrahieren und visualisieren
+        if (custom.includes('person')) addTag(div, 'Person', 'tag-person');
+        if (custom.includes('date')) addTag(div, 'Datum', 'tag-date');
+        if (custom.includes('movie')) addTag(div, 'Film', 'tag-movie');
+        if (custom.includes('FeldpostNr.')) addTag(div, 'FeldpostNr.', 'tag-feldpost');
+        if (custom.includes('Regiment')) addTag(div, 'Regiment', 'tag-regiment');
+
         div.addEventListener('click', () => zoomToBox(box));
         textLinesDiv.appendChild(div);
       });
+    }
+
+    function addTag(element, text, className) {
+      const tag = document.createElement('span');
+      tag.textContent = text;
+      tag.className = `tag-label ${className}`;
+      element.appendChild(tag);
     }
 
     function getBoundingBox(points) {
@@ -94,7 +115,7 @@
       canvas.width = image.width;
       canvas.height = image.height;
       ctx.drawImage(image, 0, 0);
-      boxes.forEach(({ box }, i) => {
+      boxes.forEach(({ box }) => {
         ctx.strokeStyle = 'rgba(255,0,0,0.7)';
         ctx.lineWidth = 2;
         ctx.strokeRect(box.x, box.y, box.w, box.h);
