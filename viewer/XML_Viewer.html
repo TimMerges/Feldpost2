@@ -68,29 +68,35 @@
     }
 
     function updateFileSelector() {
-      const selectedYear = yearFilter.value;
-      fileSelector.innerHTML = '';
+  const selectedYear = yearFilter.value;
+  fileSelector.innerHTML = '';
 
-      fetch('files.json')
-        .then(response => response.json())
-        .then(files => {
-          files.forEach(file => {
-            const years = fileDateMap[file] || [];
-            if (selectedYear === 'all' || years.includes(selectedYear)) {
-              const opt = document.createElement('option');
-              opt.value = file;
-              opt.textContent = file;
-              fileSelector.appendChild(opt);
-            }
-          });
-          if (fileSelector.options.length > 0) {
-            loadXml(fileSelector.value);
-          } else {
-            textLinesDiv.innerHTML = '<p>Keine Briefe für dieses Jahr gefunden.</p>';
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-          }
-        });
-    }
+  fetch('files.json')
+    .then(response => response.json())
+    .then(files => {
+      files.forEach(file => {
+        const years = fileDateMap[file] || [];
+        if (selectedYear === 'all' || years.includes(selectedYear)) {
+          const opt = document.createElement('option');
+          opt.value = file;
+
+          // Nur den lesbaren Teil anzeigen:
+          const label = file.replace(/^.*?_/, '').replace(/\.xml$/, '');
+          opt.textContent = label;
+
+          fileSelector.appendChild(opt);
+        }
+      });
+
+      if (fileSelector.options.length > 0) {
+        loadXml(fileSelector.value);
+      } else {
+        textLinesDiv.innerHTML = '<p>Keine Briefe für dieses Jahr gefunden.</p>';
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+      }
+    });
+}
+
 
     yearFilter.addEventListener('change', updateFileSelector);
     fileSelector.addEventListener('change', e => loadXml(e.target.value));
