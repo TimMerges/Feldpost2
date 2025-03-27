@@ -7,10 +7,8 @@
   <link rel="stylesheet" href="viewer-style.css" />
 </head>
 <body>
-  <!-- Header wird aus Root geladen -->
   <div id="page-header"></div>
 
-  <!-- Hauptbereich: Sidebar + Canvas -->
   <div id="main-wrapper">
     <div id="sidebar">
       <h2>Feldpostbriefe</h2>
@@ -30,7 +28,6 @@
     </div>
   </div>
 
-  <!-- Footer wird aus Root geladen -->
   <div id="page-footer"></div>
 
   <script>
@@ -45,6 +42,11 @@
     let highlightIndex = null;
     let rotation = 0;
     let fileDateMap = {};
+
+    function getXmlFileFromUrl() {
+      const params = new URLSearchParams(window.location.search);
+      return params.get('file');
+    }
 
     async function loadFileList() {
       const response = await fetch('files.json');
@@ -79,6 +81,11 @@
       });
 
       updateFileSelector();
+
+      const initialFile = getXmlFileFromUrl();
+      if (initialFile) {
+        loadXml(initialFile);
+      }
     }
 
     function updateFileSelector() {
@@ -99,9 +106,9 @@
             }
           });
 
-          if (fileSelector.options.length > 0) {
+          if (fileSelector.options.length > 0 && !getXmlFileFromUrl()) {
             loadXml(fileSelector.value);
-          } else {
+          } else if (fileSelector.options.length === 0) {
             textLinesDiv.innerHTML = '<p>Keine Briefe für dieses Jahr gefunden.</p>';
             ctx.clearRect(0, 0, canvas.width, canvas.height);
           }
@@ -267,7 +274,6 @@
 
     loadFileList();
 
-    // Header/Footer laden
     fetch('../header.html')
       .then(res => res.text())
       .then(html => document.getElementById('page-header').innerHTML = html);
@@ -279,4 +285,3 @@
 </body>
 </html>
 
-</html>
