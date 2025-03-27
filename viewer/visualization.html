@@ -6,19 +6,6 @@
   <title>Feldpostbrief Visualisierungen</title>
   <link rel="stylesheet" href="viewer-style.css" />
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/wordcloud2"></script>
-  <style>
-    #tooltip {
-      position: absolute;
-      background: rgba(0, 0, 0, 0.75);
-      color: white;
-      padding: 6px 10px;
-      border-radius: 4px;
-      font-size: 14px;
-      display: none;
-      pointer-events: none;
-    }
-  </style>
 </head>
 <body>
   <h1>📊 Visualisierungen der Feldpostbriefe</h1>
@@ -26,10 +13,6 @@
 
   <h2>📅 Zeitstrahl der Datumsangaben (Monatsweise)</h2>
   <canvas id="timelineChart"></canvas>
-
-  <h2>🔠 Wordcloud der Begriffe mit Tags</h2>
-  <div id="tooltip"></div>
-  <canvas id="wordCloudCanvas" width="700" height="400"></canvas>
 
   <script>
     async function fetchFileList() {
@@ -44,12 +27,9 @@
       const xmlDoc = parser.parseFromString(xmlText, "text/xml");
 
       let dates = [];
-      let taggedWords = [];
 
       xmlDoc.querySelectorAll("TextLine").forEach((line) => {
-        const text = line.querySelector("Unicode")?.textContent || "";
         const custom = line.getAttribute("custom") || "";
-
         if (custom.includes("date")) {
           const match = custom.match(/when:(\d{4})\.(\d{2})\.(\d{2})/);
           if (match) {
@@ -57,64 +37,21 @@
             dates.push(yearMonth);
           }
         }
-
-        const offset = parseInt((custom.match(/offset:(\d+)/) || [])[1]);
-        const length = parseInt((custom.match(/length:(\d+)/) || [])[1]);
-        const hasValidSlice = !isNaN(offset) && !isNaN(length);
-        const fallbackWord = text.trim();
-        const word = hasValidSlice ? text.slice(offset, offset + length).trim() : fallbackWord;
-
-        if (word === "") return; // Skip empty words
-
-        if (custom.includes("person")) {
-          const first = (custom.match(/firstname:([^;]+)/) || [])[1];
-          const last = (custom.match(/lastname:([^;]+)/) || [])[1];
-          taggedWords.push({
-            word,
-            tooltip: `Person: ${first ?? ""} ${last ?? ""}`.trim(),
-          });
-        }
-
-        if (custom.includes("FeldNummer")) {
-          const nr = (custom.match(/nummer:([^;]+)/) || [])[1];
-          taggedWords.push({
-            word,
-            tooltip: `Feldnummer: ${nr}`,
-          });
-        }
-
-        if (custom.includes("Regiment")) {
-          const reg = (custom.match(/Regiment:([^;]+)/) || [])[1];
-          taggedWords.push({
-            word,
-            tooltip: `Regiment: ${reg}`,
-          });
-        }
-
-        if (custom.includes("movie")) {
-          taggedWords.push({
-            word,
-            tooltip: `Filmstelle`,
-          });
-        }
       });
 
-      return { dates, taggedWords };
+      return { dates };
     }
 
     async function loadData() {
       const files = await fetchFileList();
       let allDates = [];
-      let allTags = [];
 
       for (let file of files) {
         const data = await parseXmlData(file);
         allDates.push(...data.dates);
-        allTags.push(...data.taggedWords);
       }
 
       renderTimelineChart(allDates);
-      renderWordCloud(allTags);
     }
 
     function renderTimelineChart(dates) {
@@ -152,62 +89,7 @@
       });
     }
 
-    function renderWordCloud(taggedWords) {
-      const freqMap = {};
-      const tooltipMap = {};
-
-      taggedWords.forEach(({ word, tooltip }) => {
-        const key = (word || "").trim();
-        if (key) {
-          freqMap[key] = (freqMap[key] || 0) + 1;
-          tooltipMap[key] = tooltip;
-        }
-      });
-
-      const wordList = Object.entries(freqMap).map(([word, count]) => [word, count]);
-
-      console.log("Wörter in der Wordcloud:", wordList);
-
-      const tooltip = document.getElementById("tooltip");
-      const canvas = document.getElementById("wordCloudCanvas");
-
-      if (wordList.length === 0) {
-        canvas.style.display = "none";
-        const msg = document.createElement("p");
-        msg.textContent = "⚠️ Keine Tags gefunden – bitte prüfen, ob 'custom' vorhanden ist.";
-        msg.style.color = "red";
-        msg.style.fontSize = "1.2rem";
-        msg.style.marginTop = "1rem";
-        document.body.appendChild(msg);
-        return;
-      }
-
-      WordCloud(canvas, {
-        list: wordList,
-        gridSize: 8,
-        weightFactor: 6,
-        backgroundColor: "#f8f8f8",
-        color: "#333",
-        hover: function (item, dimension, event) {
-          if (item) {
-            const word = item[0];
-            tooltip.style.display = "block";
-            tooltip.style.left = event.pageX + 10 + "px";
-            tooltip.style.top = event.pageY + 10 + "px";
-            tooltip.innerText = tooltipMap[word] || word;
-          } else {
-            tooltip.style.display = "none";
-          }
-        },
-      });
-    }
-
     loadData();
-  </script>
-</body>
-</html>
-
-
   </script>
 </body>
 </html>
