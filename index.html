@@ -5,22 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Feldpostbrief Sammlung</title>
   <style>
-    body {
-      font-family: sans-serif;
-      background-color: #f5f5f5;
+    html, body {
       margin: 0;
-      padding: 2rem;
+      padding: 0;
+      font-family: sans-serif;
+      height: 100%;
+    }
+
+    body {
+      background: url('Bilder/Bundesarchiv_Bild_141-0763,_Warschau,_Brände.jpg') no-repeat center center;
+      background-size: cover;
+      position: relative;
+      color: #fff;
       text-align: center;
     }
 
+    /* Overlay für bessere Lesbarkeit */
+    body::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 0;
+    }
+
+    #content {
+      position: relative;
+      z-index: 1;
+      padding: 4rem 2rem;
+    }
+
     h1 {
-      font-size: 2.5rem;
+      font-size: 2.8rem;
       margin-bottom: 1rem;
     }
 
     p {
       font-size: 1.2rem;
-      margin-bottom: 2rem;
+      margin-bottom: 2.5rem;
     }
 
     a.button {
@@ -41,22 +63,21 @@
   </style>
 </head>
 <body>
-  <!-- Header laden -->
+  <!-- HEADER -->
   <div id="page-header"></div>
 
-  <h1>Digitale Sammlung der Feldpostbriefe</h1>
-  <p>
-    Willkommen in der digitalen Sammlung der transkribierten Feldpostbriefe von Karl, Paul und Peter Klein.
-  </p>
+  <!-- Hauptinhalt mit Overlay -->
+  <div id="content">
+    <h1>Digitale Sammlung der Feldpostbriefe</h1>
+    <p>Willkommen in der digitalen Sammlung der transkribierten Feldpostbriefe von Karl, Paul und Peter Klein.</p>
+    <a href="viewer/XML_Viewer.html" class="button">📄 Interaktiver Viewer</a>
+    <a href="viewer/visualization.html" class="button">📊 Visualisierungen</a>
+  </div>
 
-  <a href="viewer/XML_Viewer.html" class="button">📄 Interaktiver Viewer</a>
-  <a href="viewer/visualization.html" class="button">📊 Visualisierungen</a>
-
-  <!-- Footer laden -->
+  <!-- FOOTER -->
   <div id="page-footer"></div>
 
   <script>
-    // Header & Footer laden
     fetch('header.html')
       .then(res => res.text())
       .then(html => document.getElementById('page-header').innerHTML = html);
@@ -67,6 +88,7 @@
   </script>
 </body>
 </html>
+
 
     <a href="viewer/visualization.html" class="button">➡️ Zum anderen</a>
 
