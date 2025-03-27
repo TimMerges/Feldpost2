@@ -7,26 +7,30 @@
   <link rel="stylesheet" href="viewer-style.css" />
 </head>
 <body>
-  <!-- HEADER aus Root laden -->
+  <!-- Header wird aus Root geladen -->
   <div id="page-header"></div>
 
-  <!-- Dein Haupt-Layout -->
-  <div id="sidebar">
-    <h2>Feldpostbriefe</h2>
-    <label for="yearFilter">Jahr auswählen:</label>
-    <select id="yearFilter"><option value="all">Alle Jahre</option></select>
-    <select id="fileSelector"></select>
-    <button onclick="rotateImage()">Bild drehen</button>
-    <button onclick="window.location.href='visualization.html'">Visualisierungen anzeigen</button>
-    <h3>Transkription &amp; Tags</h3>
-    <div id="textLines"></div>
+  <!-- Hauptbereich: Sidebar + Canvas -->
+  <div id="main-wrapper">
+    <div id="sidebar">
+      <h2>Feldpostbriefe</h2>
+      <label for="yearFilter">Jahr auswählen:</label>
+      <select id="yearFilter">
+        <option value="all">Alle Jahre</option>
+      </select>
+      <select id="fileSelector"></select>
+      <button onclick="rotateImage()">Bild drehen</button>
+      <button onclick="window.location.href='visualization.html'">Visualisierungen anzeigen</button>
+      <h3>Transkription &amp; Tags</h3>
+      <div id="textLines"></div>
+    </div>
+
+    <div id="main">
+      <canvas id="canvas"></canvas>
+    </div>
   </div>
 
-  <div id="main">
-    <canvas id="canvas"></canvas>
-  </div>
-
-  <!-- FOOTER aus Root laden -->
+  <!-- Footer wird aus Root geladen -->
   <div id="page-footer"></div>
 
   <script>
@@ -89,11 +93,8 @@
             if (selectedYear === 'all' || years.includes(selectedYear)) {
               const opt = document.createElement('option');
               opt.value = file;
-
-              // Nur den beschreibenden Teil anzeigen:
               const label = file.replace(/^.*?_/, '').replace(/\.xml$/, '');
               opt.textContent = label;
-
               fileSelector.appendChild(opt);
             }
           });
@@ -266,7 +267,7 @@
 
     loadFileList();
 
-    // Header & Footer nachladen (aus dem Root-Verzeichnis)
+    // Header/Footer laden
     fetch('../header.html')
       .then(res => res.text())
       .then(html => document.getElementById('page-header').innerHTML = html);
@@ -276,4 +277,6 @@
       .then(html => document.getElementById('page-footer').innerHTML = html);
   </script>
 </body>
+</html>
+
 </html>
