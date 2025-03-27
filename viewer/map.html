@@ -24,7 +24,7 @@
 
   <main>
     <h1>🗺️ Historische Karte der Feldpostbewegungen</h1>
-    <p>Orte, die in Briefen außerhalb Deutschlands erwähnt werden.</p>
+    <p>Rekonstruktion der Einsatzorte und erwähnten Städte in der Feldpost.</p>
     <div id="map"></div>
   </main>
 
@@ -32,7 +32,6 @@
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script>
-    // Header & Footer einfügen
     fetch('../header.html')
       .then(res => res.text())
       .then(html => document.getElementById('page-header').innerHTML = html);
@@ -41,41 +40,28 @@
       .then(res => res.text())
       .then(html => document.getElementById('page-footer').innerHTML = html);
 
-    // Karte initialisieren (Zentrum Deutschland)
     const map = L.map('map').setView([51.1657, 10.4515], 6);
 
-    // Kartenhintergrund (OpenStreetMap)
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; OpenStreetMap-Mitwirkende',
       maxZoom: 18
     }).addTo(map);
 
-    // Orte laden & Marker setzen
     fetch('places.json')
       .then(res => res.json())
       .then(places => {
         places.forEach(place => {
           const marker = L.marker([place.lat, place.lon]).addTo(map);
-
-          // Generiere Link zu Viewer-Datei
-          const fileBase = place.source.replace('.xml', '.html');
-          const viewerLink = `viewer/${fileBase}`;
-
+          const viewerLink = `/Feldpost2/viewer/XML_Viewer.html?file=${encodeURIComponent(place.source)}`;
           const popupContent = `
             <strong>${place.name}</strong><br>
             ${place.note}<br>
             <em>${place.source}</em><br><br>
-            <a href="${viewerLink}" target="_blank">📄 Zum Brief anzeigen</a>
+            <a href="${viewerLink}" target="_blank">📄 Brief im Viewer öffnen</a>
           `;
-
           marker.bindPopup(popupContent);
         });
       });
-  </script>
-</body>
-</html>
-
-    // Hier kannst du weitere Marker dynamisch hinzufügen
   </script>
 </body>
 </html>
