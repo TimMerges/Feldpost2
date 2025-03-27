@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/pagecontent.xsd">
+    <Metadata>
+        <Creator>prov=READ-COOP:name=PyLaia@TranskribusPlatform:version=2.20.0:model_id=50870:lm=none:date=14_01_2025_21:14</Creator>
+        <Created>2025-01-14T20:07:49.324+01:00</Created>
+        <LastChange>2025-03-27T08:51:32.178+01:00</LastChange>
+    </Metadata>
+    <Page imageFilename="0051_Karl.jpeg" imageWidth="1680" imageHeight="1092">
+        <ReadingOrder>
+            <OrderedGroup id="ro_1743065173449" caption="Regions reading order">
+                <RegionRefIndexed index="0" regionRef="r"/>
+            </OrderedGroup>
+        </ReadingOrder>
+        <TextRegion id="r" custom="readingOrder {index:0;}">
+            <Coords points="54,29 1542,29 1542,793 54,793"/>
+            <TextLine id="l" custom="readingOrder {index:0;}">
+                <Coords points="188,100 1532,124 1533,94 188,70"/>
+                <Baseline points="188,100 1532,124"/>
+                <TextEquiv>
+                    <Unicode>Wenn Ihr die Uhr nicht gemacht</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_27" custom="readingOrder {index:1;}">
+                <Coords points="266,179 1312,229 1313,199 267,149"/>
+                <Baseline points="266,179 1312,229"/>
+                <TextEquiv>
+                    <Unicode>bekommt so soll mein</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_31" custom="readingOrder {index:2;}">
+                <Coords points="364,240 1243,296 1245,266 366,210"/>
+                <Baseline points="364,240 1243,296"/>
+                <TextEquiv>
+                    <Unicode>Bruder mal nachsehen.</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_35" custom="readingOrder {index:3;}">
+                <Coords points="310,329 1523,402 1525,372 312,299"/>
+                <Baseline points="310,329 1523,402"/>
+                <TextEquiv>
+                    <Unicode>Falls die armbanduhr so auch ein</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_39" custom="readingOrder {index:4;}">
+                <Coords points="92,425 1528,498 1529,468 93,395"/>
+                <Baseline points="92,425 1528,498"/>
+                <TextEquiv>
+                    <Unicode>neues Arm Band. die Armbanduhr</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_43" custom="readingOrder {index:5;}">
+                <Coords points="112,529 1331,605 1333,575 114,499"/>
+                <Baseline points="112,529 1331,605"/>
+                <TextEquiv>
+                    <Unicode>is mir am liebsten.</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_47" custom="readingOrder {index:6;}">
+                <Coords points="135,668 1547,726 1548,696 136,638"/>
+                <Baseline points="135,668 1547,726"/>
+                <TextEquiv>
+                    <Unicode>Ich werde Euch dann das Geld</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_51" custom="readingOrder {index:7;}">
+                <Coords points="522,787 940,805 941,775 523,757"/>
+                <Baseline points="522,787 940,805"/>
+                <TextEquiv>
+                    <Unicode> schicken.</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode></Unicode>
+            </TextEquiv>
+        </TextRegion>
+    </Page>
+</PcGts>

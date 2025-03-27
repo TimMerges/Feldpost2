@@ -3,11 +3,11 @@
     <Metadata>
         <Creator>prov=READ-COOP:name=PyLaia@TranskribusPlatform:version=2.20.0:model_id=50870:lm=none:date=15_01_2025_11:49</Creator>
         <Created>2025-01-14T20:07:44.462+01:00</Created>
-        <LastChange>2025-03-25T10:24:46.859+01:00</LastChange>
+        <LastChange>2025-03-27T09:31:34.622+01:00</LastChange>
     </Metadata>
     <Page imageFilename="0005_Karl 04.06.43 Umschlag.jpeg" imageWidth="1664" imageHeight="2375">
         <ReadingOrder>
-            <OrderedGroup id="ro_1742907171215" caption="Regions reading order">
+            <OrderedGroup id="ro_1743065149253" caption="Regions reading order">
                 <RegionRefIndexed index="0" regionRef="r"/>
                 <RegionRefIndexed index="1" regionRef="r_7"/>
                 <RegionRefIndexed index="2" regionRef="r_9"/>
@@ -65,7 +65,7 @@
                     <Unicode>Karl Klein</Unicode>
                 </TextEquiv>
             </TextLine>
-            <TextLine id="l_80" custom="readingOrder {index:3;}">
+            <TextLine id="l_80" custom="readingOrder {index:3;} FeldNummer {offset:5; length:6;Nummer:35181C;}">
                 <Coords points="558,1790 1308,1807 1309,1777 558,1760"/>
                 <Baseline points="558,1790 1308,1807"/>
                 <TextEquiv>

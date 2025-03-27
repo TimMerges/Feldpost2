@@ -3,11 +3,11 @@
     <Metadata>
         <Creator>prov=READ-COOP:name=PyLaia@TranskribusPlatform:version=2.20.0:model_id=50870:lm=none:date=22_01_2025_19:06</Creator>
         <Created>2025-01-14T20:07:44.023+01:00</Created>
-        <LastChange>2025-03-23T10:47:06.194+01:00</LastChange>
+        <LastChange>2025-03-27T09:37:05.875+01:00</LastChange>
     </Metadata>
     <Page imageFilename="0001_Karl 01.08.43 Umschlag.jpeg" imageWidth="1672" imageHeight="2408">
         <ReadingOrder>
-            <OrderedGroup id="ro_1742907169105" caption="Regions reading order">
+            <OrderedGroup id="ro_1743065145594" caption="Regions reading order">
                 <RegionRefIndexed index="0" regionRef="r"/>
                 <RegionRefIndexed index="1" regionRef="r_25"/>
                 <RegionRefIndexed index="2" regionRef="r_26"/>
@@ -22,14 +22,14 @@
         </TextRegion>
         <TextRegion id="r_25" custom="readingOrder {index:1;}">
             <Coords points="129,790 1673,790 1673,1163 129,1163"/>
-            <TextLine id="l_65" custom="readingOrder {index:0;}">
+            <TextLine id="l_65" custom="readingOrder {index:0;} FeldNummer {offset:6; length:8;Nummer:35187\u0020C;}">
                 <Coords points="804,866 1481,844 1480,814 803,836"/>
                 <Baseline points="804,866 1481,844"/>
                 <TextEquiv>
                     <Unicode>F.P.N. 35187 C</Unicode>
                 </TextEquiv>
             </TextLine>
-            <TextLine id="l_61" custom="readingOrder {index:1;}">
+            <TextLine id="l_61" custom="readingOrder {index:1;} person {offset:11; length:10;firstname:Karl; lastname:Klein;}">
                 <Coords points="290,1020 1516,1006 1516,976 290,990"/>
                 <Baseline points="290,1020 1516,1006"/>
                 <TextEquiv>
@@ -49,7 +49,7 @@
                     <Unicode>Feldpost</Unicode>
                 </TextEquiv>
             </TextLine>
-            <TextLine id="l_50" custom="readingOrder {index:1;}">
+            <TextLine id="l_50" custom="readingOrder {index:1;} date {offset:3; length:8;when:1943.03.08;}">
                 <Coords points="1111,1354 1384,1411 1390,1381 1117,1324"/>
                 <Baseline points="1111,1354 1384,1411"/>
                 <TextEquiv>
@@ -76,14 +76,14 @@
                     <Unicode>Frl.</Unicode>
                 </TextEquiv>
             </TextLine>
-            <TextLine id="l_38" custom="readingOrder {index:2;}">
+            <TextLine id="l_38" custom="readingOrder {index:2;} person {offset:0; length:10;firstname:Anna; lastname:Klein;}">
                 <Coords points="298,1929 1198,1947 1199,1917 298,1899"/>
                 <Baseline points="298,1929 1198,1947"/>
                 <TextEquiv>
                     <Unicode>Anna Klein</Unicode>
                 </TextEquiv>
             </TextLine>
-            <TextLine id="l_42" custom="readingOrder {index:3;}">
+            <TextLine id="l_42" custom="readingOrder {index:3;} place {offset:0; length:8;wikiData:Q559514; country:Germany; placeName:Wittlich;}">
                 <Coords points="605,2167 1181,2176 1181,2146 606,2137"/>
                 <Baseline points="605,2167 1181,2176"/>
                 <TextEquiv>

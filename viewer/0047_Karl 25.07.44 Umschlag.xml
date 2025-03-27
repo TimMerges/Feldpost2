@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/pagecontent.xsd">
+    <Metadata>
+        <Creator>prov=READ-COOP:name=PyLaia@TranskribusPlatform:version=2.20.0:model_id=50870:lm=none:date=22_01_2025_19:06</Creator>
+        <Created>2025-01-14T20:07:48.909+01:00</Created>
+        <LastChange>2025-03-27T08:48:07.877+01:00</LastChange>
+    </Metadata>
+    <Page imageFilename="0047_Karl 25.07.44 Umschlag.jpeg" imageWidth="1755" imageHeight="2458">
+        <ReadingOrder>
+            <OrderedGroup id="ro_1743065170657" caption="Regions reading order">
+                <RegionRefIndexed index="0" regionRef="r_19"/>
+                <RegionRefIndexed index="1" regionRef="r_20"/>
+                <RegionRefIndexed index="2" regionRef="r"/>
+                <RegionRefIndexed index="3" regionRef="r_16"/>
+                <RegionRefIndexed index="4" regionRef="r_18"/>
+                <RegionRefIndexed index="5" regionRef="r_17"/>
+                <RegionRefIndexed index="6" regionRef="tr_1"/>
+            </OrderedGroup>
+        </ReadingOrder>
+        <TextRegion id="r_19" custom="readingOrder {index:0;}">
+            <Coords points="176,1250 426,1250 426,2290 176,2290"/>
+            <TextEquiv>
+                <Unicode></Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r_20" custom="readingOrder {index:1;}">
+            <Coords points="449,1907 809,1907 809,2299 449,2299"/>
+            <TextLine id="l_44" custom="readingOrder {index:0;} person {offset:0; length:10;firstname:Anna; lastname:Klein;}">
+                <Coords points="768,1922 1506,1922 1506,1892 768,1892"/>
+                <Baseline points="768,1922 1506,1922"/>
+                <TextEquiv>
+                    <Unicode>Anna Klein</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode></Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r" custom="readingOrder {index:2;}">
+            <Coords points="613,1385 1010,1385 1010,1604 613,1604"/>
+            <TextLine id="l" custom="readingOrder {index:0;}">
+                <Coords points="654,1542 905,1537 904,1507 653,1512"/>
+                <Baseline points="654,1542 905,1537"/>
+                <TextEquiv>
+                    <Unicode>Feldpost</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode></Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r_16" custom="readingOrder {index:3;}">
+            <Coords points="563,1686 1616,1686 1616,1987 563,1987"/>
+            <TextLine id="l_36" custom="readingOrder {index:0;}">
+                <Coords points="661,1817 961,1813 961,1783 661,1787"/>
+                <Baseline points="661,1817 961,1813"/>
+                <TextEquiv>
+                    <Unicode>An Frl</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode></Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r_18" custom="readingOrder {index:4;}">
+            <Coords points="928,1989 1662,1989 1662,2276 928,2276"/>
+            <TextLine id="l_49" custom="readingOrder {index:0;} place {offset:0; length:6;wikiData:Q563974; country:Germany; placeName:Dreis;}">
+                <Coords points="933,2107 1477,2109 1477,2079 933,2077"/>
+                <Baseline points="933,2107 1477,2109"/>
+                <TextEquiv>
+                    <Unicode>Dreis 65</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_53" custom="readingOrder {index:1;} place {offset:3; length:8;wikiData:Q559514; country:Germany; placeName:Wittlich;}">
+                <Coords points="952,2236 1539,2238 1539,2208 952,2206"/>
+                <Baseline points="952,2236 1539,2238"/>
+                <TextEquiv>
+                    <Unicode>b. Wittlich</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode></Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r_17" custom="readingOrder {index:5;}">
+            <Coords points="1379,1380 1753,1380 1753,1784 1379,1784"/>
+            <TextLine id="l_30" custom="readingOrder {index:0;} date {offset:0; length:7;when:1944.07.27;}">
+                <Coords points="0,0 1670,1615 1470,1624 1471,1654 1713,1631 21,-22"/>
+                <Baseline points="0,0 1670,1615 1470,1624"/>
+                <TextEquiv>
+                    <Unicode>27.7.44 -9</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode></Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion orientation="0.0" id="tr_1" custom="readingOrder {index:6;}">
+            <Coords points="156,2344 156,2412 252,2412 252,2344"/>
+            <TextLine id="tr_1_tl_1" custom="readingOrder {index:0;}">
+                <Coords points="161,2376 170,2378 184,2373 203,2383 214,2379 223,2383 238,2374 250,2373 252,2332 240,2331 226,2322 194,2344 186,2338 162,2342"/>
+                <Baseline points="166,2368 194,2366 223,2364 252,2364"/>
+                <TextEquiv>
+                    <Unicode>011489</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_1_tl_2" custom="readingOrder {index:1;}">
+                <Coords points="150,2410 156,2409 158,2412 167,2413 174,2407 177,2409 186,2404 192,2410 201,2410 202,2385 182,2384 175,2381 167,2384 164,2382 161,2384 151,2384"/>
+                <Baseline points="156,2402 204,2400"/>
+                <TextEquiv>
+                    <Unicode></Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode></Unicode>
+            </TextEquiv>
+        </TextRegion>
+    </Page>
+</PcGts>

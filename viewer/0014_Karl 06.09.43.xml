@@ -3,11 +3,11 @@
     <Metadata>
         <Creator>prov=READ-COOP:name=PyLaia@TranskribusPlatform:version=2.20.0:model_id=36508:lm=none:date=24_01_2025_13:40</Creator>
         <Created>2025-01-14T20:07:45.431+01:00</Created>
-        <LastChange>2025-03-25T13:07:59.756+01:00</LastChange>
+        <LastChange>2025-03-27T09:42:41.668+01:00</LastChange>
     </Metadata>
     <Page imageFilename="0014_Karl 06.09.43.jpeg" imageWidth="1639" imageHeight="2425">
         <ReadingOrder>
-            <OrderedGroup id="ro_1742907174216" caption="Regions reading order">
+            <OrderedGroup id="ro_1743065152961" caption="Regions reading order">
                 <RegionRefIndexed index="0" regionRef="r"/>
             </OrderedGroup>
         </ReadingOrder>
@@ -108,7 +108,7 @@
                 <Coords points="93,1568 460,1549 555,1597 615,1555 678,1586 956,1551 1130,1604 1280,1547 1562,1555 1562,1467 1410,1476 1326,1428 1242,1485 1040,1430 883,1494 683,1438 493,1492 297,1428 216,1476 93,1447"/>
                 <Baseline points="104,1550 1567,1545"/>
                 <TextEquiv>
-                    <Unicode>geforen. Hier gibt es nicht nur</Unicode>
+                    <Unicode>geforen. Hier gibt es nicht neus</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="l_63" custom="readingOrder {index:14;}">
@@ -122,7 +122,7 @@
                 <Coords points="106,1754 236,1734 366,1796 672,1740 753,1811 914,1740 1560,1758 1560,1652 1309,1655 1174,1731 910,1720 773,1666 577,1725 498,1723 394,1644 106,1659"/>
                 <Baseline points="117,1736 1564,1744"/>
                 <TextEquiv>
-                    <Unicode>dir: Hast du noch keine Wehen?</Unicode>
+                    <Unicode>dir: Hast du noch keine Unruhen?</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="l_71" custom="readingOrder {index:16;}">

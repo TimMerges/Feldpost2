@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/pagecontent.xsd">
+    <Metadata>
+        <Creator>prov=READ-COOP:name=PyLaia@TranskribusPlatform:version=2.20.0:model_id=50870:lm=none:date=22_01_2025_19:06</Creator>
+        <Created>2025-01-14T20:07:46.169+01:00</Created>
+        <LastChange>2025-03-27T09:44:23.924+01:00</LastChange>
+    </Metadata>
+    <Page imageFilename="0021_Karl 13.06.43 Umschlag.jpeg" imageWidth="1672" imageHeight="2326">
+        <ReadingOrder>
+            <OrderedGroup id="ro_1743065157106" caption="Regions reading order">
+                <RegionRefIndexed index="0" regionRef="r"/>
+                <RegionRefIndexed index="1" regionRef="r_30"/>
+            </OrderedGroup>
+        </ReadingOrder>
+        <TextRegion id="r" custom="readingOrder {index:0;}">
+            <Coords points="66,1288 1603,1288 1603,2207 66,2207"/>
+            <TextLine id="l" custom="readingOrder {index:0;}">
+                <Coords points="153,1440 475,1433 475,1403 153,1410"/>
+                <Baseline points="153,1440 475,1433"/>
+                <TextEquiv>
+                    <Unicode>Frl.</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_14" custom="readingOrder {index:1;} person {offset:0; length:10;firstname:Anna; lastname:Klein;}">
+                <Coords points="206,1639 495,1609 492,1579 203,1609"/>
+                <Baseline points="206,1639 495,1609"/>
+                <TextEquiv>
+                    <Unicode>Anna Klein</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_18" custom="readingOrder {index:2;} place {offset:0; length:8;wikiData:Q559514;}">
+                <Coords points="299,1808 1195,1808 1195,1778 299,1778"/>
+                <Baseline points="299,1808 1195,1808"/>
+                <TextEquiv>
+                    <Unicode>Wittlich</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_22" custom="readingOrder {index:3;}">
+                <Coords points="641,2034 1228,2034 1228,2004 641,2004"/>
+                <Baseline points="641,2034 1228,2034"/>
+                <TextEquiv>
+                    <Unicode>Kurfürstenstr. 57</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_26" custom="readingOrder {index:4;}">
+                <Coords points="634,2153 1474,2167 1474,2137 635,2123"/>
+                <Baseline points="634,2153 1474,2167"/>
+                <TextEquiv>
+                    <Unicode></Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode></Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r_30" custom="readingOrder {index:1;}">
+            <Coords points="1520,1130 21,1130 21,838 1520,838"/>
+            <TextLine id="l_34" custom="readingOrder {index:0;} person {offset:6; length:11;firstname:Karl; lastname:Klein;}">
+                <Coords points="1228,1032 95,1007 94,1037 1227,1062"/>
+                <Baseline points="1228,1032 95,1007"/>
+                <TextEquiv>
+                    <Unicode>Soldat Karl Klein</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_38" custom="readingOrder {index:1;} FeldNummer {offset:7; length:7;Nummer:35187\u0020C;}">
+                <Coords points="1492,880 616,891 616,921 1492,910"/>
+                <Baseline points="1492,880 616,891"/>
+                <TextEquiv>
+                    <Unicode>F.P.N. 35187 C</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode></Unicode>
+            </TextEquiv>
+        </TextRegion>
+    </Page>
+</PcGts>

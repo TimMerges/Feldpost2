@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/pagecontent.xsd">
+    <Metadata>
+        <Creator>prov=READ-COOP:name=PyLaia@TranskribusPlatform:version=2.20.0:model_id=50870:lm=none:date=22_01_2025_19:06</Creator>
+        <Created>2025-01-14T20:07:50.673+01:00</Created>
+        <LastChange>2025-03-26T10:35:21.763+01:00</LastChange>
+    </Metadata>
+    <Page imageFilename="0064_Peter 23.11.41 Seite 2.jpeg" imageWidth="2458" imageHeight="3178">
+        <ReadingOrder>
+            <OrderedGroup id="ro_1743065177823" caption="Regions reading order">
+                <RegionRefIndexed index="0" regionRef="r"/>
+            </OrderedGroup>
+        </ReadingOrder>
+        <TextRegion id="r" custom="readingOrder {index:0;}">
+            <Coords points="492,149 2428,149 2428,1622 492,1622"/>
+            <TextLine id="l" custom="readingOrder {index:0;}">
+                <Coords points="718,295 2215,301 2215,271 719,265"/>
+                <Baseline points="718,295 2215,301"/>
+                <TextEquiv>
+                    <Unicode>oft genug nach Hause schreiben, ich will</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_15" custom="readingOrder {index:1;}">
+                <Coords points="636,394 2170,394 2170,364 636,364"/>
+                <Baseline points="636,394 2170,394"/>
+                <TextEquiv>
+                    <Unicode>also deinem Wunsch folgen. Mutter brauch</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_19" custom="readingOrder {index:2;}">
+                <Coords points="588,486 2212,496 2212,466 588,456"/>
+                <Baseline points="588,486 2212,496"/>
+                <TextEquiv>
+                    <Unicode>sich keine Sorgen zu machen, denn einmal</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_23" custom="readingOrder {index:3;}">
+                <Coords points="578,581 2234,585 2234,555 578,551"/>
+                <Baseline points="578,581 2234,585"/>
+                <TextEquiv>
+                    <Unicode>stehe ich fas(crossed out) vor der tür, dann wird alles</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_27" custom="readingOrder {index:4;}">
+                <Coords points="572,667 1088,680 1088,650 573,637"/>
+                <Baseline points="572,667 1088,680"/>
+                <TextEquiv>
+                    <Unicode>andere folgen.</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_31" custom="readingOrder {index:5;}">
+                <Coords points="731,782 1699,776 1699,746 731,752"/>
+                <Baseline points="731,782 1699,776"/>
+                <TextEquiv>
+                    <Unicode>Ich will nun schließen</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_35" custom="readingOrder {index:6;}">
+                <Coords points="1715,863 2275,879 2276,849 1716,833"/>
+                <Baseline points="1715,863 2275,879"/>
+                <TextEquiv>
+                    <Unicode>und dich herzlich</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_39" custom="readingOrder {index:7;}">
+                <Coords points="1836,968 2087,958 2086,928 1835,938"/>
+                <Baseline points="1836,968 2087,958"/>
+                <TextEquiv>
+                    <Unicode>grüßen.</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_43" custom="readingOrder {index:8;}">
+                <Coords points="1202,1143 2141,1146 2141,1116 1202,1113"/>
+                <Baseline points="1202,1143 2141,1146"/>
+                <TextEquiv>
+                    <Unicode>So grüßt dich dein Bruder</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_47" custom="readingOrder {index:9;} person {offset:0; length:6;firstname:Peter; lastname:Klein;}">
+                <Coords points="1804,1337 2043,1340 2043,1310 1804,1307"/>
+                <Baseline points="1804,1337 2043,1340"/>
+                <TextEquiv>
+                    <Unicode>Peter!</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_51" custom="readingOrder {index:10;}">
+                <Coords points="1075,1525 1632,1531 1632,1501 1075,1495"/>
+                <Baseline points="1075,1525 1632,1531"/>
+                <TextEquiv>
+                    <Unicode>Auf Wiedersehen!</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode></Unicode>
+            </TextEquiv>
+        </TextRegion>
+    </Page>
+</PcGts>

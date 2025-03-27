@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/pagecontent.xsd">
+    <Metadata>
+        <Creator>prov=READ-COOP:name=PyLaia@TranskribusPlatform:version=2.24.0:model_id=36508:lm=none:date=20_03_2025_11:59</Creator>
+        <Created>2025-01-14T20:07:47.614+01:00</Created>
+        <LastChange>2025-03-25T08:49:47.516+01:00</LastChange>
+    </Metadata>
+    <Page imageFilename="0035_Karl 19.12.43 Seite 2.jpeg" imageWidth="1746" imageHeight="2483">
+        <ReadingOrder>
+            <OrderedGroup id="ro_1743065163153" caption="Regions reading order">
+                <RegionRefIndexed index="0" regionRef="r"/>
+                <RegionRefIndexed index="1" regionRef="r_6"/>
+            </OrderedGroup>
+        </ReadingOrder>
+        <TextRegion id="r" custom="readingOrder {index:0;}">
+            <Coords points="74,52 1576,52 1576,982 74,982"/>
+            <TextLine id="l_10" custom="readingOrder {index:0;}">
+                <Coords points="120,162 955,153 1075,227 1272,159 1272,68 1119,38 993,75 883,30 728,101 455,35 336,98 120,82"/>
+                <Baseline points="130,160 1276,157"/>
+                <TextEquiv>
+                    <Unicode>wir dir von der Fahrt</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_14" custom="readingOrder {index:1;}">
+                <Coords points="122,352 322,357 430,277 592,268 706,338 908,263 1136,328 1328,254 1521,261 1523,202 1295,153 1054,233 955,155 125,193"/>
+                <Baseline points="133,277 1526,250"/>
+                <TextEquiv>
+                    <Unicode>geschrieben haben schon er-</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_18" custom="readingOrder {index:2;}">
+                <Coords points="127,366 256,378 404,362 465,385 591,359 591,329 561,335 418,275 369,303 293,284 227,336 204,321 127,326"/>
+                <Baseline points="136,363 595,356"/>
+                <TextEquiv>
+                    <Unicode>halten?</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_22" custom="readingOrder {index:3;}">
+                <Coords points="148,490 423,450 756,484 819,451 1415,460 1415,408 1354,397 1007,416 646,354 148,429"/>
+                <Baseline points="157,448 1420,448"/>
+                <TextEquiv>
+                    <Unicode>Was gibt es denn neues</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_27" custom="readingOrder {index:4;}">
+                <Coords points="143,704 275,687 416,727 486,699 572,704 662,655 735,660 734,476 643,470 504,565 403,579 277,549 141,582"/>
+                <Baseline points="150,654 739,664"/>
+                <TextEquiv>
+                    <Unicode>bei dir. Hier gibt es keine</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_31" custom="readingOrder {index:5;}">
+                <Coords points="134,927 545,849 812,896 906,852 1059,897 1124,852 1422,859 1422,753 1338,734 1134,741 1032,802 906,802 793,741 134,800"/>
+                <Baseline points="143,849 1424,852"/>
+                <TextEquiv>
+                    <Unicode>Neuigkeit. zum Schluß grüßt dich</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_35" custom="readingOrder {index:6;} person {offset:12; length:4;firstname:Karl; lastname:Klein;}">
+                <Coords points="171,953 239,983 768,981 920,948 1042,976 1115,960 1117,871 1019,901 915,852 788,899 535,850 396,910 291,880 171,922"/>
+                <Baseline points="181,948 1119,945"/>
+                <TextEquiv>
+                    <Unicode>dein Bruder Karl</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode></Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r_6" custom="readingOrder {index:1;}">
+            <Coords points="102,1000 1711,1000 1711,1530 102,1530"/>
+            <TextLine id="l_39" custom="readingOrder {index:0;}">
+                <Coords points="709,1197 1244,1154 1336,1199 1472,1174 1573,1199 1631,1188 1633,1052 711,1049"/>
+                <Baseline points="718,1161 1636,1147"/>
+                <TextEquiv>
+                    <Unicode>Auf Widersehen</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_43" custom="readingOrder {index:1;}">
+                <Coords points="148,1413 1316,1338 1316,1216 1269,1208 152,1201"/>
+                <Baseline points="160,1346 1318,1335"/>
+                <TextEquiv>
+                    <Unicode>Herzlichen Gruß von</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_47" custom="readingOrder {index:2;} person {offset:0; length:6;firstname:Edmund; lastname:?;}">
+                <Coords points="603,1502 870,1441 1145,1453 1145,1336 1052,1382 1007,1375 976,1404 906,1382 774,1399 734,1384 652,1415 603,1401"/>
+                <Baseline points="612,1438 1150,1438"/>
+                <TextEquiv>
+                    <Unicode>Edmund</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode></Unicode>
+            </TextEquiv>
+        </TextRegion>
+    </Page>
+</PcGts>

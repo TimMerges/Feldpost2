@@ -3,24 +3,22 @@
     <Metadata>
         <Creator>prov=READ-COOP:name=PyLaia@TranskribusPlatform:version=2.20.0:model_id=50870:lm=none:date=22_01_2025_19:06</Creator>
         <Created>2025-01-14T20:07:45.109+01:00</Created>
-        <LastChange>2025-03-25T12:27:28.136+01:00</LastChange>
+        <LastChange>2025-03-27T09:38:48.103+01:00</LastChange>
     </Metadata>
     <Page imageFilename="0011_Karl 05.07.43 Rueckseite.jpeg" imageWidth="1738" imageHeight="1250">
         <ReadingOrder>
-            <OrderedGroup id="ro_1742907173319" caption="Regions reading order">
+            <OrderedGroup id="ro_1743065151013" caption="Regions reading order">
                 <RegionRefIndexed index="0" regionRef="tr_1"/>
-                <RegionRefIndexed index="1" regionRef="tr_2"/>
-                <RegionRefIndexed index="2" regionRef="tr_3"/>
-                <RegionRefIndexed index="3" regionRef="tr_4"/>
+                <RegionRefIndexed index="1" regionRef="tr_4"/>
             </OrderedGroup>
         </ReadingOrder>
         <TextRegion orientation="0.0" id="tr_1" custom="readingOrder {index:0;}">
-            <Coords points="60,772 60,1162 342,1162 342,772"/>
-            <TextLine id="tr_1_tl_1" custom="readingOrder {index:0;} person {offset:16; length:5;firstname:Karl; lastname:Klein;}">
+            <Coords points="60,772 60,1162 713,1145 744,770"/>
+            <TextLine id="tr_1_tl_1" custom="readingOrder {index:0;} person {offset:16; length:5;firstname:Peter; lastname:Klein;}">
                 <Coords points="61,841 98,840 134,821 175,826 201,817 268,818 268,759 228,768 198,763 176,779 142,776 120,756 89,746 61,756"/>
                 <Baseline points="66,812 91,812 117,811 142,811 168,812 193,812 219,810 244,812 270,812"/>
                 <TextEquiv>
-                    <Unicode>Absender: Gefr. Klein ???Gericht Landau(?)</Unicode>
+                    <Unicode>Absender: Gefr. Klein Gericht Landau(?)</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="tr_1_tl_2" custom="readingOrder {index:1;}">
@@ -30,7 +28,7 @@
                     <Unicode>Feldpostnummmer:</Unicode>
                 </TextEquiv>
             </TextLine>
-            <TextLine id="tr_1_tl_3" custom="readingOrder {index:2;}">
+            <TextLine id="tr_1_tl_3" custom="readingOrder {index:2;} place {offset:5; length:9;wikiData:Q1780345; country:Poland; placeName:Guttentag;}">
                 <Coords points="57,1048 67,1047 72,1042 86,1042 94,1047 108,1040 123,1038 130,1043 141,1040 141,992 120,984 94,995 83,988 70,989 57,985"/>
                 <Baseline points="62,1024 88,1024 115,1024 142,1024"/>
                 <TextEquiv>
@@ -55,33 +53,7 @@
                 <Unicode></Unicode>
             </TextEquiv>
         </TextRegion>
-        <TextRegion orientation="0.0" id="tr_2" custom="readingOrder {index:1;}">
-            <Coords points="358,922 358,1074 502,1074 502,922"/>
-            <TextLine id="tr_2_tl_1" custom="readingOrder {index:0;}">
-                <Coords points="353,1027 372,1032 402,1026 415,1031 424,1026 500,1026 502,956 452,989 430,996 412,991 380,960 355,961"/>
-                <Baseline points="358,1024 386,1024 415,1024 444,1022 473,1022 502,1022"/>
-                <TextEquiv>
-                    <Unicode>land</Unicode>
-                </TextEquiv>
-            </TextLine>
-            <TextEquiv>
-                <Unicode></Unicode>
-            </TextEquiv>
-        </TextRegion>
-        <TextRegion orientation="0.0" id="tr_3" custom="readingOrder {index:2;}">
-            <Coords points="754,830 754,982 868,982 868,830"/>
-            <TextLine id="tr_3_tl_1" custom="readingOrder {index:0;}">
-                <Coords points="749,957 787,967 797,961 804,968 849,958 866,969 867,909 855,906 841,913 820,906 801,920 786,916 773,921 750,919"/>
-                <Baseline points="754,932 782,932 811,932 839,932 868,930"/>
-                <TextEquiv>
-                    <Unicode></Unicode>
-                </TextEquiv>
-            </TextLine>
-            <TextEquiv>
-                <Unicode></Unicode>
-            </TextEquiv>
-        </TextRegion>
-        <TextRegion orientation="0.0" id="tr_4" custom="readingOrder {index:3;}">
+        <TextRegion orientation="0.0" id="tr_4" custom="readingOrder {index:1;}">
             <Coords points="824,40 824,1213 1592,1213 1592,40"/>
             <TextLine id="tr_4_tl_1" custom="readingOrder {index:0;}">
                 <Coords points="1444,108 1468,100 1480,108 1488,107 1505,120 1514,117 1530,121 1544,114 1549,26 1528,24 1505,9 1491,13 1468,0 1450,0"/>
@@ -104,21 +76,21 @@
                     <Unicode>Fräulein</Unicode>
                 </TextEquiv>
             </TextLine>
-            <TextLine id="l_11" custom="readingOrder {index:3;}">
+            <TextLine id="l_11" custom="readingOrder {index:3;} person {offset:0; length:10;firstname:Anna; lastname:Klein;}">
                 <Coords points="948,680 1398,672 1397,642 948,650"/>
                 <Baseline points="948,680 1398,672"/>
                 <TextEquiv>
                     <Unicode>Anna Klein</Unicode>
                 </TextEquiv>
             </TextLine>
-            <TextLine id="tr_4_tl_3" custom="readingOrder {index:4;}">
+            <TextLine id="tr_4_tl_3" custom="readingOrder {index:4;} place {offset:0; length:5;wikiData:Q563974; country:Germany; placeName:Dreis;}">
                 <Coords points="873,801 1023,815 1117,798 1172,816 1195,800 1239,816 1283,792 1283,756 1247,760 1201,729 1091,727 980,758 933,754 875,712"/>
                 <Baseline points="878,796 903,790 928,790 954,792 979,790 1004,790 1030,789 1055,789 1081,790 1106,788 1131,786 1157,786 1182,787 1207,787 1233,786 1258,786 1284,788"/>
                 <TextEquiv>
                     <Unicode>Dreis bei</Unicode>
                 </TextEquiv>
             </TextLine>
-            <TextLine id="l_19" custom="readingOrder {index:5;}">
+            <TextLine id="l_19" custom="readingOrder {index:5;} place {offset:0; length:8;wikiData:Q559514; country:Germany; placeName:Wittlich;}">
                 <Coords points="1385,925 1723,940 1724,910 1386,895"/>
                 <Baseline points="1385,925 1723,940"/>
                 <TextEquiv>

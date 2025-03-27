@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/pagecontent.xsd">
+    <Metadata>
+        <Creator>prov=READ-COOP:name=PyLaia@TranskribusPlatform:version=2.20.0:model_id=50870:lm=none:date=14_01_2025_20:57</Creator>
+        <Created>2025-01-14T20:07:50.366+01:00</Created>
+        <LastChange>2025-03-26T10:16:59.408+01:00</LastChange>
+    </Metadata>
+    <Page imageFilename="0061_Peter 13.11.41 Seite 2.jpeg" imageWidth="1614" imageHeight="2110">
+        <ReadingOrder>
+            <OrderedGroup id="ro_1743065174397" caption="Regions reading order">
+                <RegionRefIndexed index="0" regionRef="tr_1"/>
+            </OrderedGroup>
+        </ReadingOrder>
+        <TextRegion orientation="0.0" id="tr_1" custom="readingOrder {index:0;}">
+            <Coords points="330,288 330,1225 1464,1225 1464,288"/>
+            <TextLine id="tr_1_tl_1" custom="readingOrder {index:0;}">
+                <Coords points="338,394 478,356 931,356 1054,393 1340,354 1325,276 1143,322 967,274 847,305 657,275 547,315 338,283"/>
+                <Baseline points="346,358 395,352 445,350 495,348 545,353 595,352 645,352 695,350 745,352 795,352 845,351 894,350 944,349 994,348 1044,350 1094,348 1144,350 1194,348 1244,345 1294,342 1344,346"/>
+                <TextEquiv>
+                    <Unicode>schicken, oder mitbringen soll.</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_1_tl_2" custom="readingOrder {index:1;}">
+                <Coords points="323,479 504,505 750,451 943,496 1197,474 1322,455 1324,378 1032,417 504,371 442,407 323,395"/>
+                <Baseline points="330,446 379,446 429,446 479,444 528,444 578,444 628,442 677,442 727,444 777,446 827,447 876,446 926,446 976,445 1025,444 1075,443 1125,442 1174,442 1224,439 1274,438 1324,442"/>
+                <TextEquiv>
+                    <Unicode>Beinahe hätte ich vergessen,</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_1_tl_3" custom="readingOrder {index:2;}">
+                <Coords points="327,567 651,541 910,576 1085,538 1228,569 1358,546 1360,484 1259,464 1003,529 810,474 470,523 328,483"/>
+                <Baseline points="334,540 385,538 436,541 487,542 539,541 590,538 641,536 693,538 744,539 795,538 847,540 898,541 949,538 1000,538 1052,536 1103,535 1154,534 1206,534 1257,533 1308,535 1360,538"/>
+                <TextEquiv>
+                    <Unicode>Dir alles Gute zu wünschen.</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_1_tl_4" custom="readingOrder {index:3;}">
+                <Coords points="337,653 1373,662 1365,588 337,584"/>
+                <Baseline points="344,628 395,631 447,633 498,634 550,632 602,633 653,635 705,634 756,634 808,634 860,632 911,630 963,629 1014,632 1066,633 1118,632 1169,630 1221,632 1272,631 1324,630 1376,632"/>
+                <TextEquiv>
+                    <Unicode>Mir geht es gut, was ja</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_1_tl_6" custom="readingOrder {index:4;}">
+                <Coords points="333,735 464,735 515,770 563,745 600,770 626,748 718,771 785,755 843,785 910,752 984,757 984,655 965,649 820,682 746,640 575,684 519,666 473,697 385,657 333,664"/>
+                <Baseline points="340,726 372,726 404,726 436,726 469,726 501,726 533,726 566,726 598,726 630,726 663,726 695,724 727,724 759,724 792,726 824,724 856,724 889,725 921,726 953,726 986,726"/>
+                <TextEquiv>
+                    <Unicode>die Hauptsache ist.</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_1_tl_5" custom="readingOrder {index:5;}">
+                <Coords points="1014,753 1098,773 1192,730 1352,730 1356,659 1317,660 1232,693 1116,662 1082,678 1018,680"/>
+                <Baseline points="1022,726 1047,727 1073,726 1099,725 1124,726 1150,726 1176,726 1201,724 1227,724 1253,723 1278,720 1304,715 1330,713 1356,708"/>
+                <TextEquiv>
+                    <Unicode>Ich will</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_1_tl_8" custom="readingOrder {index:6;}">
+                <Coords points="359,829 550,826 611,873 742,847 819,852 870,886 1003,885 1016,786 944,768 904,802 856,801 792,764 655,757 359,812"/>
+                <Baseline points="366,822 398,823 431,822 463,824 496,826 529,826 561,826 594,824 626,824 659,820 692,820 724,820 757,823 789,824 822,825 855,825 887,823 920,822 952,820 985,818 1018,820"/>
+                <TextEquiv>
+                    <Unicode>nun schließen und</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_1_tl_7" custom="readingOrder {index:7;}">
+                <Coords points="1067,887 1107,865 1118,868 1130,863 1143,852 1147,856 1158,850 1167,855 1178,852 1184,761 1149,771 1138,759 1129,758 1092,775 1073,776"/>
+                <Baseline points="1078,822 1104,821 1131,818 1157,816 1184,816"/>
+                <TextEquiv>
+                    <Unicode>dich</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_1_tl_9" custom="readingOrder {index:8;}">
+                <Coords points="1038,966 1065,970 1100,957 1174,968 1209,953 1237,963 1240,860 1220,866 1197,859 1169,870 1140,855 1104,857 1082,842 1042,843"/>
+                <Baseline points="1046,916 1074,914 1102,913 1130,912 1158,912 1186,910 1214,910 1242,910"/>
+                <TextEquiv>
+                    <Unicode>herzlich</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_1_tl_10" custom="readingOrder {index:9;}">
+                <Coords points="1224,1054 1287,1069 1318,1059 1340,1070 1362,1059 1462,1076 1459,953 1428,937 1406,944 1383,936 1360,953 1278,971 1222,961"/>
+                <Baseline points="1228,998 1254,1000 1280,1003 1306,1004 1332,1005 1359,1006 1385,1006 1411,1004 1437,1006 1464,1004"/>
+                <TextEquiv>
+                    <Unicode>grüßen!</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_1_tl_12" custom="readingOrder {index:10;}">
+                <Coords points="511,1205 710,1197 815,1216 835,1201 878,1203 877,1139 846,1122 761,1131 717,1120 637,1158 575,1126 510,1145"/>
+                <Baseline points="518,1190 543,1193 569,1194 595,1195 621,1197 647,1198 673,1198 699,1196 724,1196 750,1197 776,1198 802,1197 828,1196 854,1196 880,1194"/>
+                <TextEquiv>
+                    <Unicode>Dein Bruder</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_1_tl_11" custom="readingOrder {index:11;} person {offset:0; length:5;firstname:Peter; lastname:Klein;}">
+                <Coords points="1082,1201 1123,1194 1136,1206 1151,1200 1193,1216 1237,1218 1232,1132 1218,1132 1193,1152 1166,1131 1141,1132 1123,1123 1112,1132 1101,1127 1078,1138"/>
+                <Baseline points="1088,1184 1113,1187 1138,1189 1163,1191 1188,1192 1213,1192 1238,1192"/>
+                <TextEquiv>
+                    <Unicode>Peter</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode></Unicode>
+            </TextEquiv>
+        </TextRegion>
+    </Page>
+</PcGts>

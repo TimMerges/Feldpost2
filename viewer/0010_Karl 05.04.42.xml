@@ -3,11 +3,11 @@
     <Metadata>
         <Creator>prov=READ-COOP:name=PyLaia@TranskribusPlatform:version=2.20.0:model_id=50870:lm=none:date=24_01_2025_13:55</Creator>
         <Created>2025-01-14T20:07:44.999+01:00</Created>
-        <LastChange>2025-03-25T12:09:00.625+01:00</LastChange>
+        <LastChange>2025-03-26T08:40:47.551+01:00</LastChange>
     </Metadata>
     <Page imageFilename="0010_Karl 05.04.42.jpeg" imageWidth="1606" imageHeight="2442">
         <ReadingOrder>
-            <OrderedGroup id="ro_1742907173026" caption="Regions reading order">
+            <OrderedGroup id="ro_1743065150833" caption="Regions reading order">
                 <RegionRefIndexed index="0" regionRef="r_50"/>
                 <RegionRefIndexed index="1" regionRef="r_47"/>
             </OrderedGroup>

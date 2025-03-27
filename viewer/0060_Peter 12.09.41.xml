@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/pagecontent.xsd">
+    <Metadata>
+        <Creator>prov=READ-COOP:name=PyLaia@TranskribusPlatform:version=2.20.0:model_id=50870:lm=none:date=22_01_2025_19:06</Creator>
+        <Created>2025-01-14T20:07:50.262+01:00</Created>
+        <LastChange>2025-03-26T10:16:30.756+01:00</LastChange>
+    </Metadata>
+    <Page imageFilename="0060_Peter 12.09.41.jpeg" imageWidth="2483" imageHeight="3195">
+        <ReadingOrder>
+            <OrderedGroup id="ro_1743065174178" caption="Regions reading order">
+                <RegionRefIndexed index="0" regionRef="r_5"/>
+                <RegionRefIndexed index="1" regionRef="r_7"/>
+                <RegionRefIndexed index="2" regionRef="r_8"/>
+                <RegionRefIndexed index="3" regionRef="r"/>
+            </OrderedGroup>
+        </ReadingOrder>
+        <TextRegion id="r_5" custom="readingOrder {index:0;}">
+            <Coords points="620,356 1461,356 1461,597 620,597"/>
+            <TextLine id="l_15" custom="readingOrder {index:0;}">
+                <Coords points="704,519 1334,541 1335,511 705,489"/>
+                <Baseline points="704,519 1334,541"/>
+                <TextEquiv>
+                    <Unicode>Liebe Schwester</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode></Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r_7" custom="readingOrder {index:1;}">
+            <Coords points="263,584 2466,584 2466,2009 964,2016 263,2009"/>
+            <TextLine id="l_19" custom="readingOrder {index:0;}">
+                <Coords points="294,713 2166,727 2166,697 294,683"/>
+                <Baseline points="294,713 2166,727"/>
+                <TextEquiv>
+                    <Unicode>Habe Deinen Brief erhalten, wofür ich dir</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_23" custom="readingOrder {index:1;}">
+                <Coords points="444,832 2224,815 2223,785 444,802"/>
+                <Baseline points="444,832 2224,815"/>
+                <TextEquiv>
+                    <Unicode>herzlich danke. Bin noch gesund und mun¬</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_27" custom="readingOrder {index:2;}">
+                <Coords points="426,903 2221,903 2221,873 426,873"/>
+                <Baseline points="426,903 2221,903"/>
+                <TextEquiv>
+                    <Unicode>ter was ich auch von dir hoffe. Wie ich</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_31" custom="readingOrder {index:3;}">
+                <Coords points="437,1000 2111,991 2111,961 437,970"/>
+                <Baseline points="437,1000 2111,991"/>
+                <TextEquiv>
+                    <Unicode>in deinem Brief ersah, folgt da eine</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_35" custom="readingOrder {index:4;}">
+                <Coords points="428,1093 2230,1097 2230,1067 428,1063"/>
+                <Baseline points="428,1093 2230,1097"/>
+                <TextEquiv>
+                    <Unicode>Bitte an mich. Ich will mit dem besten</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_39" custom="readingOrder {index:5;}">
+                <Coords points="432,1185 2230,1203 2230,1173 433,1155"/>
+                <Baseline points="432,1185 2230,1203"/>
+                <TextEquiv>
+                    <Unicode>Willen versuchen, dir deinen Wunsch zu er-</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_43" custom="readingOrder {index:6;}">
+                <Coords points="433,1296 2142,1291 2142,1261 433,1266"/>
+                <Baseline points="433,1296 2142,1291"/>
+                <TextEquiv>
+                    <Unicode>füllen, wenn was zu machen ist, du</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_47" custom="readingOrder {index:7;}">
+                <Coords points="411,1379 2318,1397 2319,1367 411,1349"/>
+                <Baseline points="411,1379 2318,1397"/>
+                <TextEquiv>
+                    <Unicode>darfst aber kein böses Gesicht machen, wenn</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_51" custom="readingOrder {index:8;}">
+                <Coords points="429,1476 2283,1485 2283,1455 429,1446"/>
+                <Baseline points="429,1476 2283,1485"/>
+                <TextEquiv>
+                    <Unicode>ich kein Glück habe. Hier ist es sehr schlecht</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_55" custom="readingOrder {index:9;}">
+                <Coords points="407,1591 2235,1564 2234,1534 406,1561"/>
+                <Baseline points="407,1591 2235,1564"/>
+                <TextEquiv>
+                    <Unicode>mit solchen Sachen. Aber ich werden mein</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_59" custom="readingOrder {index:10;}">
+                <Coords points="407,1679 2164,1675 2164,1645 406,1649"/>
+                <Baseline points="407,1679 2164,1675"/>
+                <TextEquiv>
+                    <Unicode>Glück versuchen wenns geht Hoffentlich habe</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_63" custom="readingOrder {index:11;}">
+                <Coords points="398,1758 2248,1762 2248,1732 398,1728"/>
+                <Baseline points="398,1758 2248,1762"/>
+                <TextEquiv>
+                    <Unicode>ich Glück. Ich will nun langsam schließen</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_67" custom="readingOrder {index:12;}">
+                <Coords points="407,1855 1865,1850 1865,1820 407,1825"/>
+                <Baseline points="407,1855 1865,1850"/>
+                <TextEquiv>
+                    <Unicode>in der Hoffnung, daß du diesen Brief erhälst</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_71" custom="readingOrder {index:13;}">
+                <Coords points="1817,1952 2358,1961 2359,1931 1817,1922"/>
+                <Baseline points="1817,1952 2358,1961"/>
+                <TextEquiv>
+                    <Unicode>Brief erhälst</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode></Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r_8" custom="readingOrder {index:2;}">
+            <Coords points="950,2044 2241,2044 2241,2600 950,2600"/>
+            <TextLine id="l_75" custom="readingOrder {index:0;}">
+                <Coords points="1191,2163 2046,2168 2046,2138 1191,2133"/>
+                <Baseline points="1191,2163 2046,2168"/>
+                <TextEquiv>
+                    <Unicode>grüßt dein Bruder</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_79" custom="readingOrder {index:1;} person {offset:0; length:5;firstname:Peter; lastname:Klein;}">
+                <Coords points="1610,2344 1934,2352 1935,2322 1610,2314"/>
+                <Baseline points="1610,2344 1934,2352"/>
+                <TextEquiv>
+                    <Unicode>Peter</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_83" custom="readingOrder {index:2;}">
+                <Coords points="1203,2546 1864,2529 1863,2499 1202,2516"/>
+                <Baseline points="1203,2546 1864,2529"/>
+                <TextEquiv>
+                    <Unicode>Auf Wiedersehen</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode></Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r" custom="readingOrder {index:3;}">
+            <Coords points="1379,141 2354,141 2354,409 1379,409"/>
+            <TextLine id="l" custom="readingOrder {index:0;} date {offset:13; length:7;when:1941.09.12;}">
+                <Coords points="1492,330 2241,348 2242,318 1493,300"/>
+                <Baseline points="1492,330 2241,348"/>
+                <TextEquiv>
+                    <Unicode>Freitag, den 12.9.41</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode></Unicode>
+            </TextEquiv>
+        </TextRegion>
+    </Page>
+</PcGts>

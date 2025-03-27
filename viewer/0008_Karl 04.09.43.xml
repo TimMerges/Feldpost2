@@ -3,11 +3,11 @@
     <Metadata>
         <Creator>prov=READ-COOP:name=PyLaia@TranskribusPlatform:version=2.24.0:model_id=32524:lm=none:date=19_03_2025_13:47</Creator>
         <Created>2025-01-14T20:07:44.789+01:00</Created>
-        <LastChange>2025-03-25T10:29:13.519+01:00</LastChange>
+        <LastChange>2025-03-26T08:40:21.846+01:00</LastChange>
     </Metadata>
     <Page imageFilename="0008_Karl 04.09.43.jpeg" imageWidth="1647" imageHeight="2408">
         <ReadingOrder>
-            <OrderedGroup id="ro_1742907172404" caption="Regions reading order">
+            <OrderedGroup id="ro_1743065150409" caption="Regions reading order">
                 <RegionRefIndexed index="0" regionRef="r"/>
                 <RegionRefIndexed index="1" regionRef="r_14"/>
             </OrderedGroup>
@@ -111,11 +111,11 @@
                     <Unicode>schreibst war bei euch Flieger-</Unicode>
                 </TextEquiv>
             </TextLine>
-            <TextLine id="l_69" custom="readingOrder {index:12;}">
+            <TextLine id="l_69" custom="readingOrder {index:12;} sic {offset:15; length:5;correction:British\u0020Soldier;}">
                 <Coords points="94,1518 336,1466 460,1534 1242,1558 1300,1510 1448,1520 1442,1392 1340,1374 1102,1451 91,1403"/>
                 <Baseline points="100,1431 1450,1484"/>
                 <TextEquiv>
-                    <Unicode>alarm. Hat der Tarnung(?)</Unicode>
+                    <Unicode>alarm. Hat der Tommy</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="l_73" custom="readingOrder {index:13;}">

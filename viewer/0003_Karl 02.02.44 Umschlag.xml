@@ -3,11 +3,11 @@
     <Metadata>
         <Creator>prov=READ-COOP:name=PyLaia@TranskribusPlatform:version=2.24.0:model_id=46140:lm=none:date=16_03_2025_18:09</Creator>
         <Created>2025-01-14T20:07:44.249+01:00</Created>
-        <LastChange>2025-03-23T10:47:19.323+01:00</LastChange>
+        <LastChange>2025-03-27T09:37:14.816+01:00</LastChange>
     </Metadata>
     <Page imageFilename="0003_Karl 02.02.44 Umschlag.jpeg" imageWidth="2218" imageHeight="3336">
         <ReadingOrder>
-            <OrderedGroup id="ro_1742907170397" caption="Regions reading order">
+            <OrderedGroup id="ro_1743065147873" caption="Regions reading order">
                 <RegionRefIndexed index="0" regionRef="r"/>
                 <RegionRefIndexed index="1" regionRef="r_57"/>
                 <RegionRefIndexed index="2" regionRef="r_58"/>
@@ -19,11 +19,11 @@
         </ReadingOrder>
         <TextRegion id="r" custom="readingOrder {index:0;}">
             <Coords points="2127,797 2127,1699 1810,1699 1810,797"/>
-            <TextLine id="l" custom="readingOrder {index:0;}">
+            <TextLine id="l" custom="readingOrder {index:0;} date {offset:24; length:8;when:1944.02.04;}">
                 <Coords points="1953,829 1966,1413 1996,1412 1983,828"/>
                 <Baseline points="1953,829 1966,1413"/>
                 <TextEquiv>
-                    <Unicode>Felpostkarte (FELDPOST d 04.2.44) Hakenkreuzadleler</Unicode>
+                    <Unicode>Felpostkarte (FELDPOST d 04.2.44)</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextEquiv>
@@ -39,7 +39,7 @@
                     <Unicode>Fräulein</Unicode>
                 </TextEquiv>
             </TextLine>
-            <TextLine id="l_72" custom="readingOrder {index:1;}">
+            <TextLine id="l_72" custom="readingOrder {index:1;} person {offset:0; length:10;firstname:Anna; lastname:Klein;}">
                 <Coords points="1635,737 1612,1491 1642,1492 1665,738"/>
                 <Baseline points="1635,737 1612,1491"/>
                 <TextEquiv>
@@ -52,14 +52,14 @@
         </TextRegion>
         <TextRegion id="r_58" custom="readingOrder {index:2;}">
             <Coords points="1510,692 1510,1754 1147,1754 1147,692"/>
-            <TextLine id="l_76" custom="readingOrder {index:0;}">
+            <TextLine id="l_76" custom="readingOrder {index:0;} place {offset:0; length:5;wikiData:Q563974; country:Germany; placeName:Dreis;}">
                 <Coords points="1387,903 1377,1524 1407,1524 1417,903"/>
                 <Baseline points="1387,903 1377,1524"/>
                 <TextEquiv>
                     <Unicode>Dreis 65</Unicode>
                 </TextEquiv>
             </TextLine>
-            <TextLine id="l_80" custom="readingOrder {index:1;}">
+            <TextLine id="l_80" custom="readingOrder {index:1;} place {offset:6; length:8;country:Germany; placeName:Wittlich;}">
                 <Coords points="1267,907 1262,1639 1292,1639 1297,907"/>
                 <Baseline points="1267,907 1262,1639"/>
                 <TextEquiv>
@@ -98,25 +98,25 @@
         </TextRegion>
         <TextRegion id="r_59" custom="readingOrder {index:5;}">
             <Coords points="760,659 760,1813 466,1813 466,659"/>
-            <TextLine id="l_89" custom="readingOrder {index:0;}">
+            <TextLine id="l_89" custom="readingOrder {index:0;} person {offset:6; length:5;firstname:Karl; lastname:Klein;}">
                 <Coords points="715,985 715,1455 745,1455 745,985"/>
                 <Baseline points="715,985 715,1455"/>
                 <TextEquiv>
                     <Unicode>Gefr. Klein</Unicode>
                 </TextEquiv>
             </TextLine>
-            <TextLine id="l_93" custom="readingOrder {index:1;}">
+            <TextLine id="l_93" custom="readingOrder {index:1;} FeldNummer {offset:0; length:6;Nummer:35181C;}">
                 <Coords points="595,866 591,1496 621,1496 625,866"/>
                 <Baseline points="595,866 591,1496"/>
                 <TextEquiv>
                     <Unicode>35181C</Unicode>
                 </TextEquiv>
             </TextLine>
-            <TextLine id="l_98" custom="readingOrder {index:2;}">
+            <TextLine id="l_98" custom="readingOrder {index:2;} person {offset:10; length:10;firstname:Karl; lastname:Klein;}">
                 <Coords points="591,1763 581,1537 551,1539 561,1764"/>
                 <Baseline points="591,1763 581,1537"/>
                 <TextEquiv>
-                    <Unicode>Absender:ggg</Unicode>
+                    <Unicode>Absender: Gefr Klein</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextEquiv>

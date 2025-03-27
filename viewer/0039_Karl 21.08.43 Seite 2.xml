@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/pagecontent.xsd">
+    <Metadata>
+        <Creator>prov=READ-COOP:name=PyLaia@TranskribusPlatform:version=2.24.0:model_id=36508:lm=none:date=23_03_2025_10:20</Creator>
+        <Created>2025-01-14T20:07:48.043+01:00</Created>
+        <LastChange>2025-03-27T08:42:16.169+01:00</LastChange>
+    </Metadata>
+    <Page imageFilename="0039_Karl 21.08.43 Seite 2.jpeg" imageWidth="1672" imageHeight="2359">
+        <ReadingOrder>
+            <OrderedGroup id="ro_1743065164566" caption="Regions reading order">
+                <RegionRefIndexed index="0" regionRef="r_28"/>
+                <RegionRefIndexed index="1" regionRef="r"/>
+            </OrderedGroup>
+        </ReadingOrder>
+        <TextRegion id="r_28" custom="readingOrder {index:0;}">
+            <Coords points="50,33 1639,33 1639,1456 50,1456"/>
+            <TextLine id="l" custom="readingOrder {index:0;}">
+                <Coords points="27,150 156,80 565,127 1067,78 1375,131 1545,92 1534,0 803,57 694,0 334,41 27,12"/>
+                <Baseline points="38,88 1551,97"/>
+                <TextEquiv>
+                    <Unicode>Ich habe Braun nur getroffen als</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_35" custom="readingOrder {index:1;}">
+                <Coords points="45,223 770,191 928,236 1231,209 1379,252 1457,217 1612,262 1610,131 1418,152 1331,107 1073,119 979,82 647,145 430,92 43,135"/>
+                <Baseline points="55,181 888,187 1617,207"/>
+                <TextEquiv>
+                    <Unicode>wir  vorn(?) waren</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_39" custom="readingOrder {index:2;}">
+                <Coords points="59,309 139,344 971,299 1477,371 1448,217 1379,254 1231,209 903,236 678,190 533,252 229,197 59,221"/>
+                <Baseline points="69,281 1480,302"/>
+                <TextEquiv>
+                    <Unicode>Vorname Nachname ist ja nicht mit</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_43" custom="readingOrder {index:3;}">
+                <Coords points="76,414 324,389 475,432 772,404 1518,459 1516,371 951,297 731,340 467,307 74,336"/>
+                <Baseline points="86,381 1522,430"/>
+                <TextEquiv>
+                    <Unicode>mir abgestellt worden</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_47" custom="readingOrder {index:4;}">
+                <Coords points="82,543 1442,559 1415,428 670,483 426,397 82,401"/>
+                <Baseline points="93,528 1446,528"/>
+                <TextEquiv>
+                    <Unicode>Will nun zum Schluß</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_51" custom="readingOrder {index:5;}">
+                <Coords points="104,660 1362,674 1362,537 1223,604 1069,608 758,600 559,529 416,570 342,537 104,563"/>
+                <Baseline points="114,645 1365,657"/>
+                <TextEquiv>
+                    <Unicode>kommen und grüße</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_55" custom="readingOrder {index:6;}">
+                <Coords points="109,782 258,776 442,864 801,793 1086,885 1248,850 1397,889 1540,824 1538,748 1288,801 920,744 463,768 106,705"/>
+                <Baseline points="119,766 1544,825"/>
+                <TextEquiv>
+                    <Unicode>dich recht herzlich Karl.</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_59" custom="readingOrder {index:7;}">
+                <Coords points="141,961 1340,1010 1338,965 1147,944 139,908"/>
+                <Baseline points="150,937 1344,990"/>
+                <TextEquiv>
+                    <Unicode>ich schicke(?) dir meine</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_63" custom="readingOrder {index:8;}">
+                <Coords points="168,1069 711,1084 1080,1147 1481,1131 1497,991 1411,1022 643,963 166,991"/>
+                <Baseline points="178,1063 1505,1097"/>
+                <TextEquiv>
+                    <Unicode>Urkunde(?) über das wer-</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_67" custom="readingOrder {index:9;}">
+                <Coords points="191,1288 359,1309 477,1246 1008,1243 1500,1303 1500,1127 1467,1121 1368,1155 1182,1118 973,1155 191,1129"/>
+                <Baseline points="202,1242 1505,1244"/>
+                <TextEquiv>
+                    <Unicode>..... Diese</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_71" custom="readingOrder {index:10;}">
+                <Coords points="221,1362 692,1366 830,1442 1416,1436 1454,1432 1452,1272 1094,1332 950,1274 555,1329 219,1282"/>
+                <Baseline points="231,1344 1458,1354"/>
+                <TextEquiv>
+                    <Unicode>kannst du zu Hause</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_75" custom="readingOrder {index:11;}">
+                <Coords points="244,1461 750,1442 750,1346 588,1387 485,1360 408,1377 244,1350"/>
+                <Baseline points="254,1434 756,1434"/>
+                <TextEquiv>
+                    <Unicode>abgeben</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode></Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r" custom="readingOrder {index:1;}">
+            <Coords points="190,1446 1646,1446 1646,2278 190,2278"/>
+            <TextEquiv>
+                <Unicode></Unicode>
+            </TextEquiv>
+        </TextRegion>
+    </Page>
+</PcGts>

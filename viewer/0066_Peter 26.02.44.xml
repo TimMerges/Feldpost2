@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/pagecontent.xsd">
+    <Metadata>
+        <Creator>prov=READ-COOP:name=PyLaia@TranskribusPlatform:version=2.20.0:model_id=50870:lm=none:date=14_01_2025_20:33</Creator>
+        <Created>2025-01-14T20:07:50.868+01:00</Created>
+        <LastChange>2025-03-27T09:23:39.440+01:00</LastChange>
+    </Metadata>
+    <Page imageFilename="0066_Peter 26.02.44.jpeg" imageWidth="2309" imageHeight="2988">
+        <ReadingOrder>
+            <OrderedGroup id="ro_1743065180208" caption="Regions reading order">
+                <RegionRefIndexed index="0" regionRef="r_9"/>
+                <RegionRefIndexed index="1" regionRef="r_10"/>
+                <RegionRefIndexed index="2" regionRef="r"/>
+            </OrderedGroup>
+        </ReadingOrder>
+        <TextRegion id="r_9" custom="readingOrder {index:0;}">
+            <Coords points="618,322 1663,322 1663,579 618,579"/>
+            <TextLine id="l_17" custom="readingOrder {index:0;} person {offset:16; length:5;firstname:Anna; lastname:Klein;}">
+                <Coords points="698,475 1565,469 1565,439 697,445"/>
+                <Baseline points="698,475 1565,469"/>
+                <TextEquiv>
+                    <Unicode>Liebe Schwester Anna!</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode></Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r_10" custom="readingOrder {index:1;}">
+            <Coords points="229,519 2301,519 2301,2867 229,2867"/>
+            <TextLine id="l_21" custom="readingOrder {index:0;}">
+                <Coords points="239,666 2220,682 2220,652 240,636"/>
+                <Baseline points="239,666 2220,682"/>
+                <TextEquiv>
+                    <Unicode>die herzlichsten Grüße sendet dir dein Bruder</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_25" custom="readingOrder {index:1;} person {offset:0; length:5;firstname:Peter; lastname:Klein;}">
+                <Coords points="234,770 2138,792 2138,762 234,740"/>
+                <Baseline points="234,770 2138,792"/>
+                <TextEquiv>
+                    <Unicode>Peter. Bin noch gesund und munter was ich</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_29" custom="readingOrder {index:2;}">
+                <Coords points="245,901 2132,884 2132,854 245,871"/>
+                <Baseline points="245,901 2132,884"/>
+                <TextEquiv>
+                    <Unicode>auch von dir hoffe. Herzlichen Dank für den</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_33" custom="readingOrder {index:3;}">
+                <Coords points="256,1005 2225,1005 2225,975 256,975"/>
+                <Baseline points="256,1005 2225,1005"/>
+                <TextEquiv>
+                    <Unicode>Brief mit Inhalt. Wenn ich zum Ersatz komme von</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_37" custom="readingOrder {index:4;} place {offset:15; length:8;wikiData:Q156828; country:Poland; placeName:Bolesławiec;} place {offset:27; length:8;wikiData:Q1799; country:Poland; placeName:Wrocław;}">
+                <Coords points="234,1092 2187,1114 2187,1084 234,1062"/>
+                <Baseline points="234,1092 2187,1114"/>
+                <TextEquiv>
+                    <Unicode>hier, dann nach Bunslau bei Breslau der</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_41" custom="readingOrder {index:5;}">
+                <Coords points="212,1218 2181,1234 2182,1204 212,1188"/>
+                <Baseline points="212,1218 2181,1234"/>
+                <TextEquiv>
+                    <Unicode>Ersatz Einheit von uns. Wann ich in Urlaub</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_45" custom="readingOrder {index:6;}">
+                <Coords points="207,1305 2176,1332 2176,1302 207,1275"/>
+                <Baseline points="207,1305 2176,1332"/>
+                <TextEquiv>
+                    <Unicode>komme, weiß ich noch nicht, es kann noch</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_49" custom="readingOrder {index:7;}">
+                <Coords points="225,1425 2134,1431 2134,1401 225,1395"/>
+                <Baseline points="225,1425 2134,1431"/>
+                <TextEquiv>
+                    <Unicode>eine Weile dauern. Schreibe mir bitte was du</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_53" custom="readingOrder {index:8;}">
+                <Coords points="230,1540 2188,1540 2188,1510 230,1510"/>
+                <Baseline points="230,1540 2188,1540"/>
+                <TextEquiv>
+                    <Unicode>für eine Lampe damit meinst, ob vielleicht</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_57" custom="readingOrder {index:9;}">
+                <Coords points="263,1633 2221,1649 2221,1619 263,1603"/>
+                <Baseline points="263,1633 2221,1649"/>
+                <TextEquiv>
+                    <Unicode>eine Taschenlampe, denn sonst hat gretchen(?) keine</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_62" custom="readingOrder {index:10;}">
+                <Coords points="282,1740 2253,1751 2253,1721 282,1710"/>
+                <Baseline points="282,1740 2253,1751"/>
+                <TextEquiv>
+                    <Unicode>Lampe von mir. An Siefel brauchst du gar-</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_66" custom="readingOrder {index:11;}">
+                <Coords points="271,1855 2197,1859 2197,1829 271,1825"/>
+                <Baseline points="271,1855 2197,1859"/>
+                <TextEquiv>
+                    <Unicode>nicht zu denken; die kosten einige Hundert</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_70" custom="readingOrder {index:12;}">
+                <Coords points="289,1960 531,1963 532,1933 290,1930"/>
+                <Baseline points="289,1960 531,1963"/>
+                <TextEquiv>
+                    <Unicode>Mark.</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_74" custom="readingOrder {index:13;}">
+                <Coords points="312,2072 2253,2072 2253,2042 312,2042"/>
+                <Baseline points="312,2072 2253,2072"/>
+                <TextEquiv>
+                    <Unicode>Was ich dir besorgen kann werde ich machen,</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_78" custom="readingOrder {index:14;}">
+                <Coords points="933,2175 311,2163 311,2193 933,2205"/>
+                <Baseline points="933,2175 311,2163"/>
+                <TextEquiv>
+                    <Unicode>wenn es geht.</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_82" custom="readingOrder {index:15;}">
+                <Coords points="283,2272 2000,2275 2001,2245 283,2242"/>
+                <Baseline points="283,2272 2000,2275"/>
+                <TextEquiv>
+                    <Unicode>Ich will nun langsam schließen, es</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_86" custom="readingOrder {index:16;}">
+                <Coords points="1561,2387 1992,2369 1990,2339 1560,2357"/>
+                <Baseline points="1561,2387 1992,2369"/>
+                <TextEquiv>
+                    <Unicode>grüßt dich</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_90" custom="readingOrder {index:17;}">
+                <Coords points="1336,2585 1928,2604 1929,2574 1337,2555"/>
+                <Baseline points="1336,2585 1928,2604"/>
+                <TextEquiv>
+                    <Unicode>recht herzlch</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_94" custom="readingOrder {index:18;} person {offset:12; length:6;firstname:Peter; lastname:Klein;}">
+                <Coords points="1213,2805 2141,2812 2141,2782 1213,2775"/>
+                <Baseline points="1213,2805 2141,2812"/>
+                <TextEquiv>
+                    <Unicode>dein Bruder. Peter!</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode></Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r" custom="readingOrder {index:2;}">
+            <Coords points="1578,98 2314,98 2314,338 1578,338"/>
+            <TextLine id="l" custom="readingOrder {index:0;} place {offset:0; length:8;wikiData:Q270; country:Russia; placeName:Warsaw;} date {offset:14; length:7;when:26.2.44;}">
+                <Coords points="1630,246 2280,262 2280,232 1631,216"/>
+                <Baseline points="1630,246 2280,262"/>
+                <TextEquiv>
+                    <Unicode>Warschau, der 26.2.44</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode></Unicode>
+            </TextEquiv>
+        </TextRegion>
+    </Page>
+</PcGts>
