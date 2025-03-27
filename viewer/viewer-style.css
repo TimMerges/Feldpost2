@@ -59,23 +59,24 @@ h2 {
 }
 
 .tag-person {
-  background-color: #4caf50;
+  text-decoration: underline dotted #0066cc;
+  cursor: help;
 }
-
 .tag-date {
-  background-color: #2196f3;
+  text-decoration: underline dotted #009900;
+  cursor: help;
 }
-
-.tag-movie {
-  background-color: #ff9800;
-}
-
 .tag-feldpost {
-  background-color: #9c27b0;
+  text-decoration: underline dotted #990000;
+  cursor: help;
 }
-
 .tag-regiment {
-  background-color: #795548;
+  text-decoration: underline dotted #663399;
+  cursor: help;
+}
+.tag-movie {
+  text-decoration: underline dotted #ff9900;
+  cursor: help;
 }
 
 select, button {
