@@ -34,8 +34,8 @@ canvas {
   margin-bottom: 1rem;
 }
 
-h2 {
-  margin-top: 0;
+h2, h3 {
+  margin-top: 0.5rem;
 }
 
 .region-text {
@@ -43,45 +43,59 @@ h2 {
   margin-bottom: 0.7rem;
   padding: 0.4rem;
   border-bottom: 1px solid #eee;
+  line-height: 1.5;
 }
 
 .region-text:hover {
   background-color: #e0e0e0;
 }
 
-.tag-label {
-  display: inline-block;
-  margin-left: 0.5rem;
-  padding: 0.2rem 0.4rem;
+select,
+button {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
   border-radius: 4px;
-  font-size: 0.8rem;
-  color: #fff;
 }
+
+/* Tag-Stile für Inline-Text mit Tooltips */
 
 .tag-person {
   text-decoration: underline dotted #0066cc;
   cursor: help;
 }
+
 .tag-date {
   text-decoration: underline dotted #009900;
   cursor: help;
 }
+
 .tag-feldpost {
   text-decoration: underline dotted #990000;
   cursor: help;
 }
+
 .tag-regiment {
   text-decoration: underline dotted #663399;
   cursor: help;
 }
+
 .tag-movie {
   text-decoration: underline dotted #ff9900;
   cursor: help;
 }
 
-select, button {
-  width: 100%;
-  margin-bottom: 1rem;
-  padding: 0.5rem;
-  font-size: 1rem;
+/* Optional: Tooltip-Bubble, falls du später mit JS arbeitest */
+#tooltip {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  display: none;
+  pointer-events: none;
+  z-index: 1000;
 }
