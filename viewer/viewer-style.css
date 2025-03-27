@@ -21,17 +21,19 @@ body {
   overflow: auto;
   background: #f0f0f0;
   display: flex;
-  align-items: center;
+  align-items: flex-start;     /* Bild nicht mehr mittig geklebt */
   justify-content: center;
   flex-direction: column;
+  padding-top: 1rem;           /* Abstand nach oben für Bildsichtbarkeit */
 }
 
 canvas {
   border: 1px solid #333;
   max-width: 90%;
+  max-height: 80vh;            /* Bildhöhe begrenzt auf 80% der Bildschirmhöhe */
   height: auto;
   cursor: pointer;
-  margin-bottom: 1rem;
+  margin: 1rem 0;              /* Abstand oben & unten */
 }
 
 h2, h3 {
@@ -60,7 +62,7 @@ button {
   border-radius: 4px;
 }
 
-/* Tag-Stile für Inline-Text mit Tooltips */
+/* Inline-Tag-Stile für Markierung + Tooltip */
 
 .tag-person {
   text-decoration: underline dotted #0066cc;
@@ -87,7 +89,8 @@ button {
   cursor: help;
 }
 
-/* Optional: Tooltip-Bubble, falls du später mit JS arbeitest */
+/* Optional Tooltip-Bubble (z. B. für Wordcloud) */
+
 #tooltip {
   position: absolute;
   background: rgba(0, 0, 0, 0.8);
