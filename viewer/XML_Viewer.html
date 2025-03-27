@@ -3,10 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Feldpostbriefe 2. Weltkrieg</title>
+  <title>Feldpostbrief XML Viewer</title>
   <link rel="stylesheet" href="viewer-style.css" />
 </head>
 <body>
+  <!-- HEADER aus Root laden -->
+  <div id="page-header"></div>
+
+  <!-- Dein Haupt-Layout -->
   <div id="sidebar">
     <h2>Feldpostbriefe</h2>
     <label for="yearFilter">Jahr auswählen:</label>
@@ -14,10 +18,16 @@
     <select id="fileSelector"></select>
     <button onclick="rotateImage()">Bild drehen</button>
     <button onclick="window.location.href='visualization.html'">Visualisierungen anzeigen</button>
-    <h3>Transkription & Tags</h3>
+    <h3>Transkription &amp; Tags</h3>
     <div id="textLines"></div>
   </div>
-  <div id="main"><canvas id="canvas"></canvas></div>
+
+  <div id="main">
+    <canvas id="canvas"></canvas>
+  </div>
+
+  <!-- FOOTER aus Root laden -->
+  <div id="page-footer"></div>
 
   <script>
     const fileSelector = document.getElementById('fileSelector');
@@ -68,38 +78,37 @@
     }
 
     function updateFileSelector() {
-  const selectedYear = yearFilter.value;
-  fileSelector.innerHTML = '';
+      const selectedYear = yearFilter.value;
+      fileSelector.innerHTML = '';
 
-  fetch('files.json')
-    .then(response => response.json())
-    .then(files => {
-      files.forEach(file => {
-        const years = fileDateMap[file] || [];
-        if (selectedYear === 'all' || years.includes(selectedYear)) {
-          const opt = document.createElement('option');
-          opt.value = file;
+      fetch('files.json')
+        .then(response => response.json())
+        .then(files => {
+          files.forEach(file => {
+            const years = fileDateMap[file] || [];
+            if (selectedYear === 'all' || years.includes(selectedYear)) {
+              const opt = document.createElement('option');
+              opt.value = file;
 
-          // Nur den lesbaren Teil anzeigen:
-          const label = file.replace(/^.*?_/, '').replace(/\.xml$/, '');
-          opt.textContent = label;
+              // Nur den beschreibenden Teil anzeigen:
+              const label = file.replace(/^.*?_/, '').replace(/\.xml$/, '');
+              opt.textContent = label;
 
-          fileSelector.appendChild(opt);
-        }
-      });
+              fileSelector.appendChild(opt);
+            }
+          });
 
-      if (fileSelector.options.length > 0) {
-        loadXml(fileSelector.value);
-      } else {
-        textLinesDiv.innerHTML = '<p>Keine Briefe für dieses Jahr gefunden.</p>';
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-      }
-    });
-}
+          if (fileSelector.options.length > 0) {
+            loadXml(fileSelector.value);
+          } else {
+            textLinesDiv.innerHTML = '<p>Keine Briefe für dieses Jahr gefunden.</p>';
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+          }
+        });
+    }
 
-
-    yearFilter.addEventListener('change', updateFileSelector);
     fileSelector.addEventListener('change', e => loadXml(e.target.value));
+    yearFilter.addEventListener('change', updateFileSelector);
 
     async function loadXml(file) {
       boxes = [];
@@ -256,6 +265,15 @@
     }
 
     loadFileList();
+
+    // Header & Footer nachladen (aus dem Root-Verzeichnis)
+    fetch('../header.html')
+      .then(res => res.text())
+      .then(html => document.getElementById('page-header').innerHTML = html);
+
+    fetch('../footer.html')
+      .then(res => res.text())
+      .then(html => document.getElementById('page-footer').innerHTML = html);
   </script>
 </body>
 </html>
