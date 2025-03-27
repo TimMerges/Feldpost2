@@ -8,13 +8,32 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-  <h1>📊 Visualisierungen der Feldpostbriefe</h1>
-  <button onclick="window.location.href='XML_Viewer.html'">⬅️ Zurück zum Viewer</button>
+  <!-- Header -->
+  <div id="page-header"></div>
 
-  <h2>📅 Zeitstrahl der Datumsangaben (Monatsweise)</h2>
-  <canvas id="timelineChart"></canvas>
+  <!-- Hauptinhalt -->
+  <main style="padding: 2rem; text-align: center;">
+    <h1>📊 Visualisierungen der Feldpostbriefe</h1>
+    <button onclick="window.location.href='XML_Viewer.html'">⬅️ Zurück zum Viewer</button>
+
+    <h2 style="margin-top: 2rem;">📅 Zeitstrahl der Datumsangaben (Monatsweise)</h2>
+    <canvas id="timelineChart" style="max-width: 800px; margin: 2rem auto;"></canvas>
+  </main>
+
+  <!-- Footer -->
+  <div id="page-footer"></div>
 
   <script>
+    // Header & Footer dynamisch einfügen
+    fetch('../header.html')
+      .then(res => res.text())
+      .then(html => document.getElementById('page-header').innerHTML = html);
+
+    fetch('../footer.html')
+      .then(res => res.text())
+      .then(html => document.getElementById('page-footer').innerHTML = html);
+
+    // Datenverarbeitung
     async function fetchFileList() {
       const response = await fetch("files.json");
       return await response.json();
@@ -88,6 +107,12 @@
         }
       });
     }
+
+    loadData();
+  </script>
+</body>
+</html>
+
 
     loadData();
   </script>
