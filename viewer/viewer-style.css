@@ -1,12 +1,24 @@
 /* viewer-style.css */
 
+/* viewer-style.css */
+
+/* Gesamtstruktur: vertikale Seite mit Header & Footer */
 body {
-  display: flex;
   margin: 0;
-  height: 100vh;
   font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
+/* Hauptbereich (zwischen Header & Footer) */
+#main-wrapper {
+  flex: 1;
+  display: flex;
+  height: 100%;
+}
+
+/* Sidebar links */
 #sidebar {
   width: 320px;
   overflow-y: auto;
@@ -15,27 +27,30 @@ body {
   background: #fafafa;
 }
 
+/* Canvas-Hauptbereich */
 #main {
   flex: 1;
   position: relative;
   overflow: auto;
   background: #f0f0f0;
   display: flex;
-  align-items: flex-start;     /* Bild nicht mehr mittig geklebt */
+  align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  padding-top: 1rem;           /* Abstand nach oben für Bildsichtbarkeit */
+  padding-top: 1rem;
 }
 
+/* Bildanzeige */
 canvas {
   border: 1px solid #333;
   max-width: 90%;
-  max-height: 80vh;            /* Bildhöhe begrenzt auf 80% der Bildschirmhöhe */
+  max-height: 80vh;
   height: auto;
   cursor: pointer;
-  margin: 1rem 0;              /* Abstand oben & unten */
+  margin: 1rem auto;
 }
 
+/* Elemente im Textbereich */
 h2, h3 {
   margin-top: 0.5rem;
 }
@@ -52,6 +67,7 @@ h2, h3 {
   background-color: #e0e0e0;
 }
 
+/* Dropdowns und Buttons */
 select,
 button {
   width: 100%;
@@ -62,8 +78,7 @@ button {
   border-radius: 4px;
 }
 
-/* Inline-Tag-Stile für Markierung + Tooltip */
-
+/* Tags als unterstrichener Text mit Tooltip */
 .tag-person {
   text-decoration: underline dotted #0066cc;
   cursor: help;
@@ -89,8 +104,7 @@ button {
   cursor: help;
 }
 
-/* Optional Tooltip-Bubble (z. B. für Wordcloud) */
-
+/* Optional: Tooltip-Element für dynamische Anzeige */
 #tooltip {
   position: absolute;
   background: rgba(0, 0, 0, 0.8);
