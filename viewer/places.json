@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Warschau",
+    "lat": 52.2297,
+    "lon": 21.0122,
+    "source": "0066_Peter 26.02.44.xml",
+    "note": "im Brief genannt"
+  },
+  {
+    "name": "Guttentag",
+    "lat": 50.6156,
+    "lon": 18.4454,
+    "source": "Unbekannt",
+    "note": "ehem. Oberschlesien"
+  },
+  {
+    "name": "Sambir",
+    "lat": 49.5180,
+    "lon": 23.2003,
+    "source": "0016_Karl 07.08.43.xml",
+    "note": "möglicher Standort"
+  },
+  {
+    "name": "Bolesławiec",
+    "lat": 51.2638,
+    "lon": 15.5693,
+    "source": "Unbekannt",
+    "note": "im Kontext erwähnt"
+  }
+]
