@@ -52,12 +52,12 @@
   <div id="page-header"></div>
 
   <main>
-    <h1>🗺️ Historische Karte der Feldpostbewegungen</h1>
+    <h1> Historische Karte der Feldpostbewegungen</h1>
     <p>Rekonstruktion der Einsatzorte und erwähnten Städte in der Feldpost.</p>
 
     <div id="filter-bar">
       <form id="filter-form">
-        <label for="filter-from">📤 Absender:</label>
+        <label for="filter-from"> Absender:</label>
         <select id="filter-from">
           <option value="all">Alle</option>
         </select>
@@ -112,7 +112,7 @@
           <strong>${place.name}</strong><br>
           ${place.note}<br>
           <em>${place.source}</em><br><br>
-          <a href="${viewerLink}" target="_blank">📄 Brief im Viewer öffnen</a>
+          <a href="${viewerLink}" target="_blank"> Brief im Viewer öffnen</a>
         `;
         marker.bindPopup(popupContent);
       });
@@ -156,7 +156,7 @@
                 <a href="https://www.wikidata.org/wiki/${toPerson?.wikidata}" target="_blank">${toPerson?.name}</a>
               </strong><br>
               📅 ${letter.date}<br>
-              <a href="${viewerLink}" target="_blank">📄 Brief im Viewer öffnen</a>
+              <a href="${viewerLink}" target="_blank"> Brief im Viewer öffnen</a>
             `;
             line.bindPopup(popupContent);
             lines.push(line);
