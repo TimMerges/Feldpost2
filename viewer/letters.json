@@ -1,0 +1,29 @@
+[
+  {
+    "from": "karl_klein",
+    "to": "anna_klein",
+    "date": "1943-01-08",
+    "source": "0002_Karl 01.08.43.xml",
+    "place_from": "Unbekannt",
+    "place_to": "Dreis",
+    "note": "Feldpostnummer 35187 C – vermutlich Ostfront"
+  },
+  {
+    "from": "karl_klein",
+    "to": "anna_klein",
+    "date": "1943-06-16",
+    "source": "0016_Karl 07.08.43.xml",
+    "place_from": "Sambir",
+    "place_to": "Dreis",
+    "note": "Karl schreibt aus der Ukraine"
+  },
+  {
+    "from": "karl_klein",
+    "to": "anna_klein",
+    "date": "1944-07-25",
+    "source": "0048_Karl 25.07.44.xml",
+    "place_from": "Tábor",
+    "place_to": "Dreis",
+    "note": "Ausbildungslager in Böhmen"
+  }
+]
