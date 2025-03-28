@@ -1,0 +1,148 @@
+/* viewer-style.css */
+
+/* viewer-style.css */
+
+/* Gesamtstruktur: vertikale Seite mit Header & Footer */
+body {
+  margin: 0;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Hauptbereich (zwischen Header & Footer) */
+#main-wrapper {
+  flex: 1;
+  display: flex;
+  height: 100%;
+}
+
+/* Sidebar links */
+#sidebar {
+  width: 320px;
+  overflow-y: auto;
+  border-right: 1px solid #ccc;
+  padding: 1rem;
+  background: #fafafa;
+}
+
+/* Canvas-Hauptbereich */
+#main {
+  flex: 1;
+  overflow: auto;
+  position: relative;
+  overflow: auto;
+  background: #f0f0f0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 1rem;
+}
+
+/* Bildanzeige */
+canvas {
+  border: 1px solid #333;
+  max-width: 90%;
+  max-height: 80vh;
+  height: auto;
+  cursor: pointer;
+  margin: 1rem auto;
+}
+
+/* Elemente im Textbereich */
+h2, h3 {
+  margin-top: 0.5rem;
+}
+
+.region-text {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  cursor: pointer;
+  margin-bottom: 0.7rem;
+  padding: 0.4rem;
+  border-bottom: 1px solid #eee;
+  line-height: 1.5;
+}
+
+.region-text:hover {
+  background-color: #e0e0e0;
+}
+
+/* Dropdowns und Buttons */
+select,
+button {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  background-color: #4a90e2;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.25s, box-shadow 0.25s;
+}
+
+button:hover,
+select:hover {
+  background-color: #357abd;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+button:active {
+  background-color: #2a5d9f;
+  transform: translateY(1px);
+}
+
+
+/* Tags als unterstrichener Text mit Tooltip */
+.tag-person {
+  text-decoration: underline dotted #0066cc;
+  cursor: help;
+}
+
+.tag-date {
+  text-decoration: underline dotted #009900;
+  cursor: help;
+}
+
+.tag-feldpost {
+  text-decoration: underline dotted #990000;
+  cursor: help;
+}
+
+.tag-regiment {
+  text-decoration: underline dotted #663399;
+  cursor: help;
+}
+
+.tag-movie {
+  text-decoration: underline dotted #ff9900;
+  cursor: help;
+}
+
+/* Optional: Tooltip-Element für dynamische Anzeige */
+#tooltip {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  display: none;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+#page-header {
+  position: relative;
+  z-index: 10;
+}
+
+canvas {
+  position: relative;
+  z-index: 1;
+}
