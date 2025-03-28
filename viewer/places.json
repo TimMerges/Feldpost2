@@ -26,5 +26,26 @@
     "lon": 15.5693,
     "source": "Unbekannt",
     "note": "im Kontext erwähnt"
+  },
+  {
+    "name": "Wittlich",
+    "lat": 49.9853,
+    "lon": 6.8936,
+    "source": "Heimatort",
+    "note": "Herkunft der Familie"
+  },
+  {
+    "name": "Dreis",
+    "lat": 50.0337,
+    "lon": 6.8510,
+    "source": "Heimatort",
+    "note": "Wohnort der Familie Klein"
+  },
+  {
+    "name": "Trier",
+    "lat": 49.7499,
+    "lon": 6.6371,
+    "source": "Region",
+    "note": "nächstgelegene Stadt"
   }
 ]
