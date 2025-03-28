@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feldpost Visualisierungen</title>
+  <link rel="stylesheet" href="viewer-style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div id="page-header"></div>
+
+  <main style="padding: 2rem; text-align: center;">
+    <h1>📊 Visualisierungen der Feldpostbriefe</h1>
+
+    <h2 style="margin-top: 2rem;">📅 Zeitstrahl der Korrepondenzen</h2>
+    <canvas id="timelineChart" style="max-width: 800px; margin: 2rem auto;"></canvas>
+
+    <h2 style="margin-top: 3rem;">📤 Briefe nach Absender</h2>
+    <canvas id="senderChart" style="max-width: 700px; margin: 2rem auto;"></canvas>
+
+    <h2 style="margin-top: 3rem;">📍 Briefe nach Absender-Ort</h2>
+    <canvas id="placeChart" style="max-width: 700px; margin: 2rem auto;"></canvas>
+  </main>
+
+  <div id="page-footer"></div>
+
+  <script>
+    let persons = {};
+
+    fetch('../header.html')
+      .then(res => res.text())
+      .then(html => document.getElementById('page-header').innerHTML = html);
+
+    fetch('../footer.html')
+      .then(res => res.text())
+      .then(html => document.getElementById('page-footer').innerHTML = html);
+
+    async function fetchFileList() {
+      const response = await fetch("files.json");
+      return await response.json();
+    }
+
+    async function parseXmlData(file) {
+      const response = await fetch(file);
+      const xmlText = await response.text();
+      const parser = new DOMParser();
+      const xmlDoc = parser.parseFromString(xmlText, "text/xml");
+
+      let dates = [];
+
+      xmlDoc.querySelectorAll("TextLine").forEach((line) => {
+        const custom = line.getAttribute("custom") || "";
+        if (custom.includes("date")) {
+          const match = custom.match(/when:(\d{4})\.(\d{2})\.(\d{2})/);
+          if (match) {
+            const yearMonth = `${match[1]}-${match[2]}`;
+            dates.push(yearMonth);
+          }
+        }
+      });
+
+      return { dates };
+    }
+
+    async function loadData() {
+      const files = await fetchFileList();
+      let allDates = [];
+
+      for (let file of files) {
+        const data = await parseXmlData(file);
+        allDates.push(...data.dates);
+      }
+
+      renderTimelineChart(allDates);
+    }
+
+    function renderTimelineChart(dates) {
+      const counts = dates.reduce((acc, date) => {
+        acc[date] = (acc[date] || 0) + 1;
+        return acc;
+      }, {});
+
+      const sortedDates = Object.keys(counts).sort();
+      const dataPoints = sortedDates.map((d) => counts[d]);
+
+      new Chart(document.getElementById("timelineChart"), {
+        type: "bar",
+        data: {
+          labels: sortedDates,
+          datasets: [
+            {
+              label: "Erwähnungen pro Monat",
+              data: dataPoints,
+              backgroundColor: "#3399cc",
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            legend: { display: false },
+          },
+          scales: {
+            x: {
+              ticks: { autoSkip: false },
+            }
+          }
+        }
+      });
+    }
+
+    async function renderExtraCharts() {
+      const letterRes = await fetch("letters.json");
+      const letters = await letterRes.json();
+
+      const personRes = await fetch("persons.json");
+      const personList = await personRes.json();
+      personList.forEach(p => { persons[p.id] = p; });
+
+      // Absender zählen
+      const senderCounts = {};
+      const placeCounts = {};
+
+      letters.forEach(letter => {
+        senderCounts[letter.from] = (senderCounts[letter.from] || 0) + 1;
+        if (letter.place_from) {
+          placeCounts[letter.place_from] = (placeCounts[letter.place_from] || 0) + 1;
+        }
+      });
+
+      // Absender-Chart
+      new Chart(document.getElementById("senderChart"), {
+        type: "bar",
+        data: {
+          labels: Object.keys(senderCounts).map(id => persons[id]?.name || id),
+          datasets: [{
+            label: "Briefe pro Absender",
+            data: Object.values(senderCounts),
+            backgroundColor: "#77b6ea"
+          }]
+        },
+        options: {
+          responsive: true,
+          plugins: { legend: { display: false } }
+        }
+      });
+
+      // Orts-Chart
+      new Chart(document.getElementById("placeChart"), {
+        type: "bar",
+        data: {
+          labels: Object.keys(placeCounts),
+          datasets: [{
+            label: "Briefe pro Absender-Ort",
+            data: Object.values(placeCounts),
+            backgroundColor: "#ffb347"
+          }]
+        },
+        options: {
+          responsive: true,
+          plugins: { legend: { display: false } }
+        }
+      });
+    }
+
+    loadData();
+    renderExtraCharts();
+  </script>
+</body>
+</html>
