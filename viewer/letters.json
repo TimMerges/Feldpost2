@@ -270,3 +270,70 @@
     "note": "Feldpost von Karl"
   }
 ]
+
+[
+  {
+    "from": "peter_klein",
+    "to": "anna_klein",
+    "date": "1941-09-12",
+    "source": "0060_Peter 12.09.41.xml",
+    "place_from": "Unbekannt",
+    "place_to": "Dreis",
+    "note": "Feldpost von Peter"
+  },
+  {
+    "from": "peter_klein",
+    "to": "anna_klein",
+    "date": "1941-11-13",
+    "source": "0061_Peter 13.11.41 Seite 2.xml",
+    "place_from": "Unbekannt",
+    "place_to": "Dreis",
+    "note": "Brief mit zweitem Teil"
+  },
+  {
+    "from": "peter_klein",
+    "to": "anna_klein",
+    "date": "1941-11-13",
+    "source": "0062_Peter 13.11.41.xml",
+    "place_from": "Unbekannt",
+    "place_to": "Dreis",
+    "note": "Brief an Anna"
+  },
+  {
+    "from": "peter_klein",
+    "to": "anna_klein",
+    "date": "1943-12-20",
+    "source": "0063_Peter 20.12.43.xml",
+    "place_from": "Unbekannt",
+    "place_to": "Dreis",
+    "note": "Feldpost von Peter"
+  },
+  {
+    "from": "peter_klein",
+    "to": "anna_klein",
+    "date": "1941-11-23",
+    "source": "0064_Peter 23.11.41 Seite 2.xml",
+    "place_from": "Unbekannt",
+    "place_to": "Dreis",
+    "note": "Brief mit zweitem Teil"
+  },
+  {
+    "from": "peter_klein",
+    "to": "anna_klein",
+    "date": "1941-11-23",
+    "source": "0065_Peter 23.11.41.xml",
+    "place_from": "Unbekannt",
+    "place_to": "Dreis",
+    "note": "Brief an Anna"
+  },
+  {
+    "from": "peter_klein",
+    "to": "anna_klein",
+    "date": "1944-02-26",
+    "source": "0066_Peter 26.02.44.xml",
+    "place_from": "Warschau",
+    "place_to": "Dreis",
+    "note": "Erwähnung von Warschau im Text"
+  }
+]
+
