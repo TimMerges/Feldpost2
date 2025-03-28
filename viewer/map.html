@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feldpostkarte</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="../viewer-style.css" />
+  <style>
+    #map {
+      height: 80vh;
+      width: 90%;
+      margin: 2rem auto;
+      border: 2px solid #333;
+      border-radius: 6px;
+    }
+    main {
+      text-align: center;
+    }
+    #filter-bar {
+      margin: 1rem auto;
+      width: 90%;
+      text-align: left;
+      background: #f3f3f3;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+    #filter-bar label {
+      margin-right: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div id="page-header"></div>
+
+  <main>
+    <h1>🗺️ Historische Karte der Feldpostbewegungen</h1>
+    <p>Rekonstruktion der Einsatzorte und erwähnten Städte in der Feldpost.</p>
+
+    <div id="filter-bar">
+      <label>
+        📤 Absender filtern:
+        <select id="filter-from">
+          <option value="all">Alle</option>
+        </select>
+      </label>
+      <label>
+        📥 Empfänger filtern:
+        <select id="filter-to">
+          <option value="all">Alle</option>
+        </select>
+      </label>
+    </div>
+
+    <div id="map"></div>
+  </main>
+
+  <div id="page-footer"></div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+    let map = L.map('map').setView([51.1657, 10.4515], 6);
+    let persons = {};
+    let places = [];
+    let lines = [];
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap-Mitwirkende',
+      maxZoom: 18
+    }).addTo(map);
+
+    fetch('../header.html')
+      .then(res => res.text())
+      .then(html => document.getElementById('page-header').innerHTML = html);
+
+    fetch('../footer.html')
+      .then(res => res.text())
+      .then(html => document.getElementById('page-footer').innerHTML = html);
+
+    Promise.all([
+      fetch('places.json').then(res => res.json()),
+      fetch('persons.json').then(res => res.json()),
+      fetch('letters.json').then(res => res.json())
+    ]).then(([placeData, personData, letterData]) => {
+      places = placeData;
+      personData.forEach(p => {
+        persons[p.id] = p;
+        addPersonToFilter('filter-from', p);
+        addPersonToFilter('filter-to', p);
+      });
+
+      places.forEach(place => {
+        const marker = L.marker([place.lat, place.lon]).addTo(map);
+        const viewerLink = `/Feldpost2/viewer/XML_Viewer.html?file=${encodeURIComponent(place.source)}`;
+        const popupContent = `
+          <strong>${place.name}</strong><br>
+          ${place.note}<br>
+          <em>${place.source}</em><br><br>
+          <a href="${viewerLink}" target="_blank">📄 Brief im Viewer öffnen</a>
+        `;
+        marker.bindPopup(popupContent);
+      });
+
+      drawLetterLines(letterData);
+      document.getElementById('filter-from').addEventListener('change', () => drawLetterLines(letterData));
+      document.getElementById('filter-to').addEventListener('change', () => drawLetterLines(letterData));
+    });
+
+    function addPersonToFilter(selectId, person) {
+      const opt = document.createElement('option');
+      opt.value = person.id;
+      opt.textContent = person.name;
+      document.getElementById(selectId).appendChild(opt);
+    }
+
+    function drawLetterLines(letters) {
+      lines.forEach(line => map.removeLayer(line));
+      lines = [];
+
+      const filterFrom = document.getElementById('filter-from').value;
+      const filterTo = document.getElementById('filter-to').value;
+
+      letters.forEach(letter => {
+        if ((filterFrom === 'all' || letter.from === filterFrom) &&
+            (filterTo === 'all' || letter.to === filterTo)) {
+          const from = places.find(p => p.name === letter.place_from);
+          const to = places.find(p => p.name === letter.place_to);
+          if (from && to) {
+            const line = L.polyline([
+              [from.lat, from.lon],
+              [to.lat, to.lon]
+            ], {
+              color: 'red',
+              weight: 2,
+              opacity: 0.8,
+              dashArray: '5, 8'
+            }).addTo(map);
+
+            const fromPerson = persons[letter.from];
+            const toPerson = persons[letter.to];
+            const viewerLink = `/Feldpost2/viewer/XML_Viewer.html?file=${encodeURIComponent(letter.source)}`;
+            const popupContent = `
+              ✉️ <strong>Brief von 
+                <a href="https://www.wikidata.org/wiki/${fromPerson?.wikidata}" target="_blank">${fromPerson?.name}</a> 
+                an 
+                <a href="https://www.wikidata.org/wiki/${toPerson?.wikidata}" target="_blank">${toPerson?.name}</a>
+              </strong><br>
+              📅 ${letter.date}<br>
+              <a href="${viewerLink}" target="_blank">📄 Brief im Viewer öffnen</a>
+            `;
+            line.bindPopup(popupContent);
+            lines.push(line);
+          }
+        }
+      });
+    }
+  </script>
+</body>
+</html>
