@@ -10,20 +10,18 @@
       padding: 0;
       font-family: sans-serif;
       height: 100%;
+      display: flex;
+      flex-direction: column;
     }
-#page-header {
-  position: relative;
-  z-index: 1;
-}
+
     body {
       background: url('Bilder/Bundesarchiv_Bild_141-0763,_Warschau,_Brände.jpg') no-repeat center center;
       background-size: cover;
-      position: relative;
       color: #fff;
+      position: relative;
       text-align: center;
     }
 
-    /* Overlay für bessere Lesbarkeit */
     body::before {
       content: "";
       position: absolute;
@@ -32,10 +30,19 @@
       z-index: 0;
     }
 
+    #page-header {
+      position: relative;
+      z-index: 1;
+    }
+
     #content {
+      flex: 1;
       position: relative;
       z-index: 1;
       padding: 4rem 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
 
     h1 {
@@ -46,6 +53,16 @@
     p {
       font-size: 1.2rem;
       margin-bottom: 2.5rem;
+    }
+
+    #page-footer {
+      position: relative;
+      z-index: 1;
+      background: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
     }
 
     a.button {
@@ -71,7 +88,7 @@
 
   <!-- Hauptinhalt mit Overlay -->
   <div id="content">
-    <h1>Digitale Sammlung der Kleinschen Korrespondenz in den Jahren 1942-1944</h1>
+    <h1>Digitale Sammlung der Kleinschen Korrespondenz in den Jahren 1942–1944</h1>
     <p>"Liebe Schwester, bin noch gesund und munter, was ich auch von dir hoffe!"</p>
   </div>
 
@@ -89,4 +106,3 @@
   </script>
 </body>
 </html>
-
