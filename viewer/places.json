@@ -48,4 +48,12 @@
     "source": "Region",
     "note": "nächstgelegene Stadt"
   }
+  {
+  "name": "Tábor",
+  "lat": 49.4144,
+  "lon": 14.6578,
+  "source": "0048_Karl 25.07.44.xml",
+  "note": "Feldwerfer-Schule der Infanterie, 2. Grenadier-Lehrgang"
+}
+
 ]
