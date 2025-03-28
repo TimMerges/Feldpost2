@@ -10,7 +10,7 @@
     "active": ["1942", "1943", "1944"],
     "locations": ["Sambir", "Tábor"],
     "project": "Q133574462",
-    "related": ["anna_klein"]
+    "related": ["anna_klein", "peter_klein"]
   },
   {
     "id": "anna_klein",
@@ -19,6 +19,15 @@
     "role": "Empfängerin",
     "residence": "Dreis",
     "project": "Q133574462",
-    "related": ["karl_klein"]
+    "related": ["karl_klein", "peter_klein"]
+  },
+  {
+    "id": "peter_klein",
+    "name": "Peter Klein",
+    "wikidata": "Q133574744",
+    "role": "Absender",
+    "project": "Q133574462",
+    "related": ["anna_klein", "karl_klein"]
   }
 ]
+
