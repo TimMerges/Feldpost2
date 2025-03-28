@@ -21,6 +21,7 @@ body {
 /* Sidebar links */
 #sidebar {
   width: 320px;
+  height: 100vh;
   overflow-y: auto;
   border-right: 1px solid #ccc;
   padding: 1rem;
@@ -30,8 +31,7 @@ body {
 /* Canvas-Hauptbereich */
 #main {
   flex: 1;
-  overflow: auto;
-  position: relative;
+  height: 100vh;
   overflow: auto;
   background: #f0f0f0;
   display: flex;
@@ -40,6 +40,7 @@ body {
   flex-direction: column;
   padding-top: 1rem;
 }
+
 
 /* Bildanzeige */
 canvas {
