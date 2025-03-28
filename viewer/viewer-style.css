@@ -42,14 +42,13 @@ body {
 
 /* Bildanzeige */
 canvas {
-  border: 1px solid #333;
-  max-width: 90%;
-  max-height: 80vh;
+  max-width: 100%;
+  max-height: 90vh;
   height: auto;
-  cursor: pointer;
+  border: 1px solid #333;
+  cursor: zoom-in;
   margin: 1rem auto;
 }
-
 /* Elemente im Textbereich */
 h2, h3 {
   margin-top: 0.5rem;
