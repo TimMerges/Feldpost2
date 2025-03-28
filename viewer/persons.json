@@ -1,0 +1,24 @@
+[
+  {
+    "id": "karl_klein",
+    "name": "Karl Klein",
+    "wikidata": "Q133574386",
+    "role": "Absender",
+    "rank": "Obergefreiter",
+    "unit": "Grenadier-Regiment 287",
+    "feldpostnummer": "35187 C",
+    "active": ["1942", "1943", "1944"],
+    "locations": ["Sambir", "Tábor"],
+    "project": "Q133574462",
+    "related": ["anna_klein"]
+  },
+  {
+    "id": "anna_klein",
+    "name": "Anna Klein",
+    "wikidata": "Q133574532",
+    "role": "Empfängerin",
+    "residence": "Dreis",
+    "project": "Q133574462",
+    "related": ["karl_klein"]
+  }
+]
