@@ -9,9 +9,17 @@
       font-family: sans-serif;
       background-color: #f8f9fa;
       margin: 0;
+      padding: 0;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    main {
+      flex: 1;
       padding: 2rem;
       text-align: center;
-      color: #333;
     }
 
     h1 {
@@ -40,27 +48,57 @@
     a.button:hover {
       background-color: #357abd;
     }
+
+    ul {
+      text-align: left;
+      max-width: 700px;
+      margin: 1rem auto;
+      line-height: 1.6;
+    }
   </style>
 </head>
 <body>
-  <h1>📤 Deinen Feldpostbrief beisteuern</h1>
+  <!-- HEADER -->
+  <div id="page-header"></div>
 
-  <p>
-    Du möchtest die digitalen Sammlung erweitern? Vielen Dank! <br>
-    Lade hier einen Scan oder ein gutes Foto deines historischen Feldpostbriefs hoch. <br>
-    Erlaubt sind auch Transkriptionen im XML- oder Textformat.
-  </p>
+  <main>
+    <h1>📤 Deinen Feldpostbrief beisteuern</h1>
 
-  <p><strong>Tipps für die Aufnahme oder den Scan:</strong></p>
-  <ul style="text-align: left; max-width: 700px; margin: 1rem auto;">
-    <li>Verwende eine möglichst hohe Auflösung (mind. 300dpi bei Scans)</li>
-    <li>Wenn du fotografierst: von oben, ohne Schatten oder Schräglage</li>
-    <li>Mehrseitige Briefe bitte in Reihenfolge nummerieren</li>
-    <li>Erlaubte Dateiformate: <code>.jpg, .png, .pdf, .xml, .txt</code></li>
-    <li>Maximale Gesamtgröße: <strong>100 MB</strong></li>
-  </ul>
+    <p>
+      Du möchtest Teil der digitalen Sammlung werden? Großartig! <br>
+      Lade hier einen Scan oder ein gutes Foto deines historischen Feldpostbriefs hoch. <br>
+      Erlaubt sind auch Transkriptionen im XML- oder Textformat.
+    </p>
 
-  <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSdM7EvJYr4uuCxt3P841qsXlJp-5oxzqivKH256t7ClZqsOiQ/viewform?usp=dialog" target="_blank">
+    <p><strong>Tipps für die Aufnahme oder den Scan:</strong></p>
+    <ul>
+      <li>Verwende eine möglichst hohe Auflösung (mind. 300dpi bei Scans)</li>
+      <li>Wenn du fotografierst: von oben, ohne Schatten oder Schräglage</li>
+      <li>Mehrseitige Briefe bitte in Reihenfolge nummerieren</li>
+      <li>Erlaubte Dateiformate: <code>.jpg, .png, .pdf, .xml, .txt</code></li>
+      <li>Maximale Gesamtgröße: <strong>100 MB</strong></li>
+    </ul>
+
+    <a class="button" href="https://docs.google.com/forms/d/DEIN_FORMULAR_ID/viewform" target="_blank">
+      📎 Jetzt Brief hochladen
+    </a>
+  </main>
+
+  <!-- FOOTER -->
+  <div id="page-footer"></div>
+
+  <script>
+    fetch('../header.html')
+      .then(res => res.text())
+      .then(html => document.getElementById('page-header').innerHTML = html);
+
+    fetch('../footer.html')
+      .then(res => res.text())
+      .then(html => document.getElementById('page-footer').innerHTML = html);
+  </script>
+</body>
+</html>
+
     📎 Jetzt Brief hochladen
   </a>
 </body>
