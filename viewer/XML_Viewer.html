@@ -301,9 +301,11 @@ canvas.addEventListener('mousemove', e => {
   const x = e.clientX - rect.left;
   const y = e.clientY - rect.top;
 
+  const zoomSize = 150; 
+
   zoomLens.style.display = 'block';
-  zoomLens.style.left = `${e.pageX + 15}px`;
-  zoomLens.style.top = `${e.pageY - 75}px`;
+  zoomLens.style.left = `${rect.left + x - zoomSize / 2}px`;
+  zoomLens.style.top = `${rect.top + y - zoomSize / 2}px`;
 
   zoomCtx.clearRect(0, 0, zoomCanvas.width, zoomCanvas.height);
   zoomCtx.drawImage(
@@ -318,6 +320,7 @@ canvas.addEventListener('mousemove', e => {
     zoomCanvas.height
   );
 });
+
 
 canvas.addEventListener('mouseleave', () => {
   zoomLens.style.display = 'none';
