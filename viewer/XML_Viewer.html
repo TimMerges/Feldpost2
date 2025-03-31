@@ -25,6 +25,8 @@
 
     <div id="main">
       <canvas id="canvas"></canvas>
+      <div id="zoom-lens"><canvas id="zoom-canvas" width="300" height="300"></canvas></div>
+
     </div>
   </div>
 
@@ -289,6 +291,38 @@ canvas.addEventListener('wheel', (e) => {
     fetch('../footer.html')
       .then(res => res.text())
       .then(html => document.getElementById('page-footer').innerHTML = html);
+    const zoomLens = document.getElementById('zoom-lens');
+const zoomCanvas = document.getElementById('zoom-canvas');
+const zoomCtx = zoomCanvas.getContext('2d');
+const zoomFactor = 2;
+
+canvas.addEventListener('mousemove', e => {
+  const rect = canvas.getBoundingClientRect();
+  const x = e.clientX - rect.left;
+  const y = e.clientY - rect.top;
+
+  zoomLens.style.display = 'block';
+  zoomLens.style.left = `${e.pageX + 15}px`;
+  zoomLens.style.top = `${e.pageY - 75}px`;
+
+  zoomCtx.clearRect(0, 0, zoomCanvas.width, zoomCanvas.height);
+  zoomCtx.drawImage(
+    canvas,
+    x - zoomCanvas.width / (2 * zoomFactor),
+    y - zoomCanvas.height / (2 * zoomFactor),
+    zoomCanvas.width / zoomFactor,
+    zoomCanvas.height / zoomFactor,
+    0,
+    0,
+    zoomCanvas.width,
+    zoomCanvas.height
+  );
+});
+
+canvas.addEventListener('mouseleave', () => {
+  zoomLens.style.display = 'none';
+});
+
   </script>
 </body>
 </html>
