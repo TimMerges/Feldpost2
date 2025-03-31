@@ -301,12 +301,20 @@ canvas.addEventListener('mousemove', e => {
   const x = e.clientX - rect.left;
   const y = e.clientY - rect.top;
 
-  const zoomSize = 150; 
+const zoomSize = 150;
+const zoomFactor = 2;
 
+canvas.addEventListener('mousemove', (e) => {
+  const rect = canvas.getBoundingClientRect();
+  const x = e.clientX - rect.left;
+  const y = e.clientY - rect.top;
+
+  // Lupe positionieren – absolut im Dokument
   zoomLens.style.display = 'block';
-  zoomLens.style.left = `${rect.left + x - zoomSize / 2}px`;
-  zoomLens.style.top = `${rect.top + y - zoomSize / 2}px`;
+  zoomLens.style.left = `${e.pageX - zoomSize / 2}px`;
+  zoomLens.style.top = `${e.pageY - zoomSize / 2}px`;
 
+  // Ausschnitt aus dem Haupt-Canvas zeichnen
   zoomCtx.clearRect(0, 0, zoomCanvas.width, zoomCanvas.height);
   zoomCtx.drawImage(
     canvas,
@@ -321,8 +329,10 @@ canvas.addEventListener('mousemove', e => {
   );
 });
 
-
 canvas.addEventListener('mouseleave', () => {
+  zoomLens.style.display = 'none';
+});
+eleave', () => {
   zoomLens.style.display = 'none';
 });
 
