@@ -193,3 +193,8 @@ canvas {
   cursor: pointer;
   border-radius: 4px;
 }
+body {
+  background: url('../bilder/paper-535960_1920.jpg') repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
