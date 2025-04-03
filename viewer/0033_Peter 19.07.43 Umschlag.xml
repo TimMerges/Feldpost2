@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/pagecontent.xsd">
+    <Metadata>
+        <Creator>prov=READ-COOP:name=PyLaia@TranskribusPlatform:version=2.20.0:model_id=50870:lm=none:date=22_01_2025_19:06</Creator>
+        <Created>2025-01-14T20:07:47.406+01:00</Created>
+        <LastChange>2025-03-26T09:23:26.775+01:00</LastChange>
+    </Metadata>
+    <Page imageFilename="0033_Karl 19.07.43 Umschlag.jpeg" imageWidth="1738" imageHeight="1250">
+        <ReadingOrder>
+            <OrderedGroup id="ro_1743065162115" caption="Regions reading order">
+                <RegionRefIndexed index="0" regionRef="r_9"/>
+                <RegionRefIndexed index="1" regionRef="r_11"/>
+                <RegionRefIndexed index="2" regionRef="r_12"/>
+                <RegionRefIndexed index="3" regionRef="r_13"/>
+                <RegionRefIndexed index="4" regionRef="r_10"/>
+            </OrderedGroup>
+        </ReadingOrder>
+        <TextRegion id="r_9" custom="readingOrder {index:0;}">
+            <Coords points="12,302 683,302 683,606 12,606"/>
+            <TextLine id="l" custom="readingOrder {index:0;}">
+                <Coords points="48,535 607,368 598,339 40,506"/>
+                <Baseline points="48,535 607,368"/>
+                <TextEquiv>
+                    <Unicode>ref. - Laz. Loben 0/5</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_20" custom="readingOrder {index:1;} place {offset:13; length:9;wikiData:Q1780345; country:Poland; placeName:Guttentag;}">
+                <Coords points="79,595 619,444 611,415 70,567"/>
+                <Baseline points="79,595 619,444"/>
+                <TextEquiv>
+                    <Unicode>Teillazarett Guttentag</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode></Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r_11" custom="readingOrder {index:1;}">
+            <Coords points="786,93 1220,93 1220,333 786,333"/>
+            <TextLine id="l_48" custom="readingOrder {index:0;}">
+                <Coords points="806,272 1164,266 1163,236 805,242"/>
+                <Baseline points="806,272 1164,266"/>
+                <TextEquiv>
+                    <Unicode>Feldpostkarte</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode></Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r_12" custom="readingOrder {index:2;}">
+            <Coords points="1223,44 1669,44 1669,446 1223,446"/>
+            <TextLine id="l_52" custom="readingOrder {index:0;} place {offset:0; length:9;wikiData:Q1780345; country:Poland; placeName:Guttentag;} date {offset:22; length:8;when:1943.07.19;}">
+                <Coords points="1334,254 1537,287 1542,257 1339,224"/>
+                <Baseline points="1334,254 1537,287"/>
+                <TextEquiv>
+                    <Unicode>Guttentag Ioberschlesi 19.7.43 -15</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode></Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r_13" custom="readingOrder {index:3;}">
+            <Coords points="743,440 1736,440 1736,1163 743,1163"/>
+            <TextLine id="l_56" custom="readingOrder {index:0;}">
+                <Coords points="836,530 1219,527 1218,497 836,500"/>
+                <Baseline points="836,530 1219,527"/>
+                <TextEquiv>
+                    <Unicode>Fräulein</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_60" custom="readingOrder {index:1;} person {offset:0; length:10;firstname:Anna; lastname:Klein;}">
+                <Coords points="1000,679 1501,673 1500,643 1000,649"/>
+                <Baseline points="1000,679 1501,673"/>
+                <TextEquiv>
+                    <Unicode>Anna Klein</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_64" custom="readingOrder {index:2;} place {offset:17; length:8;placeName:Wittlich;}">
+                <Coords points="797,785 1592,782 1592,752 797,755"/>
+                <Baseline points="797,785 1592,782"/>
+                <TextEquiv>
+                    <Unicode>Kurfürstenst. 57 Wittlich</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_28" custom="readingOrder {index:3;}">
+                <Coords points="103,887 758,897 759,867 103,857"/>
+                <Baseline points="103,887 758,897"/>
+                <TextEquiv>
+                    <Unicode></Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_68" custom="readingOrder {index:4;} place {offset:0; length:8;wikiData:Q559514; country:Germany; placeName:Wittlich;}">
+                <Coords points="927,955 1322,934 1320,904 926,925"/>
+                <Baseline points="927,955 1322,934"/>
+                <TextEquiv>
+                    <Unicode>Wittlich</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_72" custom="readingOrder {index:5;}">
+                <Coords points="930,985 1428,985 1428,955 930,955"/>
+                <Baseline points="930,985 1428,985"/>
+                <TextEquiv>
+                    <Unicode>Feldpostnummer oder Bestimmungsort</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_76" custom="readingOrder {index:6;}">
+                <Coords points="945,1119 1704,1107 1704,1077 945,1089"/>
+                <Baseline points="945,1119 1704,1107"/>
+                <TextEquiv>
+                    <Unicode>z. Zt Krankenhaus 322</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode></Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r_10" custom="readingOrder {index:4;}">
+            <Coords points="12,703 774,703 774,1201 12,1201"/>
+            <TextLine id="l_24" custom="readingOrder {index:0;} person {offset:15; length:8;firstname:Karl; lastname:Klein;}">
+                <Coords points="57,817 686,805 685,775 57,787"/>
+                <Baseline points="57,817 686,805"/>
+                <TextEquiv>
+                    <Unicode>Absender Gefr. Klein K.</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_32" custom="readingOrder {index:1;}">
+                <Coords points="39,954 607,966 607,936 40,924"/>
+                <Baseline points="39,954 607,966"/>
+                <TextEquiv>
+                    <Unicode></Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_36" custom="readingOrder {index:2;}">
+                <Coords points="42,1042 555,1030 554,1000 41,1012"/>
+                <Baseline points="42,1042 555,1030"/>
+                <TextEquiv>
+                    <Unicode>Feldpostnummer:</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_40" custom="readingOrder {index:3;} place {offset:5; length:9;wikiData:Q1780345; country:Poland; placeName:Guttentag;}">
+                <Coords points="42,1103 509,1112 509,1082 43,1073"/>
+                <Baseline points="42,1103 509,1112"/>
+                <TextEquiv>
+                    <Unicode>Ort: Guttentag</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="l_44" custom="readingOrder {index:4;}">
+                <Coords points="63,1155 184,1149 182,1119 61,1125"/>
+                <Baseline points="63,1155 184,1149"/>
+                <TextEquiv>
+                    <Unicode>Straße: O/S</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode></Unicode>
+            </TextEquiv>
+        </TextRegion>
+    </Page>
+</PcGts>
