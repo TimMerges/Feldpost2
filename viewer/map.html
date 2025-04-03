@@ -59,6 +59,7 @@
       <form id="filter-form">
         <label for="filter-from"> Absender:</label>
         <select id="filter-from">
+          <label><input type="checkbox" id="toggle-movements" checked> Truppenbewegungen anzeigen</label>
           <option value="all">Alle</option>
         </select>
 
@@ -163,7 +164,55 @@
           }
         }
       });
+      
     }
+    let regimentMarkers = [];
+
+function loadRegimentMovements(show = true) {
+  fetch('regiment_movements_combined.json') // oder ggf. 'viewer/regiment_movements_combined.json' je nach Pfad
+    .then(res => res.json())
+    .then(movements => {
+      regimentMarkers.forEach(m => map.removeLayer(m));
+      regimentMarkers = [];
+
+      if (!show) return;
+
+      movements.forEach(movement => {
+        const marker = L.circleMarker([movement.lat, movement.lon], {
+          radius: 6,
+          color: 'blue',
+          fillColor: '#3388ff',
+          fillOpacity: 0.8
+        }).addTo(map);
+
+        marker.bindPopup(`
+          <strong>${movement.place}</strong><br>
+          📅 ${movement.date}<br>
+          ${movement.description}<br>
+          <a href="${movement.source}" target="_blank">Quelle</a>
+        `);
+
+        regimentMarkers.push(marker);
+      });
+    });
+}
+
+// Checkbox registrieren
+document.addEventListener('DOMContentLoaded', () => {
+  const toggle = document.getElementById('toggle-movements');
+  if (toggle) {
+    toggle.addEventListener('change', () => {
+      loadRegimentMovements(toggle.checked);
+    });
+    loadRegimentMovements(toggle.checked); // initialer Aufruf
+  }
+});
+
+    }
+    
+  </script>
+</body>
+</html>
   </script>
 </body>
 </html>
