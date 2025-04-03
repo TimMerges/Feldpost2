@@ -1,0 +1,82 @@
+[
+  {
+    "date": "1939-09-25",
+    "place": "Bergen, Deutschland",
+    "lat": 52.8085,
+    "lon": 9.9366,
+    "description": "Aufstellung der 96. Infanterie-Division am Truppenübungsplatz Bergen.",
+    "source": "https://de.wikipedia.org/wiki/96._Infanterie-Division_(Wehrmacht)"
+  },
+  {
+    "date": "1940-05-10",
+    "place": "Ardennen, Belgien",
+    "lat": 50.1234,
+    "lon": 5.1234,
+    "description": "Teilnahme am Westfeldzug; Durchquerung der Ardennen.",
+    "source": "https://de.wikipedia.org/wiki/96._Infanterie-Division_(Wehrmacht)"
+  },
+  {
+    "date": "1941-06-22",
+    "place": "Vilnius, Litauen",
+    "lat": 54.6872,
+    "lon": 25.2797,
+    "description": "Beginn des Ostfeldzugs; Vormarsch über Vilnius.",
+    "source": "https://de.wikipedia.org/wiki/96._Infanterie-Division_(Wehrmacht)"
+  },
+  {
+    "date": "1941-09-01",
+    "place": "Leningrad, Russland",
+    "lat": 59.9343,
+    "lon": 30.3351,
+    "description": "Einsatz während der Belagerung von Leningrad.",
+    "source": "https://de.wikipedia.org/wiki/96._Infanterie-Division_(Wehrmacht)"
+  },
+  {
+    "date": "1942-01-01",
+    "place": "Wolchow, Russland",
+    "lat": 59.6167,
+    "lon": 32.5833,
+    "description": "Abwehrkämpfe am Wolchow-Frontbogen.",
+    "source": "https://de.wikipedia.org/wiki/96._Infanterie-Division_(Wehrmacht)"
+  },
+  {
+    "date": "1943-01-01",
+    "place": "Ladogasee, Russland",
+    "lat": 60.0,
+    "lon": 31.5,
+    "description": "Kämpfe südlich des Ladogasees.",
+    "source": "https://de.wikipedia.org/wiki/96._Infanterie-Division_(Wehrmacht)"
+  },
+  {
+    "date": "1944-01-01",
+    "place": "Shepetivka, Ukraine",
+    "lat": 50.1865,
+    "lon": 27.0638,
+    "description": "Verlegung in die Ukraine; Abwehrkämpfe bei Shepetivka.",
+    "source": "https://de.wikipedia.org/wiki/96._Infanterie-Division_(Wehrmacht)"
+  },
+  {
+    "date": "1944-03-01",
+    "place": "Kamenez-Podolsk, Ukraine",
+    "lat": 48.6833,
+    "lon": 26.5833,
+    "description": "Eingekesselt im Hube-Kessel.",
+    "source": "https://de.wikipedia.org/wiki/96._Infanterie-Division_(Wehrmacht)"
+  },
+  {
+    "date": "1945-01-01",
+    "place": "Tata, Ungarn",
+    "lat": 47.6489,
+    "lon": 18.3183,
+    "description": "Rückzugskämpfe in Ungarn; Stellung bei Tata.",
+    "source": "https://de.wikipedia.org/wiki/96._Infanterie-Division_(Wehrmacht)"
+  },
+  {
+    "date": "1945-05-08",
+    "place": "Freistadt, Österreich",
+    "lat": 48.5117,
+    "lon": 14.5044,
+    "description": "Kapitulation und Gefangennahme bei Freistadt.",
+    "source": "https://de.wikipedia.org/wiki/96._Infanterie-Division_(Wehrmacht)"
+  }
+]
