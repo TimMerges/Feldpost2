@@ -57,6 +57,8 @@
 
     <div id="filter-bar">
       <form id="filter-form">
+<label><input type="checkbox" id="toggle-movements" checked> Truppenbewegungen anzeigen</label>
+
         <label for="filter-from"> Absender:</label>
         <select id="filter-from">
           <option value="all">Alle</option>
@@ -103,20 +105,16 @@ function loadRegimentMovements(show = true) {
     });
 }
 
-// UI-Schalter hinzufügen
-const toggleContainer = document.createElement('div');
-toggleContainer.style.margin = '1rem';
-toggleContainer.innerHTML = \`
-  <label><input type="checkbox" id="toggle-movements" checked> Truppenbewegungen anzeigen</label>
-\`;
-document.querySelector('main').insertBefore(toggleContainer, document.getElementById('map'));
-
-document.getElementById('toggle-movements').addEventListener('change', (e) => {
-  loadRegimentMovements(e.target.checked);
+// Checkbox-Event registrieren
+document.addEventListener('DOMContentLoaded', () => {
+  const toggle = document.getElementById('toggle-movements');
+  if (toggle) {
+    toggle.addEventListener('change', (e) => {
+      loadRegimentMovements(e.target.checked);
+    });
+    loadRegimentMovements(toggle.checked);
+  }
 });
-
-// Initial laden
-loadRegimentMovements(true);
 
 </script>
   <script>
@@ -243,20 +241,16 @@ function loadRegimentMovements(show = true) {
     });
 }
 
-// UI-Schalter hinzufügen
-const toggleContainer = document.createElement('div');
-toggleContainer.style.margin = '1rem';
-toggleContainer.innerHTML = \`
-  <label><input type="checkbox" id="toggle-movements" checked> Truppenbewegungen anzeigen</label>
-\`;
-document.querySelector('main').insertBefore(toggleContainer, document.getElementById('map'));
-
-document.getElementById('toggle-movements').addEventListener('change', (e) => {
-  loadRegimentMovements(e.target.checked);
+// Checkbox-Event registrieren
+document.addEventListener('DOMContentLoaded', () => {
+  const toggle = document.getElementById('toggle-movements');
+  if (toggle) {
+    toggle.addEventListener('change', (e) => {
+      loadRegimentMovements(e.target.checked);
+    });
+    loadRegimentMovements(toggle.checked);
+  }
 });
-
-// Initial laden
-loadRegimentMovements(true);
 
 </script>
 </body>

@@ -1,0 +1,65 @@
+[
+  {
+    "date": "1941-06-22",
+    "location": "Ostpolen / Sowjetunion",
+    "event": "Beginn Unternehmen Barbarossa – Angriff auf die Sowjetunion",
+    "unit": "96. Infanterie-Division",
+    "source": "https://de.wikipedia.org/wiki/96._Infanterie-Division_(Wehrmacht)"
+  },
+  {
+    "date": "1941-08-01",
+    "location": "Raum Leningrad",
+    "event": "Einsatz bei Leningrad, Beginn der Blockade",
+    "unit": "Grenadier-Regiment 287",
+    "source": "https://www.lexikon-der-wehrmacht.de/Gliederungen/Infanteriedivisionen/96ID.htm"
+  },
+  {
+    "date": "1942-12-01",
+    "location": "Schlüsselburg / Mga, südlich Ladogasee",
+    "event": "Winterschlacht – Rückzugsgefechte gegen sowjetische Offensive",
+    "unit": "Grenadier-Regiment 287",
+    "source": "https://www.okh.it/units/4division/Inf/0096ID.htm"
+  },
+  {
+    "date": "1943-06-01",
+    "location": "Wolchow-Stellung",
+    "event": "Stellungskrieg im Raum Wolchow – Karl Klein bestätigt Einsatz dort in Briefen",
+    "unit": "Grenadier-Regiment 287",
+    "source": "https://de.wikipedia.org/wiki/96._Infanterie-Division_(Wehrmacht)"
+  },
+  {
+    "date": "1943-12-15",
+    "location": "Verlegung – Nordrussland → Westukraine",
+    "event": "Division wird abgezogen, Karl berichtet von mehrtägiger Fahrt",
+    "unit": "Grenadier-Regiment 287",
+    "source": "https://www.lexikon-der-wehrmacht.de/Gliederungen/Infanteriedivisionen/96ID.htm"
+  },
+  {
+    "date": "1944-03-01",
+    "location": "Kamenez-Podolsk",
+    "event": "Eingeschlossen im Hube-Kessel, Rückzugsgefechte",
+    "unit": "96. Infanterie-Division",
+    "source": "https://de.wikipedia.org/wiki/96._Infanterie-Division_(Wehrmacht)"
+  },
+  {
+    "date": "1944-05-10",
+    "location": "Sambir",
+    "event": "Karl Klein verwundet, Lazarettaufenthalt dokumentiert",
+    "unit": "Grenadier-Regiment 287",
+    "source": "Feldpostbrief vom 10.05.1944"
+  },
+  {
+    "date": "1944-07-25",
+    "location": "Tábor (Tschechien)",
+    "event": "Besuch eines Grenadier-Lehrgangs, Schulung nach Verwundung",
+    "unit": "Grenadier-Regiment 287",
+    "source": "Feldpostbrief vom 25.07.1944"
+  },
+  {
+    "date": "1945-04-01",
+    "location": "Niederösterreich",
+    "event": "Rückzug und Kapitulation, teilweise in US-amerikanische Gefangenschaft",
+    "unit": "96. Infanterie-Division",
+    "source": "https://de.wikipedia.org/wiki/96._Infanterie-Division_(Wehrmacht)"
+  }
+]
